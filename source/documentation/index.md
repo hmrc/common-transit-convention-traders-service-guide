@@ -101,19 +101,19 @@ This diagram shows the end-to-end process of transporting goods using the Common
 24. Trader at departure receives notification that the goods movement is complete. Goods are now released to be sold etc.
 
 ## Read guidance
-You can learn more about the Common Transit Convention by reading guidance on
+You can learn more about the Common Transit Convention by reading guidance on GOV.UK. In particular:
 
-GOV.UK. In particular:
+[The Design Document for National Transit Application (DDNTA)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)
 
-The Design Document for National Transit Application (DDNTA)
+and the 
+
+[European Commissions Transition Strategy for NCTS Phase 4 to Phase 5](https://www.clecat.org/media/Transit%20transition%20strategy%20document.pdf).
 
 We encourage you to include links to relevant guidance in your software.
 
 ## Tell us what you think
 
-We rely on your feedback to help us design the right APIs. Please take a few
-
-minutes to fill in our survey.
+We rely on your feedback to help us design the right APIs. Please take a few minutes to fill in our survey.
 
 
 
