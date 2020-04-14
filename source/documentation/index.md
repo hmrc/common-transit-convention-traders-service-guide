@@ -77,7 +77,7 @@ This diagram shows how an arrival notification message is sent by the user using
 
 This diagram shows the end-to-end process of transporting goods using the Common Transit Convention API. It shows at what stage in the process each message is sent, and who each message is sent to and from.
 
-<img src="ctc-movements.svg" alt="CTC Movements" style="width:520px;" />
+<img src="figures/ctc-movements.svg" alt="CTC Movements" style="width:520px;" />
 
 1. Trader at departure fills in and sends a declaration notification.
 2. Office of departure receives declaration notification.
