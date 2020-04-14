@@ -58,9 +58,11 @@ Traders who send a high number of messages and notifications should use the API.
 - send departure notifications to the Office of Departure
 
 
-## Sending an arrival message: IE
+## Sending an arrival message: IE007
 
 This diagram shows how an arrival notification message is sent by the user using third party software to the NCTS, using the CTC API.
+
+<img src="figures/sending-an-arrival-message-ie007.svg" alt="Sending an arrival notification IE007" style="width:520px;" />
 
 1. Third party software redirects the user to the Government Gateway to get access to the CTC API.
 2. Government Gateway account is authenticated and redirects the user back to 3rd party software.
@@ -74,6 +76,8 @@ This diagram shows how an arrival notification message is sent by the user using
 ## Coming next
 
 This diagram shows the end-to-end process of transporting goods using the Common Transit Convention API. It shows at what stage in the process each message is sent, and who each message is sent to and from.
+
+<img src="ctc-movements.svg" alt="CTC Movements" style="width:520px;" />
 
 1. Trader at departure fills in and sends a declaration notification.
 2. Office of departure receives declaration notification.
