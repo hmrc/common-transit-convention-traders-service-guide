@@ -20,10 +20,10 @@
 Staticfile.auth
 
 /vendor
-/public
 /target
 /project/project
 /project/target
+/source/documentation/target
 /.project
 /logs
 .idea
