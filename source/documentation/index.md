@@ -1,61 +1,92 @@
 ---
 title: Common Transit Convention Traders end-to-end
 weight: 1
-description: Software developers, designers, product owners or business analysts. Integrate your software with Common Transit Convention Traders API for Making Tax Digital.
+description: Software developers, designers, product owners or business analysts. Integrate your software with Common Transit Convention Traders API.
 ---
 
 # Common Transit Convention API end-to-end service guide
 
-Version 0.1 issued 6th April 2020
+Version 0.2 issued 2nd June 2020
 ***
 
-This guide explains how you can use our Common Transit Convention (CTC) API with your software. It allows you to send and receive movement notifications and status messages to and from the New Computerised Transit System (NCTS). This API replaces the NCTS XML API Channel that is currently in use.
+This guide explains how you can use our Common Transit Convention (CTC) API with your software. The API will allow you to send and receive movement notifications and status messages to and from the EU’s New Computerised Transit System (NCTS). It will replace the NCTS XML API Channel that is now in use, after EU exit.
 
-## Changes to the CTC API
+### Come back for regular updates
 
-This guide describes essential changes to the existing CTC XML API to:
+We are updating this guide as we add more functionality and items you might find useful. These could include video guides, more sequence diagrams and other things you tell us we need. 
 
-- respond to changes to the NCTS system
-
-- improve security
-
-- accommodate the expected increase in CTC movements
-
-The guide shows how the API fits into various end-to-end user journeys. It aims to help you understand how your software needs to interact with HMRC systems after the changes.
+If there is anything you want to see, please get in touch with <sdsteam@hmrc.gsi.gov.uk>
 
 ## Overview
 
-UK traders can move goods freely across EU countries at the moment. This will change now the UK has left the EU. From 1 January 2021, UK traders will start moving goods under the Common Transit Convention instead. 
-
-Common Transit Convention makes sure that traders pay the right country the right amount of tax. It means traders only pay tax for goods once they reach their final destination, rather than at each country border that the goods pass through. 
+UK traders can move goods freely across EU countries at the moment. This will change when the UK leaves. This means possibly paying duties and tax, where this didn’t apply before. From early 2021, UK traders will start moving goods under the CTC instead, to make sure that they pay the right country the right amount of tax for goods, once they reach their destination. 
 
 When moving goods using the Common Transit Convention, a trader will need to let the Office of Departure know that the goods have arrived at their final destination. This is done by sending an arrival notification message to the New Computerised Transit System (NCTS). 
 
-This means that the number of goods movements being declared through the NCTS will increase. The NCTS has been upgraded already to prepare for these increases.
+It is likely that the number of goods movements being declared through the NCTS will increase. The NCTS has been upgraded already to prepare for these increases. 
 
-## Sending messages to the NCTS
 
-You can currently send messages to the NCTS by email, web and API. The way messages can be sent to the NCTS is expected to change from 1 January 2021.
+### Why we are changing to the new CTC API
 
-## API
+The NCTS is changing because the UK is leaving the UK. So we have to make changes in our API as well. But, at the same time, we’re making some improvements. We want to make it better, easier to manage and be more flexible, when it’s up and running.
 
-The current API will not be able to cope with the increased number of messages being sent to the NCTS. Changes will be made to NCTS, including:
 
-- removing the EDIFACT wrapper
+### Improvements that come with the new CTC API
 
-- increasing rate limits
+In a nutshell, some of the improvements with the CTC API allow us to:
 
-- moving to the cloud so it can flex with demand
+- respond to changes to the NCTS system
+- improve security
+- allow for accommodate the expected increase in CTC movements
+- be easier to test and maintain with an updated coding language
+- move to the cloud 
+- remove the EDIFACT wrapper
+- monitor demand 24 hours a day to manage and investigate peak flow events
 
-- improving authorisation functionality
+[You read more about these features](http://waitingforcontent.com)
 
-## Using the API
+### How we can help you with these changes
+
+#### Available now: 
+- [Review Endpoints and Error codes](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)  
+- [Take advantage of tutorials](https://developer.qa.tax.service.gov.uk/api-documentation/docs/tutorials) 
+- [Understand authorisation](https://developer.qa.tax.service.gov.uk/api-documentation/docs/authorisation)
+- [See what you can test in our Roadmap](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap/#backlog)
+
+#### Finding support
+
+We’re also here to help you. We are available to answer any questions you have about the CTC API. Our customer support contact details are below. Where you have API related questions or challenges, these will go to our developers. 
+
+You can contact our [Software Development Support Team](sdsteam@hmrc.gsi.gov.uk) with CTC Traders API questions and support requests. They’ll find the help you need and we’ll get back to you as soon as we can. You’ll get an initial response in 2 working days. This means we’re on the case. We want to give you the best support we can. 
+
+#### Helping you during our development phase
+
+Please bear with us during this period of intensive development work. We will try to answer all your questions as rapidly as possible, but in some cases we may need more time during the transition from the NCTS API channel to the CTC Traders API. 
+
+Your feedback is essential to us to build the right products, and we will direct your query to the right team to answer it. 
+
+If you would like to take part in user research we'd like to hear from you. [Please email us.](sdsteam@hmrc.gsi.gov.uk) 
+
+
+## End-to-end process
+
+The rest of this guide shows how the API fits into various end-to-end user journeys. It aims to help you understand how your software needs to interact with HMRC systems after the changes.
+
+
+### Sending messages to the NCTS
+
+You can currently send messages to the NCTS by email, web and API. The way messages can be sent to the NCTS is expected to change in 2021.
+
+The current API will run at the same time as the updated API for a short while. 
+
+
+### When to use the API
 
 Traders who send a high number of messages and notifications should use the API.  This is because the API can accept up to 999 messages at once, whereas the web form can only accept up to 99 messages. The API will allow traders to:
 
-- send arrival notifications to the Office of Destination
+- send Arrival Notifications to the Office of Destination
 
-- send departure notifications to the Office of Departure
+- send Departure Notifications to the Office of Departure
 
 
 ## Sending an arrival message: IE007
@@ -73,7 +104,9 @@ This diagram shows how an arrival notification message is sent by the user using
 7. The accepted status passes through the CTC API.
 8. The accepted status arrives at the third party software, where the user is notified the NCTS has received the arrival notification message.
 
-## Coming next
+## Sequence Diagrams
+
+### End-to-end Process
 
 This diagram shows the end-to-end process of transporting goods using the Common Transit Convention API. It shows at what stage in the process each message is sent, and who each message is sent to and from.
 
@@ -115,9 +148,7 @@ and the
 
 We encourage you to include links to relevant guidance in your software.
 
-## Tell us what you think
 
-We rely on your feedback to help us design the right APIs. Please take a few minutes to fill in our survey.
 
 
 
@@ -130,10 +161,10 @@ We rely on your feedback to help us design the right APIs. Please take a few min
 ## Changelog
 <!--- Section owner: MTD Programme --->
 
-Version 0.1
+Version 0.2
 
-6th April 2020
+2 May 2020
 
 What changed:
 
-* Initial draft
+* Second draft.
