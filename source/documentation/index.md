@@ -89,6 +89,8 @@ Traders who send a high number of messages and notifications should use the API.
 - send Departure Notifications to the Office of Departure
 
 
+## Sequence Diagrams
+
 ## Sending an arrival message: IE007
 
 This diagram shows how an arrival notification message is sent by the user using third party software to the NCTS, using the CTC API.
@@ -104,7 +106,6 @@ This diagram shows how an arrival notification message is sent by the user using
 7. The accepted status passes through the CTC API.
 8. The accepted status arrives at the third party software, where the user is notified the NCTS has received the arrival notification message.
 
-## Sequence Diagrams
 
 ### End-to-end Process
 
