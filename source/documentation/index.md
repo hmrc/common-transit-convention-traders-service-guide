@@ -107,7 +107,7 @@ This diagram shows how an arrival notification message is sent by the user using
 8. The accepted status arrives at the third party software, where the user is notified the NCTS has received the arrival notification message.
 
 
-### End-to-end Process
+### Movements diagram
 
 This diagram shows the end-to-end process of transporting goods using the Common Transit Convention API. It shows at what stage in the process each message is sent, and who each message is sent to and from.
 
