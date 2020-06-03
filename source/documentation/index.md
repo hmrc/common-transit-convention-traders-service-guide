@@ -9,13 +9,13 @@ description: Software developers, designers, product owners or business analysts
 Version 0.2 issued 2nd June 2020
 ***
 
-This guide explains how you can use our Common Transit Convention (CTC) API with your software. The API will allow you to send and receive movement notifications and status messages to and from the EU’s New Computerised Transit System (NCTS). It will replace the NCTS XML API Channel that is now in use, after EU exit.
+This guide explains how you can use our new Common Transit Convention (CTC) APIs with your software. The API will allow you to send and receive movement notifications and status messages to and from the EU’s New Computerised Transit System (NCTS). Traders will move from using the NCTS XML API Channel to CTC APIs, after EU exit.
 
 ### Come back for regular updates
 
-We are updating this guide as we add more functionality and items you might find useful. These could include video guides, more sequence diagrams and other things you tell us we need. 
+We are updating this guide as we add more functionality to our APIs, new technical specifications and other items we hope you find useful. These could include video guides and more sequence diagrams. 
 
-If there is anything you want to see, please get in touch with <sdsteam@hmrc.gsi.gov.uk>
+Tell us what you need and we will try and make it happen. Email our [Software Development Support Team](mailto:sdsteam@hmrc.gsi.gov.uk)
 
 ## Overview
 
@@ -55,9 +55,9 @@ In a nutshell, some of the improvements with the CTC API allow us to:
 
 #### Finding support
 
-We’re also here to help you. We are available to answer any questions you have about the CTC API. Our customer support contact details are below. Where you have API related questions or challenges, these will go to our developers. 
+We are here to help you and answer any questions you have about the CTC API. Where you have API related questions or challenges, these will go to our developers. 
 
-You can contact our [Software Development Support Team](sdsteam@hmrc.gsi.gov.uk) with CTC Traders API questions and support requests. They’ll find the help you need and we’ll get back to you as soon as we can. You’ll get an initial response in 2 working days. This means we’re on the case. We want to give you the best support we can. 
+You can contact our [Software Development Support Team](mailto:sdsteam@hmrc.gsi.gov.uk) with CTC Traders API questions and support requests. They’ll find the help you need and we’ll get back to you as soon as we can. You’ll get an initial response in 2 working days. This means we’re on the case. We want to give you the best support we can. 
 
 #### Helping you during our development phase
 
@@ -65,7 +65,7 @@ Please bear with us during this period of intensive development work. We will tr
 
 Your feedback is essential to us to build the right products, and we will direct your query to the right team to answer it. 
 
-If you would like to take part in user research we'd like to hear from you. [Please email us.](sdsteam@hmrc.gsi.gov.uk) 
+If you would like to take part in user research we'd like to hear from you. [Please email us.](mailto:sdsteam@hmrc.gsi.gov.uk) 
 
 
 ## End-to-end process
