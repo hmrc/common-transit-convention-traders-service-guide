@@ -91,6 +91,8 @@ Traders who send a high number of messages and notifications should use the API.
 
 ## Sequence Diagrams
 
+[# Movements Diagram](./movements-diagram.html.md)
+
 ## Sending an arrival message: IE007
 
 This diagram shows how an arrival notification message is sent by the user using third party software to the NCTS, using the CTC API.
