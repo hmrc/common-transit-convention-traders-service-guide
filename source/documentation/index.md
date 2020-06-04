@@ -91,7 +91,8 @@ Traders who send a high number of messages and notifications should use the API.
 
 ## Sequence Diagrams
 
-- [Movements Diagram](documentation/movements-diagram.html). See the end-to-end process of transporting goods using the CTC API 
+- [Movements Diagram](documentation/movements-diagram.html) - See the end-to-end process of transporting goods using the CTC API 
+- [Sending an Arrival Notification: IE007](documentation/arrivals-diagram.html) See you send an Arrival Notification to NCTS using the CTC API.  
 
 ## Sending an arrival message: IE007
 
@@ -107,9 +108,6 @@ This diagram shows how an arrival notification message is sent by the user using
 6. An accepted status is sent to the CTC API when the NCTS receives the arrival notification.
 7. The accepted status passes through the CTC API.
 8. The accepted status arrives at the third party software, where the user is notified the NCTS has received the arrival notification message.
-
-
-<img src="figures/ctc-movements.svg" alt="CTC Movements" style="width:520px;" />
 
 
 ## Read guidance
