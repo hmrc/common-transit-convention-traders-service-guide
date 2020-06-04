@@ -91,7 +91,7 @@ Traders who send a high number of messages and notifications should use the API.
 
 ## Sequence Diagrams
 
-- [Movements Diagram](documentation/movements-diagram.html). See the end-to-end process of transporting goods using the CTC API 
+- [Movements Diagram](documentation/documentation/movements-diagram.html). See the end-to-end process of transporting goods using the CTC API 
 
 ## Sending an arrival message: IE007
 
