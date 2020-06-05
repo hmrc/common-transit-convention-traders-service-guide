@@ -8,12 +8,16 @@ weight: 6
 
 We are here to help you and answer any questions you have about the CTC API. Also, your feedback is essential to us, because it helps us design APIs and systems that work best for you. 
 
-You can email the [Software Development Support Team](mailto:sdsteam@hmrc.gsi.gov.uk) with any CTC Traders API questions and support requests. If they can't help you themselves, they’ll find the help you need. Either way, some one will get back to as soon as we can. You’ll get an initial response in 2 working days. This means we’re on the case. 
+You can get in touch with any CTC Traders API questions and support requests. If they can't help you themselves, they’ll find the help you need. Either way, some one will get back to as soon as we can. You’ll get an initial response in 2 working days. This means we’re on the case. 
+
+**[Get support](https://developer.service.hmrc.gov.uk/developer/support)**
 
 ### Check service availability
 
-If your query is about service availability on the API platform, please check the [service availability](https://api-platform-status.production.tax.service.gov.uk/?_ga=2.145121908.112811846.1587044117-960820992.1580203223) page before emailing us. 
-You can also subscribe for updates on this page and we’ll notify you about planned or unplanned service downtime. 
+Before you get in touch, you might want to check our about service availability on the API platform. You can also subscribe for updates on this page and we’ll notify you about planned or unplanned service downtime. 
+
+**[See our service availability](https://api-platform-status.production.tax.service.gov.uk/?_ga=2.145121908.112811846.1587044117-960820992.1580203223)** 
+
 
 #### Helping you during our development phase
 
