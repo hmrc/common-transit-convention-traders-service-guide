@@ -53,21 +53,7 @@ In a nutshell, some of the improvements with the CTC API allow us to:
 - [Understand authorisation](https://developer.qa.tax.service.gov.uk/api-documentation/docs/authorisation)
 - [See what you can test in our Roadmap](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap/#backlog)
 
-#### Finding support
-
-We are here to help you and answer any questions you have about the CTC API. Where you have API related questions or challenges, these will go to our developers. 
-
-You can contact our [Software Development Support Team](mailto:sdsteam@hmrc.gsi.gov.uk) with CTC Traders API questions and support requests. They’ll find the help you need and we’ll get back to you as soon as we can. You’ll get an initial response in 2 working days. This means we’re on the case. We want to give you the best support we can. 
-
-#### Helping you during our development phase
-
-Please bear with us during this period of intensive development work. We will try to answer all your questions as rapidly as possible, but in some cases we may need more time during the transition from the NCTS API channel to the CTC Traders API. 
-
-Your feedback is essential to us to build the right products, and we will direct your query to the right team to answer it. 
-
-If you would like to take part in user research we'd like to hear from you. [Please email us.](mailto:sdsteam@hmrc.gsi.gov.uk) 
-
-
+ 
 ## End-to-end process
 
 The rest of this guide shows how the API fits into various end-to-end user journeys. It aims to help you understand how your software needs to interact with HMRC systems after the changes.
