@@ -43,16 +43,19 @@ In a nutshell, some of the improvements with the CTC API allow us to:
 - remove the EDIFACT wrapper
 - monitor demand 24 hours a day to manage and investigate peak flow events
 
-[You read more about these features](http://waitingforcontent.com)
 
 ### How we can help you with these changes
 
-#### Available now: 
+#### What you can do now: 
 - [Review Endpoints and Error codes](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)  
 - [Take advantage of tutorials](https://developer.qa.tax.service.gov.uk/api-documentation/docs/tutorials) 
 - [Understand authorisation](https://developer.qa.tax.service.gov.uk/api-documentation/docs/authorisation)
 - [See what you can test in our Roadmap](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap/#backlog)
 
+#### Getting support
+We have a support in place to help you with any questions or problems you might have to do with the CTC APIs. 
+- [Find support](documentation/get-support.html)
+- [Check our service availability](https://api-platform-status.production.tax.service.gov.uk/?_ga=2.145121908.112811846.1587044117-960820992.1580203223) before you get in touch, in case a downtime or technical issues are the problem.
  
 ## End-to-end process
 
