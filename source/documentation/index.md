@@ -47,15 +47,15 @@ In a nutshell, some of the improvements with the CTC API allow us to:
 ### How we can help you with these changes
 
 #### What you can do now: 
-- * [Review endpoints and error codes](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)  
-- * [Take advantage of tutorials](https://developer.qa.tax.service.gov.uk/api-documentation/docs/tutorials) 
-- * [Understand authorisation](https://developer.qa.tax.service.gov.uk/api-documentation/docs/authorisation)
-- * [See what you can test in our Roadmap](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap/#backlog)
+- **[Review endpoints and error codes](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
+- **[Take advantage of tutorials](https://developer.qa.tax.service.gov.uk/api-documentation/docs/tutorials) 
+- **[Understand authorisation](https://developer.qa.tax.service.gov.uk/api-documentation/docs/authorisation)
+- **[See what you can test in our Roadmap](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap/#backlog)
 
 #### Getting support
 We have a support in place to help you with any questions or problems you might have to do with the CTC APIs:  
-- * [Find support](documentation/get-support.html) and see how we can support you.  
-- * [Check our service availability](https://api-platform-status.production.tax.service.gov.uk/?_ga=2.145121908.112811846.1587044117-960820992.1580203223) before you get in touch, in case a downtime or technical issues are the problem.
+- **[Find support](documentation/get-support.html)** and see how we can support you.  
+- **[Check our service availability](https://api-platform-status.production.tax.service.gov.uk/?_ga=2.145121908.112811846.1587044117-960820992.1580203223)** before you get in touch, in case a downtime or technical issues are the problem.
  
 ## End-to-end process
 
@@ -80,18 +80,18 @@ Traders who send a high number of messages and notifications should use the API.
 
 ## Sequence Diagrams
 
-- [Movements Diagram](documentation/movements-diagram.html) - See the end-to-end process of transporting goods using the CTC API 
-- [Sending an Arrival Notification: IE007](documentation/arrivals-diagram.html) - See how you send an Arrival Notification to NCTS using the CTC API.  
+- **[Movements Diagram](documentation/movements-diagram.html)** - See the end-to-end process of transporting goods using the CTC API
+- **[Sending an Arrival Notification: IE007](documentation/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC API.  
 
 
 ## Read guidance
 You can learn more about the Common Transit Convention by reading guidance on GOV.UK. In particular:
 
-[The Design Document for National Transit Application (DDNTA)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)
+**[The Design Document for National Transit Application (DDNTA)]**(https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)
 
 and the 
 
-[European Commissions Transition Strategy for NCTS Phase 4 to Phase 5](https://www.clecat.org/media/Transit%20transition%20strategy%20document.pdf).
+**[European Commissions Transition Strategy for NCTS Phase 4 to Phase 5]**(https://www.clecat.org/media/Transit%20transition%20strategy%20document.pdf).
 
 We encourage you to include links to relevant guidance in your software.
 
