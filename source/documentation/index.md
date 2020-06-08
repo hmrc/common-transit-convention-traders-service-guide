@@ -13,9 +13,7 @@ This guide explains how you can use our new Common Transit Convention (CTC) APIs
 
 ### Come back for regular updates
 
-We are updating this guide as we add more functionality to our APIs, new technical specifications and other items we hope you find useful. These could include video guides and more sequence diagrams. 
-
-Tell us what you need and we will try and make it happen. Email our [Software Development Support Team](mailto:sdsteam@hmrc.gsi.gov.uk)
+We are updating this guide as we add more functionality to our APIs, new technical specifications and other items we hope you find useful. 
 
 ## Overview
 
