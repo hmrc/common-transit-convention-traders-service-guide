@@ -9,24 +9,26 @@ description: Software developers, designers, product owners or business analysts
 Version 0.2 issued 2nd June 2020
 ***
 
-This guide explains how you can use our new Common Transit Convention (CTC) APIs with your software. The API will allow you to send and receive movement notifications and status messages to and from the EU’s New Computerised Transit System (NCTS). Traders will move from using the NCTS XML API Channel to CTC APIs, after EU exit.
+This guide explains how you can use our new Common Transit Convention (CTC) API with your software. The API will allow you to send and receive movement notifications and status messages to and from the EU’s New Computerised Transit System (NCTS). Traders will move from using the NCTS XML API Channel to the CTC API, after EU exit.
 
 ### Come back for regular updates
 
-We are updating this guide as we add more functionality to our APIs, new technical specifications and other items we hope you find useful. 
+We are updating this guide as we add more functionality to our API, new technical specifications and other items we hope you find useful. 
 
 ## Overview
 
-UK traders can move goods freely across EU countries at the moment. This will change when the UK leaves. This means possibly paying duties and tax, where this didn’t apply before. From early 2021, UK traders will start moving goods under the CTC instead, to make sure that they pay the right country the right amount of tax for goods, once they reach their destination. 
+UK traders can move goods freely across EU countries at the moment. This will change when the UK leaves the EU. This means there could be the possibly of paying duties and tax, where this didn’t apply before. 
 
-When moving goods using the Common Transit Convention, a trader will need to let the Office of Departure know that the goods have arrived at their final destination. This is done by sending an arrival notification message to the New Computerised Transit System (NCTS). 
+From early 2021, UK traders will start moving goods under the CTC, to make sure that they pay the right country the right amount of tax for goods, once they reach their destination. 
+
+When moving goods using the CTC, a trader will need to let the Office of Departure know that the goods have arrived at their final destination. This is done by sending an Arrival Notification to the New Computerised Transit System (NCTS). 
 
 It is likely that the number of goods movements being declared through the NCTS will increase. The NCTS has been upgraded already to prepare for these increases. 
 
 
-### Why we are changing to the new CTC API
+### Why are creating new CTC API
 
-The NCTS is changing because the UK is leaving the UK. So we have to make changes in our API as well. But, at the same time, we’re making some improvements. We want to make it better, easier to manage and be more flexible, when it’s up and running.
+We want traders to be able seamlessly trade and send notifications to the NCTS. But we want to create an API that includes some necessary improvements. We want to make it better, easier to manage and be more flexible, when it’s up and running.
 
 
 ### Improvements that come with the new CTC API
