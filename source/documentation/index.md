@@ -82,12 +82,12 @@ The current API will run at the same time as the CTC Traders API during the firs
 
 ## Sequence diagrams
 
-- **[Movements Diagram](documentation/movements-diagram.html)** - See the end-to-end process of transporting goods using the CTC API
+- **[Movements diagram](documentation/movements-diagram.html)** - See the end-to-end process of transporting goods using the CTC API
 - **[Sending an Arrival Notification: IE007](documentation/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC API.  
 
 
 ## Read guidance
-You can learn more about the Common Transit Convention by reading guidance on GOV.UK. In particular:
+You read the full specifications for the the Common Transit Convention by reading guidance on GOV.UK. In particular:
 
 **[The Design Document for National Transit Application (DDNTA)]**(https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)
 
