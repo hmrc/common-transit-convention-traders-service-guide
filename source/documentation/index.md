@@ -64,7 +64,7 @@ We have a support in place to help you with any questions or problems you might 
 
 #### Check service availability
 Before you get in touch, check out whether API downtime or technical issues are the problem.
-- **[Check the CTC Traders API service availability](https://api-platform-status.production.tax.service.gov.uk/?_ga=2.145121908.112811846.1587044117-960820992.1580203223)** 
+- **[Check the CTC Traders API service availability](https://api-platform-status.production.tax.service.gov.uk/?_ga=2.145121908.112811846.1587044117-960820992.1580203223)**    
 - **[Check NCTS platform service availability](https://www.gov.uk/government/publications/new-computerised-transit-system-ncts-web-service-availability-and-issues/new-computerised-transit-system-ncts-web-service-availability-and-issues)**
 
  
@@ -82,12 +82,12 @@ The current API will run at the same time as the CTC Traders API during the firs
 
 ## Sequence diagrams
 
-- **[Movements Diagram](documentation/movements-diagram.html)** - See the end-to-end process of transporting goods using the CTC API
+- **[Movements diagram](documentation/movements-diagram.html)** - See the end-to-end process of transporting goods using the CTC API
 - **[Sending an Arrival Notification: IE007](documentation/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC API.  
 
 
 ## Read guidance
-You can learn more about the Common Transit Convention by reading guidance on GOV.UK. In particular:
+You read the full specifications for the the Common Transit Convention by reading guidance on GOV.UK. In particular:
 
 **[The Design Document for National Transit Application (DDNTA)]**(https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)
 
@@ -104,8 +104,8 @@ We encourage you to include links to relevant guidance in your software.
 ## Related API documentation
 <!--- Section owner: MTD Programme --->
 
-  * [REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)
-  * [Create Test User API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0)
+  **[REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**
+  **[Create Test User API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0)**
 
 ## Changelog
 <!--- Section owner: MTD Programme --->
