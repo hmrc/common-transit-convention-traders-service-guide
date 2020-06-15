@@ -60,7 +60,7 @@ In a nutshell, some of the improvements with the CTC API allow us to:
 
 #### Getting support
 We have a support in place to help you with any questions or problems you might have to do with the CTC API.  
-- **[Find support](documentation/get-support.html)** 
+**[Find support](documentation/get-support.html)** 
 
 #### Check service availability
 Before you get in touch, check out whether API downtime or technical issues are the problem.
