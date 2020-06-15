@@ -59,8 +59,8 @@ In a nutshell, some of the improvements with the CTC API allow us to:
 - **[See what you can test in our Roadmap](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap/#backlog)**
 
 #### Getting support
-We have a support in place to help you with any questions or problems you might have to do with the CTC APIs:  
-- **[Find support](documentation/get-support.html)** and see how we can support you. 
+We have a support in place to help you with any questions or problems you might have to do with the CTC API.  
+- **[Find support](documentation/get-support.html)** 
 
 #### Check service availability
 Before you get in touch, check out whether API downtime or technical issues are the problem.
@@ -89,11 +89,11 @@ The current API will run at the same time as the CTC Traders API during the firs
 ## Read guidance
 You read the full specifications for the the Common Transit Convention by reading guidance on GOV.UK. In particular:
 
-**[The Design Document for National Transit Application (DDNTA)]**(https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)
+**[The Design Document for National Transit Application (DDNTA)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)**
 
 and the 
 
-**[European Commission's Transition Strategy for NCTS Phase 4 to Phase 5]**(https://www.clecat.org/media/Transit%20transition%20strategy%20document.pdf).
+**[European Commission's Transition Strategy for NCTS Phase 4 to Phase 5](https://www.clecat.org/media/Transit%20transition%20strategy%20document.pdf)**
 
 We encourage you to include links to relevant guidance in your software.
 
