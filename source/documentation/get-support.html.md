@@ -10,15 +10,6 @@ You can get in touch our Software Development Support Team with any CTC Traders 
 
 **[Get support](https://developer.service.hmrc.gov.uk/developer/support)**
 
-
-### If you find a bug in our code
-
-If you find a bug in our code please can you raise an issue with our developers on GitHub. 
-
-**[Report a bug](https://github.com/hmrc/common-transit-convention-traders/issues)**
-
-
-
 ### Check service availability
 
 Before you get in touch, check out whether API downtime or technical issues are the problem.    
