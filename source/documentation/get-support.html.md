@@ -4,7 +4,7 @@ weight: 6
 ---
 
 # Find support
-<!--- Section owner: MTD Programme --->
+<!--- Section owner: CTC Traders API --->
 
 You can get in touch our Software Development Support Team with any CTC Traders API questions and support requests. If they can't help you themselves, they’ll find the help you need. You’ll get an initial response in 2 working days. This means we’re on the case. 
 
