@@ -17,7 +17,7 @@ We are updating this guide as we add more functionality to our API, new technica
 
 ## Overview
 
-UK traders can move goods freely across EU countries at the moment. This will change when the UK leaves the EU. This means there could be the possibility of paying duties and tax, where these didn’t apply before. 
+UK traders can move goods freely across EU countries at the moment. This will change when the UK exits. This means there could be the possibility of paying duties and tax, where these didn’t apply before. 
 
 From early 2021, UK traders will start moving goods under the CTC, to make sure that they pay the right country the right amount of tax for goods, only once, they reach their destination. 
 
@@ -89,7 +89,7 @@ The current API will run at the same time as the CTC Traders API during the firs
 ## Read guidance
 You read the full specifications for the the Common Transit Convention by reading guidance on GOV.UK. In particular:
 
-**[The Design Document for National Transit Application (DDNTA)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)**
+**[NCTS Phase 4 Technical Interface Specification(TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)**
 
 and the 
 
