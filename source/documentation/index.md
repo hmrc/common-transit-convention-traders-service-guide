@@ -89,7 +89,7 @@ The current API will run at the same time as the CTC Traders API during the firs
 ## Read guidance
 You read the full specifications for the the Common Transit Convention by reading guidance on GOV.UK. In particular:
 
-**[NCTS Phase 4 Technical Interface Specification(TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)**
+**[NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)**
 
 and the 
 
