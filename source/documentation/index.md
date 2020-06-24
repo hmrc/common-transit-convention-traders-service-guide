@@ -9,7 +9,9 @@ description: Software developers, designers, product owners or business analysts
 Version 0.2 issued 15 June 2020
 ***
 
-This guide explains how you can use our new Common Transit Convention (CTC) API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the EU’s New Computerised Transit System (NCTS). To trade between Europe and the UK, your software will need to change from using the NCTS XML API Channel to the CTC API, after EU exit.
+This guide explains how you can use our new Common Transit Convention (CTC) API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the EU’s New Computerised Transit System (NCTS). 
+
+To trade between Europe and the UK, your software will need to change from using the NCTS XML API Channel to the CTC API, after EU exit.
 
 ### Come back for regular updates
 
@@ -60,9 +62,9 @@ Essentially the improvements the CTC API will bring are:
 - **[Understand authorisation](https://developer.qa.tax.service.gov.uk/api-documentation/docs/authorisation)**
 - **[See what you can test in our roadmap](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap/#backlog)**
 
-#### Getting support
-We have a support in place to help you with any questions or problems you might have to do with the CTC API.  
-**[Find support](documentation/get-support.html)** 
+#### Find support
+We have a support in place to help you with any questions or problems you might have to do with the CTC API. [Get intouch](documentation/get-support.html) and we'll get right back to you. 
+
 
 #### Check service availability
 Before you get in touch, check out whether API downtime or technical issues are the problem.
@@ -77,16 +79,12 @@ This section shows you how the API fits into various end-to-end user journeys. I
 
 ### Get Authorisation from Government Gateway to use the API
 
-In order to use CTC Traders API your software needs to interact with the Government Gateway to get authorisation.
-
-**[Get Authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation)**
+In order to use CTC Traders API your software needs to interact with the Government Gateway to [get authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
 
 
 ### Get an EORI number to do business with the EU
 
-To trade with the EU after the UK leaves, traders will need to get an Economic Operators Registration and Identification (EORI) number.
-
-**[Get an EORI number](https://www.gov.uk/eori)**
+To trade with the EU after the UK leaves, traders will need to get an Economic Operators Registration and Identification (EORI) number. See how you [get an EORI number](https://www.gov.uk/eori).
 
 
 ### How channels to the NCTS will change 
