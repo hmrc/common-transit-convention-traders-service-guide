@@ -58,7 +58,7 @@ Essentially the improvements the CTC API will bring are:
 - **[Review endpoints and error codes](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
 - **[Take advantage of tutorials](https://developer.qa.tax.service.gov.uk/api-documentation/docs/tutorials)** 
 - **[Understand authorisation](https://developer.qa.tax.service.gov.uk/api-documentation/docs/authorisation)**
-- **[See what you can test in our Roadmap](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap/#backlog)**
+- **[See what you can test in our roadmap](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap/#backlog)**
 
 #### Getting support
 We have a support in place to help you with any questions or problems you might have to do with the CTC API.  
@@ -75,27 +75,35 @@ Before you get in touch, check out whether API downtime or technical issues are 
 This section shows you how the API fits into various end-to-end user journeys. It aims to help you understand how your software needs to interact with HMRC systems after the changes.
 
 
-### Gaining Authorisation from Government Gateway
+### Get Authorisation from Government Gateway to use the API
 
 In order to use CTC Traders API your software needs to interact with the Government Gateway to get authorisation.
 
 **[Get Authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation)**
 
 
-### Sending messages to the NCTS
+### Get an EORI number to do business with the EU
+
+To trade with the EU after the UK leaves, traders will need to get an Economic Operators Registration and Identification (EORI) number.
+
+**[Get an EORI number](https://www.gov.uk/eori)**
+
+
+### How channels to the NCTS will change 
 
 You can currently send messages to the NCTS by email, web and API. The way messages can be sent to the NCTS is expected to change in 2021.
 
 The current API will run at the same time as the CTC Traders API during the first part of 2021. 
 
 
-## Sequence diagrams
+## Journey diagrams
+Below are two simplified diagrams that give you an overview of the new processes involving the CTC Traders API:
 
 - **[Movements diagram](documentation/movements-diagram.html)** - See the end-to-end process of transporting goods using the CTC API
 - **[Sending an Arrival Notification: IE007](documentation/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC API.  
 
 
-## Read guidance
+## Full specifications
 You read the full specifications for the the Common Transit Convention by reading guidance on GOV.UK. In particular:
 
 **[NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)**
