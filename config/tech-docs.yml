@@ -8,7 +8,7 @@ service_link: https://developer.service.hmrc.gov.uk/api-documentation
 
 # Links to show on right-hand-side of header
 header_links:
-  CTC Traders API Service Guide: /guides/CTC-traders-end-to-end-service-guide
+  CTC Traders API Service Guide: /guides/CTC-traders-api-end-to-end-service-guide
   Documentation: /api-documentation/docs/using-the-hub
   Applications: /developer/applications
   Support: /developer/support
