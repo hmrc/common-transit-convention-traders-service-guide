@@ -20,6 +20,6 @@ We have split our journey maps into two categories. One to provide and overview 
 
 We will be updating this section with diagrams before testing goes live.
 
-To review our technical documentation, please see **[NCTS Phase 4 Technical Interface Specification (TIS)](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/641488/NCTSPhase4TISv3_9_3.pdf)**   
+To review our technical documentation, please see **[NCTS Phase 4 Technical Interface Specification (TIS)](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/641488/NCTSPhase4TISv3_9_3.pdf)**. This will be updated on 31 December 2020.  
 
 
