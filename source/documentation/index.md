@@ -106,11 +106,8 @@ Below are two simplified diagrams that give you an overview of the new processes
 ## Full specifications
 You read the full specifications for the Common Transit Convention by reading:
 
-**[NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)**. This will be updated after 31 December 2020.
-
-and the 
-
-**[European Commission's Transition Strategy for NCTS Phase 4 to Phase 5](https://www.clecat.org/media/Transit%20transition%20strategy%20document.pdf)**
+- **[NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)**. (this will be updated after 31 December 2020)   
+- **[European Commission's Transition Strategy for NCTS Phase 4 to Phase 5](https://www.clecat.org/media/Transit%20transition%20strategy%20document.pdf)**
 
 We encourage you to include links to relevant guidance in your software.
 
