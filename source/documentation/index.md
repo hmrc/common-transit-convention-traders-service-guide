@@ -4,12 +4,12 @@ weight: 1
 description: Software developers, designers, product owners or business analysts. Integrate your software with Common Transit Convention Traders API.
 ---
 
-# Common Transit Convention API end-to-end service guide
+# Common Transit Convention Traders API end-to-end service guide
 
 Version 0.2 issued 15 June 2020
 ***
 
-This guide explains how you can use our new Common Transit Convention (CTC) API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the EU’s New Computerised Transit System (NCTS). 
+This guide explains how you can use our new Common Transit Convention (CTC) Traders API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the EU’s New Computerised Transit System (NCTS). 
 
 To trade between Europe and the UK, your software will need to change from using the NCTS XML API Channel to the CTC API, after EU exit.
 
@@ -17,17 +17,16 @@ To trade between Europe and the UK, your software will need to change from using
 
 We are updating this guide as we add more functionality to our API, new technical specifications and other items we hope you find useful. 
 
-## Overview
+## An overview of CTC Traders API
 
 Right now, goods that can move freely  within the UK can move across the EU without restriction. This will change when the UK leaves the EU. Then, those goods will be subject to duties and other charges when they enter the EU.
 
 From 2021, if UK traders want to defer paying these duties and other charges, they can move the goods under Common Transit. They will then be able to pay these taxes only at the point they reach their destination.
 
 
+### When to use the CTC Traders API
 
-### When to use the CTC API
-
-Traders who make a significant number of Transit declarations may prefer to use the CTC API. It will  allow up to 999 items per declaration as opposed to 99 items via the web portal. It also means large scale traders can create bespoke software solutions. 
+Traders who make a significant number of Transit declarations may prefer to use the CTC Traders API. It will  allow up to 999 items per declaration as opposed to 99 items via the web portal. It also means large scale traders can create bespoke software solutions. 
 
 The API will allow traders to:
 
@@ -43,7 +42,7 @@ We believe Common Transit will be a key procedure for moving goods between the U
 
 ### Improvements that come with the new CTC API
 
-Essentially the improvements the CTC API will bring are:
+Essentially the improvements the CTC Traders API will bring are:
 - seamless handling of changes to the NCTS core
 - removing the EDIFACT wrapper
 - improving security
@@ -51,7 +50,6 @@ Essentially the improvements the CTC API will bring are:
 - making it easier to test and maintain with an updated coding language
 - allowing  cloud hosting of our systems
 - monitoring demand 24 hours a day to manage capacity and investigate peak flow events
-
 
 
 ### How we can help you with these changes
@@ -62,9 +60,9 @@ Essentially the improvements the CTC API will bring are:
 - **[Understand authorisation](https://developer.qa.tax.service.gov.uk/api-documentation/docs/authorisation)**
 - **[See what you can test in our roadmap](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap/#backlog)**
 
-#### Find support
-We have a support in place to help you with any questions or problems you might have to do with the CTC API. [Get intouch](documentation/get-support.html) and we'll get right back to you. 
 
+### Find support
+We have a support in place to help you with any questions or problems you might have to do with the CTC Traders API. [Get intouch](documentation/get-support.html) and we'll get right back to you. 
 
 #### Check service availability
 Before you get in touch, check out whether API downtime or technical issues are the problem.
@@ -87,21 +85,21 @@ In order to use CTC Traders API your software needs to interact with the Governm
 To trade with the EU after the UK leaves, traders will need to get an Economic Operators Registration and Identification (EORI) number. See how you [get an EORI number](https://www.gov.uk/eori).
 
 
-### How channels to the NCTS will change 
+### How the channels to the NCTS will change 
 
 You can currently send messages to the NCTS by email, web and API. The way messages can be sent to the NCTS is expected to change in 2021.
 
 The current API will run at the same time as the CTC Traders API during the first part of 2021. 
 
 
-## Journey diagrams
+### Review journey diagrams
 Below are two simplified diagrams that give you an overview of the new processes involving the CTC Traders API:
 
 - **[Movements diagram](documentation/movements-diagram.html)** - See the end-to-end process of transporting goods using the CTC API
 - **[Sending an Arrival Notification: IE007](documentation/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC API.  
 
 
-## Full specifications
+### Check the full specifications
 You read the full specifications for the the Common Transit Convention by reading guidance on GOV.UK. In particular:
 
 **[NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)**
@@ -114,9 +112,7 @@ We encourage you to include links to relevant guidance in your software.
 
 
 
-
-
-## Related API documentation
+## Review related API documentation
 <!--- Section owner: MTD Programme --->
 
   **[REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
