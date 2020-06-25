@@ -43,7 +43,7 @@ We believe Common Transit will be a key procedure for moving goods between the U
 
 ### Improvements that come with the new CTC API
 
-Essentially the improvements the CTC API will bring are:
+Essentially the improvements the CTC API will bring are:  
 - seamless handling of changes to the NCTS core
 - removing the EDIFACT wrapper
 - improving security
