@@ -79,12 +79,12 @@ This section shows you how the API fits into various end-to-end user journeys. I
 
 ### Get Authorisation from Government Gateway to use the API
 
-In order to use CTC Traders API your software needs to interact with the Government Gateway to [get authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
+In order to use CTC Traders API your software needs to interact with the Government Gateway to [get authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints).
 
 
 ### Get an EORI number to do business with the EU
 
-To trade with the EU after the UK leaves, traders will need to get an Economic Operators Registration and Identification (EORI) number. See how you [get an EORI number](https://www.gov.uk/eori).
+To trade with the EU after the UK leaves, traders will need to [get an EORI number](https://www.gov.uk/eori).
 
 
 ### When these changes are happening 
