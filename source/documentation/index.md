@@ -19,9 +19,9 @@ We are updating this guide as we add more functionality to our API, new technica
 
 ## Overview
 
-Right now, goods that can move freely  within the UK can move across the EU without restriction. This will change when the UK leaves the EU. Then, those goods will be subject to duties and other charges when they enter the EU.
+Right now, goods that can move freely  within the UK can move across the EU without restriction. This will change after the end of the transition period on 31 December 2020. Then, those goods will be subject to duties and other charges when they enter the EU.
 
-From 2021, if UK traders want to defer paying these duties and other charges, they can move the goods under Common Transit. They will then be able to pay these taxes only at the point they reach their destination.
+From 2021, if UK traders want to defer paying these duties and other charges, they can move the goods under Common Transit Convention. This will allow traders to move goods across a number of countries, without having to pay import duties every time they cross a border. They will only have to complete the paperwork and pay any duties they owe, once they reach their destination country.
 
 
 
