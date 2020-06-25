@@ -87,11 +87,13 @@ In order to use CTC Traders API your software needs to interact with the Governm
 To trade with the EU after the UK leaves, traders will need to get an Economic Operators Registration and Identification (EORI) number. See how you [get an EORI number](https://www.gov.uk/eori).
 
 
-### How channels to the NCTS will change 
+### When these changes are happening 
 
-You can currently send messages to the NCTS by email, web and API. The way messages can be sent to the NCTS is expected to change in 2021.
+We will release the new CTC Traders API into the NCTS production environment on 31 December 2020.
 
-The current API will run at the same time as the CTC Traders API during the first part of 2021. 
+### What's happening for Northern Ireland transit
+
+From 1 January 2021, the submission channel for Northern Ireland departure and arrival notification messages will be by email only. This is an interim solution while work continues to enable the new API to also serve Northern Ireland. We will share further information about this in the future.
 
 
 ## Journey diagrams
@@ -102,9 +104,9 @@ Below are two simplified diagrams that give you an overview of the new processes
 
 
 ## Full specifications
-You read the full specifications for the the Common Transit Convention by reading guidance on GOV.UK. In particular:
+You read the full specifications for the Common Transit Convention by reading:
 
-**[NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)**
+**[NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)**. This will be updated after 31 December 2020.
 
 and the 
 
