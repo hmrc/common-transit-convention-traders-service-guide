@@ -4,7 +4,7 @@ weight: 1
 
 ---
 
-# JSequence diagrams
+# Sequence diagrams
 <!--- Section owner: CTC Traders API --->
 
 We have split our journey maps into two categories. One to provide and overview of how our CTC Traders API will fit into your message. The other category are more technical sequence diagrams to help developers understand the kind of responses they can expect. 
