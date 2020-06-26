@@ -45,9 +45,9 @@ Essentially the improvements the CTC API will bring are:
 - seamless handling of changes to the NCTS core 
 - removing the EDIFACT wrapper 
 - improving security 
-- being ready for  the expected increase in CTC movements.  
-- making it easier to test and maintain with an updated coding language   
-- allowing  cloud hosting of our systems 
+- being ready for  the expected increase in CTC movements   
+- making it easier to test and maintain with an updated coding language    
+- allowing  cloud hosting of our systems  
 - monitoring demand 24 hours and responding any performance issues 24 hours a day   
 
 
