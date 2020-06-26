@@ -77,7 +77,7 @@ Before you get in touch, check out whether API downtime or technical issues are 
 This section shows you how the API fits into various end-to-end user journeys. It aims to help you understand how your software needs to interact with HMRC systems after the changes.
 
 
-### Get Authorisation from Government Gateway to use the API
+### Get authorisation from Government Gateway to use the API
 
 In order to use CTC Traders API your software needs to interact with the Government Gateway to [get authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints).
 
