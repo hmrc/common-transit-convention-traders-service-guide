@@ -1,6 +1,6 @@
 ---
 title: Journey Maps | CTC APIs End-to-End Service Guide
-weight: 1
+weight: 6
 
 ---
 
