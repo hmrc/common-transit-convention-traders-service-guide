@@ -15,7 +15,7 @@ Before you get in touch, check out whether API downtime or technical issues are 
 
 ### Get support
 
-If you have general query about CTC Traders API, you can get in touch our Software Development Support Team with any CTC Traders API questions and support requests. If they can't help you themselves, they’ll find the help you need. You’ll get an initial response in 2 working days. [Get support though our online form](https://developer.service.hmrc.gov.uk/developer/support).
+If you have a general query about CTC Traders API, you can get in touch with our Software Development Support Team with any CTC Traders API questions and support requests. If they can't help you themselves, they’ll find the help you need. You’ll get an initial response in 2 working days. Email <sdsteam@hmr.gov.uk>.
 
 
 ### If you find a bug
