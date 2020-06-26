@@ -7,7 +7,7 @@ weight: 6
 # Sequence diagrams
 <!--- Section owner: CTC Traders API --->
 
-We have split our journey maps into two categories. One to provide and overview of how our CTC Traders API will fit into your message. The other category are more technical sequence diagrams to help developers understand the kind of responses they can expect. 
+We have split our journey maps into two categories. One to provide an overview of how our CTC Traders API will fit into your trading messages. The other category has more technical sequence diagrams to help developers understand the kind of responses they can expect. 
 
 ## An overview of the end to end journey
 
