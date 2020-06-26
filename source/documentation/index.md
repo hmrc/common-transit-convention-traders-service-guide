@@ -69,12 +69,7 @@ This section shows you how the API fits into various end-to-end user journeys. I
 
 ### Get authorisation to use the API
 
-In order to use CTC Traders API your software needs to interact with the Government Gateway to [get authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints).
-
-
-### Get an EORI number to do business with the EU
-
-To trade with the EU after the UK leaves, traders will need to [get an EORI number](https://www.gov.uk/eori).
+In order to use the CTC Traders API your software needs to interact with the Government Gateway to [get authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints).
 
 
 ### When these changes are happening 
@@ -83,13 +78,13 @@ We will release the new CTC Traders API into the NCTS production environment on 
 
 ### What's happening for Northern Ireland transit
 
-From 1 January 2021, the submission channel for Northern Ireland departure and arrival notification messages will be by email only. This is an temporary solution while we continue to work on getting the new API to also serve Northern Ireland. 
+From 1 January 2021, the submission channel for Northern Ireland departure and arrival notification messages will be by email only. This is a temporary solution while we continue to work on getting the new API to also serve Northern Ireland. 
 
 ## Journey diagrams
 Below are two simplified diagrams that give you an overview of the new processes involving the CTC Traders API:
 
-- **[Movements diagram](documentation/movements-diagram.html.md)** - See the end-to-end process of transporting goods using the CTC API
-- **[Sending an Arrival Notification: IE007](documentation/arrivals-diagram.html.md)** - See how you send an Arrival Notification to NCTS using the CTC API.  
+- **[Movements diagram](documentation/movements-diagram.html.md)** - See the end-to-end process of transporting goods using the CTC Traders API
+- **[Sending an Arrival Notification: IE007](documentation/arrivals-diagram.html.md)** - See how you send an Arrival Notification to NCTS using the CTC Traders API.  
 
 
 ## Full specifications
