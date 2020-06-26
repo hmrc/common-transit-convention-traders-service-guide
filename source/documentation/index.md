@@ -30,9 +30,7 @@ From 2021, if UK traders want to defer paying these duties and other charges, th
 Traders who make a significant number of transit declarations may prefer to use the CTC API. It will  allow up to 999 items in a declaration as opposed to 99 items through the web portal. It also means large scale traders can create bespoke software solutions. 
 
 The API will allow traders to:
-
 - send Arrival Notifications to the Office of Destination
-
 - send Departure Notifications to the Office of Departure
 
 
@@ -50,7 +48,7 @@ Essentially the improvements the CTC API will bring are:
 - being ready for  the expected increase in CTC movements.  
 - making it easier to test and maintain with an updated coding language   
 - allowing  cloud hosting of our systems 
-- monitoring demand 24 hours a day and responding any performance issues   
+- monitoring demand 24 hours and responding any performance issues 24 hours a day   
 
 
 
@@ -94,7 +92,7 @@ We will release the new CTC Traders API into the NCTS production environment on 
 
 ### What's happening for Northern Ireland transit
 
-From 1 January 2021, the submission channel for Northern Ireland departure and arrival notification messages will be by email only. This is an temporary solution while we continue to work on getting the new API to also serve Northern Ireland. 
+From 1 January 2021, the submission channel for Northern Ireland departure and arrival notification messages will be by email only. This is an temporary solution while we continue to work on getting the new API to serve Northern Ireland as well. 
 
 ## Journey diagrams
 Below are two simplified diagrams that give you an overview of the new processes involving the CTC Traders API:
