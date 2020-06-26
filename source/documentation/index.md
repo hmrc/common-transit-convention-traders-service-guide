@@ -92,7 +92,7 @@ We will release the new CTC Traders API into the NCTS production environment on 
 
 ### What's happening for Northern Ireland transit
 
-From 1 January 2021, the submission channel for Northern Ireland departure and arrival notification messages will be by email only. This is an temporary solution while we continue to work on getting the new API to serve Northern Ireland as well. 
+From 1 January 2021, the submission channel for Northern Ireland departure and arrival notification messages will be by email only. This is an temporary solution while we continue to work on getting the new API to also serve Northern Ireland. 
 
 ## Journey diagrams
 Below are two simplified diagrams that give you an overview of the new processes involving the CTC Traders API:
