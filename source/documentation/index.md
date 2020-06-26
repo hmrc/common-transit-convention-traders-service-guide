@@ -44,13 +44,13 @@ We believe Common Transit will be a key procedure for moving goods between the U
 ### Improvements that come with the new CTC API
 
 Essentially the improvements the CTC API will bring are:  
-- seamless handling of changes to the NCTS core
-- removing the EDIFACT wrapper
-- improving security
-- being ready for  the expected increase in CTC movements
-- making it easier to test and maintain with an updated coding language
-- allowing  cloud hosting of our systems
-- monitoring demand 24 hours a day to manage capacity and investigate peak flow events
+- seamless handling of changes to the NCTS core  
+- removing the EDIFACT wrapper  
+- improving security  
+- being ready for  the expected increase in CTC movements  
+- making it easier to test and maintain with an updated coding language  
+- allowing  cloud hosting of our systems  
+- monitoring demand 24 hours a day to manage capacity and investigate peak flow events  
 
 
 
