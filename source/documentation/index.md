@@ -34,10 +34,17 @@ Common Transit will be a key procedure for moving goods between the United Kingd
 
 ### Changes that come with the new CTC Traders API
 
-Essentially the improvements the CTC Traders API will bring are:
+The table below gives you a brief outline of how the new API uses different coding, compared to the existing XML channel API. 
 
+|  **Activity** | **NCTS**  | **CTC Traders API** |
+|---|---|---|
+| **Get authority**  |  SOAP authorisation (include username and password in clear text) | Government Gateway authorisation (OAuth2 token)  | 
+| **Create instruction** | SOAP wrapper - single URL, with text input  | RESTful - multiple URLS, no text input | 
+| **Post API Payload**   | SOAP with EDIFACT body  | Information Exchange message (IE) XML | 
+| **Get API Payload** |  SOAP with EDIFACT body | JSON and IE XML |
+
+Essentially the improvements the CTC Traders API will bring are:
 * being ready for  the expected increase in CTC movements  
-* removing the EDIFACT wrapper 
 * improving security   
 * making it easier to test and maintain with an updated coding language      
 * creating a more reliable and robust cloud based service
@@ -69,7 +76,7 @@ This section shows you how the API fits into various end-to-end user journeys. I
 
 ### Get authorisation to use the API
 
-In order to use the CTC Traders API your software needs to interact with the Government Gateway to [get authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints).
+In order to use the CTC Traders API your software needs to interact with the Government Gateway to [get authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints). 
 
 
 ### When these changes are happening 
@@ -81,6 +88,7 @@ We will release the new CTC Traders API into the NCTS production environment on 
 From 1 January 2021, the submission channel for Northern Ireland departure and arrival notification messages will be by email only. This is a temporary solution while we continue to work on getting the new API to also serve Northern Ireland. 
 
 ## Journey diagrams
+
 Below are two simplified diagrams that give you an overview of the new processes involving the CTC Traders API:
 
 - **[Movements diagram](documentation/movements-diagram.html.md)** - See the end-to-end process of transporting goods using the CTC Traders API
@@ -90,7 +98,6 @@ Below are two simplified diagrams that give you an overview of the new processes
 ## Full specifications
 You can see a see full list of messages and sequence diagrams specifications on the [NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications) (this will be updated after 31 December 2020).   
 
-[European Commission's Transition Strategy for NCTS Phase 4 to Phase 5](https://www.clecat.org/media/Transit%20transition%20strategy%20document.pdf)**
 
 We encourage you to include links to relevant guidance in your software.
 
