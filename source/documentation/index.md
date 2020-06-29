@@ -39,7 +39,7 @@ The table below gives you a brief outline of how the new API uses different codi
 |  **Activity** | **NCTS**  | **CTC Traders API** |
 |---|---|---|
 | **Get authority**  |  SOAP authorisation (include username and password in clear text) | Government Gateway authorisation (OAuth2 token)  | 
-| **Create instruction** | SOAP wrapper - single URL, with text input  | RESTful - multiple URLS, no text input | 
+| **Create action** | SOAP wrapper, with embedded instruction  | RESTful interface, action inferred from the URL | 
 | **Post API Payload**   | SOAP with EDIFACT body  | Information Exchange message (IE) XML | 
 | **Get API Payload** |  SOAP with EDIFACT body | JSON and IE XML |
 
