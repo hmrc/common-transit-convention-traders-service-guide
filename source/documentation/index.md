@@ -23,7 +23,7 @@ Right now, goods that can move freely within the UK can move across the EU freel
 
 From 2021, if UK traders want to defer paying these duties and other charges, they can move the goods under the Common Transit Convention. This will allow traders to move goods across a number of countries, without having to pay import duties every time they cross a border. They will only have to complete the paperwork and pay any duties they owe, once they reach their destination country.
 
-The API will allow traders to send and received Arrival Notifications and Dperature Notifications to offices of departure and destination.
+The API will allow traders to send and received Arrival Notifications and Departure Notifications to customs and border offices.
 
 
 
@@ -88,10 +88,9 @@ Below are two simplified diagrams that give you an overview of the new processes
 
 
 ## Full specifications
-You can see the full specifications for the Common Transit Convention by reading:
+You can see a see full list of messages and sequence diagrams specifications on the [NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications) (this will be updated after 31 December 2020).   
 
-- **[NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)**. (this will be updated after 31 December 2020)   
-- **[European Commission's Transition Strategy for NCTS Phase 4 to Phase 5](https://www.clecat.org/media/Transit%20transition%20strategy%20document.pdf)**
+[European Commission's Transition Strategy for NCTS Phase 4 to Phase 5](https://www.clecat.org/media/Transit%20transition%20strategy%20document.pdf)**
 
 We encourage you to include links to relevant guidance in your software.
 
