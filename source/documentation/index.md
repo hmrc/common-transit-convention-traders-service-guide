@@ -36,11 +36,6 @@ Common Transit will be a key procedure for moving goods between the United Kingd
 
 The table below gives you a brief outline of how the new API uses different coding, compared to the existing XML channel API. 
 
-| **Milestone** | **Description** |
-|------|-------------|
-|**Changed Arrivals from Alpha to Beta** |Changed the API version to Beta to enable endpoints in developments, QA and staging areas only|
-
-
 
 | **Activity** | **NCTS** | **CTC Traders API** |
 |---|---|---|
