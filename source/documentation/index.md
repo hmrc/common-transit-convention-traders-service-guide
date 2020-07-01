@@ -39,10 +39,10 @@ The table below gives you a brief outline of how the new API uses different codi
 
 | **Activity** | **NCTS** | **CTC Traders API** |
 |---|---|---|
-|**Submit Arrival Notification message (IE007)** |SOAP authorisation (include username and password in clear text)| Government Gateway authorisation (OAuth2 token)| 
-|**Create action**|SOAP wrapper, with embedded instruction|RESTful interface, action inferred from the URL| 
+|**Submit Arrival Notification message (IE007)** | SOAP authorisation (include username and password in clear text) | Government Gateway authorisation (OAuth2 token)| 
+|**Create action**| SOAP wrapper, with embedded instruction | RESTful interface, action inferred from the URL | 
 |**Post API Payload**|SOAP with EDIFACT body|Information Exchange message (IE) XML| 
-|**Get API Payload**|SOAP with EDIFACT body|JSON and IE XML|
+|**Get API Payload**|SOAP with EDIFACT body|JSON and IE XML |
 
 
 A few improvements the CTC Traders API will bring are:
