@@ -36,12 +36,32 @@ Common Transit will be a key procedure for moving goods between the United Kingd
 
 The table below gives you a brief outline of how the new API uses different coding, compared to the existing XML channel API.   
 
-|**Activity** | **NCTS** | **CTC Traders API** |
-|---|---|---|
-|**Submit Arrival Notification message (IE007)** | SOAP authorisation (include username and password in clear text) | Government Gateway authorisation (OAuth2 token) | 
-|**Create action**| SOAP wrapper, with embedded instruction | RESTful interface, action inferred from the URL | 
-|**Post API Payload**| SOAP with EDIFACT body | Information Exchange message (IE) XML | 
-|**Get API Payload**| SOAP with EDIFACT body|JSON and IE XML|
+<table>
+  <tr>
+    <th>Activity</th>
+    <th>NCTS</th>
+    <th>CTC Traders API</th>
+  </tr>
+  <tr>
+    <th>Submit Arrival Notitication (IE007)</th>
+    <td>SOAP authorisation (include username and password in clear text)</td>
+    <td>Government Gateway authorisation (OAuth2 token)</td>
+  </tr>
+  <tr>
+    <th>Create action</th>
+    <td>SOAP wrapper, with embedded instruction</td>
+    <td>RESTful interface, action inferred from the URL</td>
+  </tr>
+  <tr>
+    <th>Post API Payload</th>
+    <td>SOAP with EDIFACT body</td>
+    <td>Information Exchange message (IE) XML</td>
+  </tr>
+  <tr>
+    <th>Get API Payload</th>
+    <td>SOAP with EDIFACT body</td>
+    <td>JSON and IE XML</td>
+ </table>
 
 A few improvements the CTC Traders API will bring are:
 * being ready for  the expected increase in CTC movements  
