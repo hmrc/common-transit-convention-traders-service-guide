@@ -62,7 +62,11 @@ The table below gives you a brief outline of how the new API uses different codi
     <td>SOAP with EDIFACT body</td>
     <td>JSON and IE XML</td>
   </tr>
-</table>    
+</table>
+
+</body>
+</html>
+
 
 
 A few improvements the CTC Traders API will bring are:  
