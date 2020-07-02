@@ -65,7 +65,7 @@ The table below gives you a brief outline of how the new API uses different codi
 </table>    
 
 
-A few improvements the CTC Traders API will bring are:
+A few improvements the CTC Traders API will bring are:  
 * being ready for  the expected increase in CTC movements  
 * improving security   
 * making it easier to test and maintain with an updated coding language      
