@@ -9,9 +9,9 @@ description: Software developers, designers, product owners or business analysts
 Version 0.2 issued 15 June 2020
 ***
 
-This guide explains how you can use our new Common Transit Convention (CTC) Traders API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the EU’s New Computerised Transit System (NCTS). 
+This guide explains how you can use our new Common Transit Convention (CTC) Traders API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the New Computerised Transit System (NCTS). 
 
-To trade between Europe and the UK, your software will need to change from using the NCTS XML API Channel to the CTC Traders API, aftrer 30 December 2020.
+To trade between Europe and the UK, your software will need to change from using the NCTS XML API Channel to the CTC Traders API, after 30 December 2020.
 
 ### Come back for regular updates
 
@@ -23,7 +23,7 @@ Right now, goods that can move freely within the UK can move across the EU freel
 
 From 2021, if UK traders want to defer paying these duties and other charges, they can move the goods under the Common Transit Convention. This will allow traders to move goods across a number of countries, without having to pay import duties every time they cross a border. They will only have to complete the paperwork and pay any duties they owe, once they reach their destination country.
 
-The API will allow traders to send and received Arrival Notifications and Departure Notifications to customs and border offices.
+The API will allow traders to send and receive Arrival Notifications and Departure Notifications to customs and border offices.
 
 
 
@@ -69,9 +69,9 @@ The table below gives you a brief outline of how the new API uses different codi
 
 
 
-A few improvements the CTC Traders API will bring are:  
-* being ready for  the expected increase in CTC movements  
-* improving security   
+#### Improvements the CTC Traders API will bring:  
+* being ready for the expected increase in CTC movements  
+* greatly improving security   
 * making it easier to test and maintain with an updated coding language      
 * creating a more reliable and robust cloud based service
 
