@@ -20,6 +20,6 @@ If you have a general query about CTC Traders API, you can get in touch with our
 
 ### If you find a bug
 
-If you have found a bug in our code, you can get in touch with our developers direct through the [GitHub Iusses page](https://github.com/hmrc/common-transit-convention-traders/issues).
+If you have found a bug in our code, you can get in touch with our developers direct through the [GitHub Issues page](https://github.com/hmrc/common-transit-convention-traders/issues).
 
 
