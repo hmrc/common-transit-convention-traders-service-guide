@@ -61,6 +61,7 @@ The table below gives you a brief outline of how the new API uses different codi
     <th>Get API Payload</th>
     <td>SOAP with EDIFACT body</td>
     <td>JSON and IE XML</td>
+  </tr>
 </table>    
 
 
