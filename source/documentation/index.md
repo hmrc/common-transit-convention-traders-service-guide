@@ -61,7 +61,8 @@ The table below gives you a brief outline of how the new API uses different codi
     <th>Get API Payload</th>
     <td>SOAP with EDIFACT body</td>
     <td>JSON and IE XML</td>
- </table>
+</table>
+
 
 A few improvements the CTC Traders API will bring are:
 * being ready for  the expected increase in CTC movements  
