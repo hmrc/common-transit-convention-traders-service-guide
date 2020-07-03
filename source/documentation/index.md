@@ -88,11 +88,12 @@ The table below gives you a brief outline of how the new API uses different codi
 - **[Understand authorisation](https://developer.qa.tax.service.gov.uk/api-documentation/docs/authorisation)**
 - **[See our roadmap for list of messages you can test](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap/#backlog)**
 
+
 #### Find support
 
-We have support in place to help you with any questions or problems you might have to do with the CTC Traders API. [See how we can support you](documentation/get-support.html). 
-
-
+We have support in place to help you with any questions or problems you might have to do with the CTC Traders API. [See how we can support you](documentation/get-support.html).    
+    
+    
 #### Check service availability
 Before you get in touch, check out whether API downtime or technical issues are the problem. [Check the HMRC API plaform availability](https://api-platform-status.production.tax.service.gov.uk/?_ga=2.145121908.112811846.1587044117-960820992.1580203223)    
 
@@ -135,6 +136,10 @@ Below are two simplified diagrams that give you an overview of the new processes
 - **[Movements diagram](documentation/diagram-pages/movements-diagram.html.html.md)** - See the end-to-end process of transporting goods using the CTC Traders API
 - **[Sending an Arrival Notification: IE007](documentation/diagram-pages/arrivals-diagram.html.md)** - See how you send an Arrival Notification to NCTS using the CTC Traders API.  
 
+
+## Check our roadmap to see what you can test
+
+We are continously adding to the endpoints you can test to our [roadmap](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap/#ready). 
 
 ## Full specifications
 You can see a see full list of messages and sequence diagrams specifications on the [NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications) (this will be updated after 31 December 2020).   
