@@ -113,9 +113,9 @@ Here are steps you need to take before you can use your software in the live env
 2. **Understand Government Gateway authorisation**    
 In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth2](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints). 
 3. **Get your test credentials**    
-To start testing your software, access [applicationrestricted endpoints](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/application-restricted-endpoints) 
+To start testing your software, access [application restricted endpoints](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/application-restricted-endpoints). 
 4. **Apply to go live**     
-Before you can can live, you need to apply for credentials from our Software Development Team. They'll apply tests and checks. Apply for credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/registration) 
+Before you can can live, you need to apply for credentials from our Software Development Team. They'll apply tests and checks. Apply for credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/registration). 
 
 
 
