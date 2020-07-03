@@ -13,9 +13,12 @@ This guide explains how you can use our new Common Transit Convention (CTC) Trad
 
 To trade between Europe and the UK, your software will need to change from using the NCTS XML API Channel to the CTC Traders API, after 30 December 2020.
 
+
 ### Come back for regular updates
 
 We are updating this guide as we add more functionality to our API, new technical specifications and other items we hope you find useful. 
+
+
 
 ## Overview
 
@@ -75,6 +78,8 @@ The table below gives you a brief outline of how the new API uses different codi
 * making it easier to test and maintain with an updated coding language      
 * creating a more reliable and robust cloud based service
 
+
+
 ### How we can help you with these changes
 
 #### What you can do now: 
@@ -97,6 +102,7 @@ Before you get in touch, check out whether API downtime or technical issues are 
 
 This section shows you how the API fits into various end-to-end user journeys. It aims to help you understand how your software needs to interact with HMRC systems after the changes.
 
+
 ### The path to going live with our API
 
 #### Register and subscribe the Developer Hub  
@@ -112,13 +118,16 @@ To start testing your software, access [applicationrestricted endpoints](https:/
 Before you can can live, you need to apply for credentials from our Software Development Team. They'll apply tests and checks. To apply through your [developer account](https://developer.service.hmrc.gov.uk/developer/registration) 
 
 
+
 ### When these changes are happening 
 
 We will release the new CTC Traders API into the NCTS production environment on 31 December 2020.
 
+
 ### What's happening for Northern Ireland transit
 
 From 1 January 2021, the submission channel for Northern Ireland departure and arrival notification messages will be by email only. This is a temporary solution while we continue to work on getting the new API to also serve Northern Ireland. 
+
 
 ## Journey diagrams
 
