@@ -26,7 +26,7 @@ Right now, goods that can move freely within the UK can move across the EU freel
 
 From 2021, if UK traders want to defer paying these duties and other charges, they can move the goods under the Common Transit Convention. This will allow traders to move goods across a number of countries, without having to pay import duties every time they cross a border. They will only have to complete the paperwork and pay any duties they owe, once they reach their destination country.
 
-The API will allow traders to send and receive Arrival Notifications and Departure Notifications to customs and border offices.
+The API will allow traders to send and receive Arrival and Departure Notifications to customs and border offices.
 
 
 
@@ -76,11 +76,11 @@ The table below gives you a brief outline of how the new API uses different codi
 Check each XML message type against our [XSD files](https://github.com/hmrc/common-transit-convention-traders/tree/master/conf/xsd) 
 
 
-#### Improvements the CTC Traders API will bring:  
+### Improvements the CTC Traders API will bring:  
 * being ready for the expected increase in CTC movements  
 * greatly improving security   
-* making it easier to test and maintain with an updated coding language      
-* creating a more reliable and robust cloud based service
+* making it easier to test and maintain      
+* creating a more reliable and robust API that meets industry standards
 
 
 
