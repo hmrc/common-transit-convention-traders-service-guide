@@ -75,6 +75,7 @@ The table below gives you a brief outline of how the new API uses different codi
 
 Check each XML message type against our [XSD files](https://github.com/hmrc/common-transit-convention-traders/tree/master/conf/xsd) 
 
+
 #### Improvements the CTC Traders API will bring:  
 * being ready for the expected increase in CTC movements  
 * greatly improving security   
@@ -138,6 +139,7 @@ Below are two simplified diagrams that give you an overview of the new processes
 
 - **[Movements diagram](diagram-pages/movements-diagram.html)** - See the end-to-end process of transporting goods using the CTC Traders API
 - **[Sending an Arrival Notification: IE007](diagram-pages/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC Traders API.  
+
 
 
 ## Check our roadmap to see what you can test and what's coming soon
