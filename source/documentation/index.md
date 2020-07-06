@@ -71,6 +71,9 @@ The table below gives you a brief outline of how the new API uses different codi
 </html>
 
 
+### Reveiw XSD files 
+
+Check each XML message type against our [XSD files](/api-documentation/docs/api/service/common-transit-convention-traders/conf/xsd) 
 
 #### Improvements the CTC Traders API will bring:  
 * being ready for the expected increase in CTC movements  
