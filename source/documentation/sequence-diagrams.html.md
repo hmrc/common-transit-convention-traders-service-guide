@@ -13,7 +13,7 @@ We have split our journey maps into two categories. One to provide an overview o
 
 **[End-to-end journey](movements-diagram.html)** - See a simplified end-to-end process of transporting goods using the CTC Traders API.
 
-**[Simplified arrivals process](arrivals-diagram.html.md)**  - See a simplified process of sending an arrivals message.
+**[Simplified arrivals process](arrivals-diagram.html)**  - See a simplified process of sending an arrivals message.
 
 
 ## Technical coders' diagrams
