@@ -71,7 +71,7 @@ The table below gives you a brief outline of how the new API uses different codi
 </html>
 
 
-### Reveiw XSD files 
+### Review XSD files 
 
 Check each XML message type against our [XSD files](https://github.com/hmrc/common-transit-convention-traders/tree/master/conf/xsd) 
 
