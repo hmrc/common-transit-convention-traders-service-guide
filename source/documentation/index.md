@@ -83,10 +83,10 @@ The table below gives you a brief outline of how the new API uses different codi
 ### How we can help you with these changes
 
 #### What you can do now: 
-- **[Review our CTC Traders API definitions](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
-- **[Take advantage of tutorials](https://developer.qa.tax.service.gov.uk/api-documentation/docs/tutorials)** 
-- **[Understand authorisation](https://developer.qa.tax.service.gov.uk/api-documentation/docs/authorisation)**
-- **[See our roadmap for list of messages you can test](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap/#backlog)**
+- **[Review our CTC Traders API definitions](/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
+- **[Take advantage of tutorials](/api-documentation/docs/tutorials)** 
+- **[Understand authorisation](/api-documentation/docs/authorisation)**
+- **[See our roadmap for list of messages you can test](/roadmaps/common-transit-convention-traders-roadmap/#backlog)**
 
 
 #### Find support
@@ -95,7 +95,7 @@ We have support in place to help you with any questions or problems you might ha
     
     
 #### Check service availability
-Before you get in touch, check out whether API downtime or technical issues are the problem. [Check the HMRC API plaform availability](https://api-platform-status.production.tax.service.gov.uk/?_ga=2.145121908.112811846.1587044117-960820992.1580203223).    
+Before you get in touch, check out whether API downtime or technical issues are the problem. [Check the HMRC API plaform availability](/api-platform-status.production.tax.service.gov.uk/?_ga=2.145121908.112811846.1587044117-960820992.1580203223).    
 
 
  
@@ -109,11 +109,11 @@ This section shows you how the API fits into various end-to-end user journeys. I
 Here are steps you need to take before you can use your software in the live environment:
 
 1. **Register and subscribe to the Developer Hub**  
-[Register for a developer account](https://developer.service.hmrc.gov.uk/developer/registration) and subscribe to the services your need to use.  
+[Register for a developer account](/developer/registration) and subscribe to the services your need to use.  
 2. **Understand Government Gateway authorisation**    
-In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth2](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints). 
+In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth2](/api-documentation/docs/authorisation/user-restricted-endpoints). 
 3. **Create test user**    
-To start testing your software, access [application restricted endpoints](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/application-restricted-endpoints). 
+To start testing your software, access [application restricted endpoints](/api-documentation/docs/authorisation/application-restricted-endpoints). 
 4. **Apply to go live**     
 Before you can can live, you need to apply for credentials from our Software Development Team. They'll apply tests and checks. Apply for credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/registration). 
 
@@ -133,13 +133,13 @@ From 1 January 2021, the submission channel for Northern Ireland departure and a
 
 Below are two simplified diagrams that give you an overview of the new processes involving the CTC Traders API:
 
-- **[Movements diagram](documentation/diagram-pages/movements-diagram.html.html.md)** - See the end-to-end process of transporting goods using the CTC Traders API
-- **[Sending an Arrival Notification: IE007](documentation/diagram-pages/arrivals-diagram.html.md)** - See how you send an Arrival Notification to NCTS using the CTC Traders API.  
+- **[Movements diagram](diagram-pages/movements-diagram.html.html.md)** - See the end-to-end process of transporting goods using the CTC Traders API
+- **[Sending an Arrival Notification: IE007](diagram-pages/arrivals-diagram.html.md)** - See how you send an Arrival Notification to NCTS using the CTC Traders API.  
 
 
 ## Check our roadmap to see what you can test and what's coming soon
 
-We are continously adding to the endpoints you can test and what's to our [roadmap](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap/#ready). 
+We are continously adding to the endpoints you can test and what's to our [roadmap](/roadmaps/common-transit-convention-traders-roadmap/#ready). 
 
 ## Full specifications
 You can see a see full list of messages and sequence diagrams specifications on the [NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications) (this will be updated after 31 December 2020).   
@@ -154,8 +154,8 @@ We encourage you to include links to relevant guidance in your software.
 ## Related API documentation
 <!--- Section owner: MTD Programme --->
 
-  **[REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
-  **[Create Test User API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0)**
+  **[REST API](/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
+  **[Create Test User API](/api-documentation/docs/api/service/api-platform-test-user/1.0)**
 
 ## Changelog
 <!--- Section owner: MTD Programme --->
