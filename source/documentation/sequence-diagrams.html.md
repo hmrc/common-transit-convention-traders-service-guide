@@ -11,9 +11,9 @@ We have split our journey maps into two categories. One to provide an overview o
 
 ## An overview of the end to end journey
 
-**[End-to-end journey](documentation/movements-diagram.html)** - See a simplified end-to-end process of transporting goods using the CTC Traders API.
+**[End-to-end journey](movements-diagram.html)** - See a simplified end-to-end process of transporting goods using the CTC Traders API.
 
-**[Simplified arrivals process](documentation/arrivals-diagram.html.md)**  - See a simplified process of sending an arrivals message.
+**[Simplified arrivals process](arrivals-diagram.html.md)**  - See a simplified process of sending an arrivals message.
 
 
 ## Technical coders' diagrams
