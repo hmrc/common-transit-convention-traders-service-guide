@@ -147,7 +147,7 @@ Below are two simplified diagrams that give you an overview of the new processes
 We are continously adding to the endpoints you can test and what's to our [roadmap](/roadmaps/common-transit-convention-traders-roadmap/#ready). 
 
 ## Full specifications
-You can see a see full list of messages and sequence diagrams specifications on the [NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications) (this will be updated after 31 December 2020).   
+You can see a full list of messages and sequence diagrams specifications on the [NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications).   
 
 
 We encourage you to include links to relevant guidance in your software.
