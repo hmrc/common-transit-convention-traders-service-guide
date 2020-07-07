@@ -1,12 +1,8 @@
 ---
+# Arrivals diagram
 
-# Arrival Notifications: IE007 diagram
---------------------------------------
-
-
-Version 0.1 4rd June 2020
+Version 0.1 3rd June 2020
 ***
-
 
 
 This diagram shows how an arrival notification message is sent by the user using third party software to the NCTS, using the CTC API.
