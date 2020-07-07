@@ -10,7 +10,7 @@ This diagram shows how an arrival notification message is sent by the user using
 <img src="../../figures/sending-an-arrival-notification.svg"/>
 
 1. Software redirects the user to the Government Gateway for login.   
-2  Once authenticated, Government Gateway redirects back to 3rd party software.
+2. Once authenticated, Government Gateway redirects back to 3rd party software.
 3. User sends an Arrival Notification.
 4. Arrival Notification message passes through the CTC API.
 5. Arrival Notification is received by the NCTS.
