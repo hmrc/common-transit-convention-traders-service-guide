@@ -7,7 +7,7 @@ Version 0.1 3rd June 2020
 
 This diagram shows the end-to-end process of transporting goods using the Common Transit Convention API. It shows at what stage in the process each message is sent, and who each message is sent to and from.
 
-<img src="../figures/end-to-end-happy-path.svg"/>
+<img src="../../figures/end-to-end-happy-path.svg"/>
 
 1.a Trader at departure fills in and sends a declaration notification IE015.    
 1.b Office of departure receives declaration notification.    
