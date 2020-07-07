@@ -1,5 +1,5 @@
 ---
-# Movements diagram
+# End-to-end happy path
 
 Version 0.1 3rd June 2020
 ***
