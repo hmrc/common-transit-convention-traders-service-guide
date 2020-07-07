@@ -137,8 +137,8 @@ From 1 January 2021, the submission channel for Northern Ireland departure and a
 
 Below are two simplified diagrams that give you an overview of the new processes involving the CTC Traders API:
 
-- **[End-to-end happy path diagram](diagram-pages/movements-diagram.html)** - See the end-to-end process of transporting goods using the CTC Traders API
-- **[Sending an Arrival Notification: IE007](diagram-pages/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC Traders API.  
+- **[End-to-end happy path diagram](figures/movements-diagram.html)** - See the end-to-end process of transporting goods using the CTC Traders API
+- **[Sending an Arrival Notification: IE007](figures/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC Traders API.  
 
 
 
