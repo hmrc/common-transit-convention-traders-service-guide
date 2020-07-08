@@ -80,7 +80,7 @@ Check each XML message type against our [XSD files](https://github.com/hmrc/comm
 * being ready for the expected increase in CTC movements  
 * greatly improving security   
 * making it easier to test and maintain      
-* creating a more reliable and robust API that meets industry standards
+* creating a more reliable, flexible and robust cloud based system
 
 
 
@@ -142,9 +142,9 @@ Below are two simplified diagrams that give you an overview of the new processes
 
 
 
-## Check our roadmap to see what you can test and what's coming soon
+## Check our roadmap to see what you can test
 
-We are continously adding to the endpoints you can test and what's to our [roadmap](/roadmaps/common-transit-convention-traders-roadmap/#ready). 
+We are continously adding to the endpoints you can test now, as well as what's coming next, in our [roadmap](/roadmaps/common-transit-convention-traders-roadmap/#ready). 
 
 ## Full specifications
 You can see a full list of messages and sequence diagrams specifications on the [NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications).   
