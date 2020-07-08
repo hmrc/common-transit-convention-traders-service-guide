@@ -7,7 +7,7 @@ Version 0.1 3rd June 2020
 
 This diagram shows how an arrival notification message is sent by the user using third party software to the NCTS, using the CTC API.
 
-<img src="../../figures/sending-an-arrival-notification.svg"/>
+<img src="../figures/sending-an-arrival-notification.svg"/>
 
 1. Software redirects the user to the Government Gateway for login.   
 2. Once authenticated, Government Gateway redirects back to 3rd party software.
