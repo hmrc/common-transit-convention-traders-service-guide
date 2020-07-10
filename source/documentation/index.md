@@ -11,7 +11,7 @@ Version 0.2 issued 15 June 2020
 
 This guide explains how you can use our new Common Transit Convention (CTC) Traders API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the New Computerised Transit System (NCTS). 
 
-In  2021, UK traders will need to move from using the New Computerised Transit System (NCTS) XML API channel to the new Common Transit Convention (CTC) Traders API. 
+In 2021, UK traders will need to move from using the New Computerised Transit System (NCTS) XML API channel to the new CTC Traders API. 
 
 
 ### Come back for regular updates
@@ -26,7 +26,7 @@ Right now, goods that can move freely within the UK can move across the EU freel
 
 From 2021, if UK traders want to defer paying these duties and other charges, they can move the goods under the Common Transit Convention. This will allow traders to move goods across a number of countries, without having to pay import duties every time they cross a border. They will only have to complete the paperwork and pay any duties they owe, once they reach their destination country.
 
-The API will allow traders to send and receive Arrival and Departure Notifications to customs and border offices.
+The API will allow traders to send and receive arrival and departure notifications to customs and border offices.
 
 
 
@@ -76,7 +76,7 @@ The table below gives you a brief outline of how the new API uses different codi
 Check each XML message type against our [XSD files](https://github.com/hmrc/common-transit-convention-traders/tree/master/conf/xsd) 
 
 
-### Improvements the CTC Traders API will bring:  
+### Improvements the CTC Traders API will bring are:  
 * being ready for the expected increase in CTC movements  
 * greatly improving security   
 * making it easier to test and maintain      
@@ -97,6 +97,7 @@ We have support in place to help you with any questions or problems you might ha
     
     
 #### Check service availability
+
 Before you get in touch, check out whether API downtime or technical issues are the problem. [Check the HMRC API plaform availability](/api-platform-status.production.tax.service.gov.uk/?_ga=2.145121908.112811846.1587044117-960820992.1580203223).    
 
 
@@ -114,8 +115,8 @@ Here are steps you need to take before you can use your software in the live env
 [Register for a developer account](/developer/registration) and subscribe to the services your need to use.  
 2. **Understand Government Gateway authorisation**    
 In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth2](/api-documentation/docs/authorisation/user-restricted-endpoints).
-3. **Download reference data to use for testing**   
-[Download COL Information](https://ec.europa.eu/taxation_customs/dds2/col/col_download_home.jsp?Lang=en)    
+3. **Download reference data**   
+To get data to use for testing [visit the EU's download COL Information page](https://ec.europa.eu/taxation_customs/dds2/col/col_download_home.jsp?Lang=en)    
 3. **Create test user**    
 To start testing your software, access [application restricted endpoints](/api-documentation/docs/authorisation/application-restricted-endpoints). 
 4. **Apply to go live**     
@@ -158,10 +159,10 @@ We encourage you to include links to relevant guidance in your software.
 ## Changelog
 <!--- Section owner: MTD Programme --->
 
-Version 0.2
+Version 0.1
 
-10 July 2020
+15 July 2020
 
 What changed:
 
-* Second draft.
+* 1st release.
