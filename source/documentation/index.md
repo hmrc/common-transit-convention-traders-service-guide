@@ -90,8 +90,6 @@ Check each XML message type against our [XSD files](https://github.com/hmrc/comm
 - **[Review our CTC Traders API definitions](/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
 - **[Take advantage of tutorials](/api-documentation/docs/tutorials)** 
 - **[Understand authorisation](/api-documentation/docs/authorisation)**
-- **[See our roadmap for list of messages you can test](/roadmaps/common-transit-convention-traders-roadmap/#backlog)**
-
 
 #### Find support
 
@@ -127,12 +125,7 @@ Before you can can live, you need to apply for credentials from our Software Dev
 
 ### When these changes are happening 
 
-We will release the new CTC Traders API into the NCTS production environment on 31 December 2020.
-
-
-### What's happening for Northern Ireland transit
-
-From 1 January 2021, the submission channel for Northern Ireland departure and arrival notification messages will be by email only. This is a temporary solution while we continue to work on getting the new API to also serve Northern Ireland. 
+We will release the new CTC Traders API into the NCTS production environment on by April 2020.
 
 
 ## Journey diagrams
@@ -141,8 +134,6 @@ Below are two simplified diagrams that give you an overview of the new processes
 
 - **[End-to-end happy path diagram](documentation/end-to-end-happy-path.html)** - See the end-to-end process of transporting goods using the CTC Traders API
 - **[Sending an Arrival Notification diagram](documentation/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC Traders API.  
-
-
 
 ## See what you can test
 
