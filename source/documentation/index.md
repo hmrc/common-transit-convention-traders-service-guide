@@ -11,7 +11,7 @@ Version 0.2 issued 15 June 2020
 
 This guide explains how you can use our new Common Transit Convention (CTC) Traders API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the New Computerised Transit System (NCTS). 
 
-To trade between Europe and the UK, your software will need to change from using the NCTS XML API Channel to the CTC Traders API, after 30 December 2020.
+In  2021, UK traders will need to move from using the New Computerised Transit System (NCTS) XML API channel to the new Common Transit Convention (CTC) Traders API. 
 
 
 ### Come back for regular updates
@@ -114,7 +114,7 @@ Here are steps you need to take before you can use your software in the live env
 [Register for a developer account](/developer/registration) and subscribe to the services your need to use.  
 2. **Understand Government Gateway authorisation**    
 In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth2](/api-documentation/docs/authorisation/user-restricted-endpoints).
-3. **Get reference data to use for testing
+3. **Download reference data to use for testing**   
 [Download COL Information](https://ec.europa.eu/taxation_customs/dds2/col/col_download_home.jsp?Lang=en)    
 3. **Create test user**    
 To start testing your software, access [application restricted endpoints](/api-documentation/docs/authorisation/application-restricted-endpoints). 
@@ -123,9 +123,13 @@ Before you can can live, you need to apply for credentials from our Software Dev
 
 
 
-### When these changes are happening 
+### When these changes are happening
 
-We will release the new CTC Traders API into the NCTS production environment on by April 2020.
+We will release the new CTC Traders API into the NCTS production environment in Spring 2021.
+
+### What’s happening for Northern Ireland transit
+
+From 1 January 2021, the submission channel for Northern Ireland departure and arrival notification messages will be by email only. This is a temporary solution while we continue to work on getting the new API to also serve Northern Ireland.
 
 
 ## Journey diagrams
@@ -133,11 +137,7 @@ We will release the new CTC Traders API into the NCTS production environment on 
 Below are two simplified diagrams that give you an overview of the new processes involving the CTC Traders API:
 
 - **[End-to-end happy path diagram](documentation/end-to-end-happy-path.html)** - See the end-to-end process of transporting goods using the CTC Traders API
-- **[Sending an Arrival Notification diagram](documentation/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC Traders API.  
-
-## See what you can test
-
-[See what the endpoints you can test](documentation/ready-to-test.html) in HMRC's sandbox. We will update this as more endpoints become available to test. 
+- **[Sending an Arrival Notification diagram](documentation/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC Traders API.   
 
 ## Full specifications
 You can see a full list of messages and sequence diagrams specifications on the [NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications).   
@@ -152,7 +152,7 @@ We encourage you to include links to relevant guidance in your software.
 ## Related API documentation
 <!--- Section owner: MTD Programme --->
 
-  **[REST API](/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
+  **[CTC Traders API definitions](/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
   **[Create Test User API](/api-documentation/docs/api/service/api-platform-test-user/1.0)**
 
 ## Changelog
@@ -160,7 +160,7 @@ We encourage you to include links to relevant guidance in your software.
 
 Version 0.2
 
-15 June 2020
+10 July 2020
 
 What changed:
 
