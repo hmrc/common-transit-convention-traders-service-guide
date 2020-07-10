@@ -1,5 +1,5 @@
 ---
-# Sends an Arrivals Notification diagram
+# Sending an Arrivals Notification diagram
 
 Version 0.1 3rd June 2020
 ***
