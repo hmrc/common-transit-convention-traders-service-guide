@@ -115,7 +115,9 @@ Here are steps you need to take before you can use your software in the live env
 1. **Register and subscribe to the Developer Hub**  
 [Register for a developer account](/developer/registration) and subscribe to the services your need to use.  
 2. **Understand Government Gateway authorisation**    
-In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth2](/api-documentation/docs/authorisation/user-restricted-endpoints). 
+In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth2](/api-documentation/docs/authorisation/user-restricted-endpoints).
+3. **Get reference data to use for testing
+[Download COL Information](https://ec.europa.eu/taxation_customs/dds2/col/col_download_home.jsp?Lang=en)    
 3. **Create test user**    
 To start testing your software, access [application restricted endpoints](/api-documentation/docs/authorisation/application-restricted-endpoints). 
 4. **Apply to go live**     
@@ -142,9 +144,9 @@ Below are two simplified diagrams that give you an overview of the new processes
 
 
 
-## Check our roadmap to see what you can test
+## See what you can test
 
-We are continously adding to the endpoints you can test now, as well as what's coming next, in our [roadmap](/roadmaps/common-transit-convention-traders-roadmap/#ready). 
+[See what the endpoints you can test](documentation/ready-to-test.html) in HMRC's sandbox. We will update this as more endpoints become available to test. 
 
 ## Full specifications
 You can see a full list of messages and sequence diagrams specifications on the [NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications).   
