@@ -144,9 +144,9 @@ Below are two simplified diagrams that give you an overview of the new processes
 
 
 
-## Check our roadmap to see what you can test
+## See what you can test
 
-We are continously adding to the endpoints you can test now, as well as what's coming next, in our [roadmap](/roadmaps/common-transit-convention-traders-roadmap/#ready). 
+[See what the endpoints you can test](documentation/ready-to-test.html) in HMRC's sandbox. We will update this as more endpoints become available to test. 
 
 ## Full specifications
 You can see a full list of messages and sequence diagrams specifications on the [NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications).   
