@@ -46,7 +46,7 @@ The table below gives you a brief outline of how the new API uses different codi
     <th>CTC Traders API</th>
   </tr>
   <tr>
-    <th>Submit Arrival Notitication (IE007)</th>
+    <th>Submit Arrival Notification (IE007)</th>
     <td>SOAP authorisation (include username and password in clear text)</td>
     <td>Government Gateway authorisation (OAuth2 token)</td>
   </tr>
@@ -98,7 +98,7 @@ We have support in place to help you with any questions or problems you might ha
     
 #### Check service availability
 
-Before you get in touch, check out whether API downtime or technical issues are the problem. [Check the HMRC API plaform availability](/api-platform-status.production.tax.service.gov.uk/?_ga=2.145121908.112811846.1587044117-960820992.1580203223).    
+Before you get in touch, check out whether API downtime or technical issues are the problem. [Check the HMRC API platform availability](/api-platform-status.production.tax.service.gov.uk/?_ga=2.145121908.112811846.1587044117-960820992.1580203223).    
 
 
  
@@ -120,7 +120,7 @@ To get data to use for testing [visit the EU's download COL Information page](ht
 3. **Create test user**    
 To start testing your software, access [application restricted endpoints](/api-documentation/docs/authorisation/application-restricted-endpoints). 
 4. **Apply to go live**     
-Before you can can live, you need to apply for credentials from our Software Development Team. They'll apply tests and checks. Apply for credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/registration). 
+Before you can go live, you need to apply for credentials from our Software Development Team. They'll apply tests and checks. Apply for credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/registration). 
 
 
 
