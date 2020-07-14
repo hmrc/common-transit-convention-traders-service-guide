@@ -14,6 +14,5 @@ This diagram shows how an arrival notification message is sent by the user using
 3. User sends an Arrival Notification.
 4. Arrival Notification message passes through the CTC API.
 5. Arrival Notification is received by the NCTS.
-6. An accepted status is sent to the CTC Traders API when the NCTS receives the Arrival Notification.
-7. The accepted status passes through the CTC Traders API.
-8. A message arrives at the third party software to inform the user that the Arrival Notification has been received but not yet processed.
+6. An accepted status passes through the CTC Traders API.
+7. A message arrives at the third party software to inform the user that the Arrival Notification has been received but not yet processed.
