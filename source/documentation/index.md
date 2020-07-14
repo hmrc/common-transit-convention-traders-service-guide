@@ -98,7 +98,7 @@ We have support in place to help you with any questions or problems you might ha
     
 #### Check service availability
 
-Before you get in touch, check out whether API downtime or technical issues are the problem. [Check the HMRC API platform availability](https://api-platform-status.production.tax.service.gov.uk/).    
+Before you get in touch, check out whether API downtime or technical issues are the problem. [Check the HMRC API platform availability](https://api-platform-status.production.tax.service.gov.uk).    
 
 
  
