@@ -93,7 +93,7 @@ Check each XML message type against our [XSD files](https://github.com/hmrc/comm
 
 #### Find support
 
-We have support in place to help you with any questions or problems you might have to do with the CTC Traders API. [See how we can support you]( https://developer.qa.tax.service.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/get-support.html).    
+We have support in place to help you with any questions or problems you might have to do with the CTC Traders API. [See how we can support you]( https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/get-support.html).    
     
     
 #### Check service availability
@@ -140,8 +140,8 @@ From 1 January 2021, the submission channel for Northern Ireland departure and a
 
 Below are two simplified diagrams that give you an overview of the new processes involving the CTC Traders API:
 
-- **[End-to-end happy path diagram](documentation/end-to-end-happy-path.html)** - See the end-to-end process of transporting goods using the CTC Traders API
-- **[Sending an Arrival Notification diagram](documentation/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC Traders API.   
+- **[End-to-end happy path diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/end-to-end-happy-path.html)** - See the end-to-end process of transporting goods using the CTC Traders API
+- **[Sending an Arrival Notification diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC Traders API.   
 
 ## Full specifications
 You can see a full list of messages and sequence diagrams specifications on the [NCTS Phase 4 Technical Interface Specification (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications).   
