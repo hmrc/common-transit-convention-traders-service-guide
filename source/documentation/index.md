@@ -93,7 +93,7 @@ Check each XML message type against our [XSD files](https://github.com/hmrc/comm
 
 #### Find support
 
-We have support in place to help you with any questions or problems you might have to do with the CTC Traders API. [See how we can support you](documentation/get-support.html).    
+We have support in place to help you with any questions or problems you might have to do with the CTC Traders API. [See how we can support you]( https://developer.qa.tax.service.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/get-support.html).    
     
     
 #### Check service availability
