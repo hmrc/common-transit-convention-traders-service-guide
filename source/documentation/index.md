@@ -11,7 +11,7 @@ Version 0.2 issued 15 June 2020
 
 This guide explains how you can use our new Common Transit Convention (CTC) Traders API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the New Computerised Transit System (NCTS). 
 
-In 2021, UK traders will need to move from using the New Computerised Transit System (NCTS) XML API channel to the new CTC Traders API. 
+In 2021, UK traders will need to move from using NCTS XML API channel to the new CTC Traders API. 
 
 
 ### Come back for regular updates
