@@ -87,9 +87,9 @@ Check each XML message type against our [XSD files](https://github.com/hmrc/comm
 ### How we can help you with these changes
 
 #### What you can do now: 
-- **[Review our CTC Traders API definitions](/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
-- **[Take advantage of tutorials](/api-documentation/docs/tutorials)** 
-- **[Understand authorisation](/api-documentation/docs/authorisation)**
+- **[Review our CTC Traders API definitions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
+- **[Take advantage of tutorials](https://developer.service.hmrc.gov.uk/api-documentation/docs/tutorials)** 
+- **[Understand authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation)**
 
 #### Find support
 
@@ -112,11 +112,11 @@ This section shows you how the API fits into various end-to-end user journeys. I
 Here are steps you need to take before you can use your software in the live environment:
 
 1. **Register and subscribe to the Developer Hub**  
-[Register for a developer account](/developer/registration) and subscribe to the services your need to use.  
+[Register for a developer account](https://developer.service.hmrc.gov.uk/developer/registration) and subscribe to the services your need to use.  
 2. **Understand Government Gateway authorisation**    
-In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth2](/api-documentation/docs/authorisation/user-restricted-endpoints).
+In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth2](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
 3. **Create test user**    
-To start testing your software, access [application restricted endpoints](/api-documentation/docs/authorisation/application-restricted-endpoints). 
+To start testing your software, access [application restricted endpoints](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/application-restricted-endpoints). 
 4. **Download reference data**   
 To get Customs Offices List data to use for testing, [visit the EU's reference data download page](https://ec.europa.eu/taxation_customs/dds2/col/col_download_home.jsp?Lang=en).
 5. **Apply to go live**     
@@ -156,8 +156,8 @@ We encourage you to include links to relevant guidance in your software.
 ## Related API documentation
 <!--- Section owner: MTD Programme --->
 
-  **[CTC Traders API definitions](/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
-  **[Create Test User API](/api-documentation/docs/api/service/api-platform-test-user/1.0)**
+  **[CTC Traders API definitions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
+  **[Create Test User API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0)**
 
 ## Changelog
 <!--- Section owner: MTD Programme --->
