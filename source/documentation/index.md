@@ -24,7 +24,7 @@ We are updating this guide as we add more functionality to our API, new technica
 
 Right now, goods that can move freely within the UK can move across the EU freely too. This will change after the end of the transition period on 31 December 2020. Then, those goods will be subject to duties and other charges when they enter the EU, or enter the UK from the EU.
 
-From 2021, if UK traders want to defer paying these duties and other charges, they can move the goods under the Common Transit Convention. This will allow traders to move goods across a number of countries, without having to pay import duties every time they cross a border. They will only have to complete the paperwork and pay any duties they owe, once they reach their destination country.
+From 2021, if UK traders want to defer paying these duties and other charges, they can move the goods under the Common Transit Convention. This will allow traders to move goods [across a number of countries](https://www.gov.uk/guidance/common-transit-convention-countries), without having to pay import duties every time they cross a border. They will only have to complete the paperwork and pay any duties they owe, once they reach their destination country.
 
 The API will allow traders to send and receive arrival and departure notifications to customs and border offices.
 
@@ -98,7 +98,7 @@ We have support in place to help you with any questions or problems you might ha
     
 #### Check service availability
 
-Before you get in touch, check out whether API downtime or technical issues are the problem. [Check the HMRC API platform availability](/api-platform-status.production.tax.service.gov.uk/?_ga=2.145121908.112811846.1587044117-960820992.1580203223).    
+Before you get in touch, check out whether API downtime or technical issues are the problem. [Check the HMRC API platform availability](https://api-platform-status.production.tax.service.gov.uk/).    
 
 
  
@@ -118,7 +118,7 @@ In order to use the CTC Traders API your software needs to interact with [Govern
 3. **Create test user**    
 To start testing your software, access [application restricted endpoints](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/application-restricted-endpoints). 
 4. **Download reference data**   
-To get Customs Offices List data to use for testing, [visit the EU's reference data download page](https://ec.europa.eu/taxation_customs/dds2/col/col_download_home.jsp?Lang=en).
+To get Customs Offices List (COL) data to use for testing, [visit the EU's reference data download page](https://ec.europa.eu/taxation_customs/dds2/col/col_download_home.jsp?Lang=en).
 5. **Apply to go live**     
 You need to apply for production credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/registration). 
 6. **Get your customers ready**
@@ -133,7 +133,7 @@ We will release the new CTC Traders API into the NCTS production environment in 
 
 ### What’s happening for Northern Ireland transit
 
-From 1 January 2021, the submission channel for Northern Ireland departure and arrival notification messages will be by email only. This is a temporary solution while we continue to work on getting the new API to also serve Northern Ireland.
+From 1 January 2021, the submission channel for Northern Ireland departure and arrival notification messages will initially be by email only. This is a temporary solution while we continue to work on getting the new API to also serve Northern Ireland.
 
 
 ## Journey diagrams
