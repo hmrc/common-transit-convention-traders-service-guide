@@ -41,7 +41,7 @@ The table below gives you a brief outline of how the new API uses different codi
 <table>
   <tr>
     <th>Activity</th>
-    <th>NCTS</th>
+    <th>NCTS XML API</th>
     <th>CTC Traders API</th>
   </tr>
   <tr>
