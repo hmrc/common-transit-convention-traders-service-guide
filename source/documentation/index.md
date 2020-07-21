@@ -155,7 +155,7 @@ We encourage you to include links to relevant guidance in your software.
 ## Related API documentation
 <!--- Section owner: MTD Programme --->
 
-  **[CTC Traders API definitions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
+  **[CTC Traders API specification](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
   **[Create Test User API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0)**
 
 ## Changelog
