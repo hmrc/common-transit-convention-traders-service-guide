@@ -55,12 +55,12 @@ The table below gives you a brief outline of how the new API uses different codi
     <td>RESTful interface, action inferred from the URL</td>
   </tr>
   <tr>
-    <th>Post API Payload</th>
+    <th>POST API Payload</th>
     <td>SOAP with EDIFACT body</td>
     <td>Information Exchange message (IE) XML</td>
   </tr>
   <tr>
-    <th>Get API Payload</th>
+    <th>GET API Payload</th>
     <td>SOAP with EDIFACT body</td>
     <td>JSON and IE XML</td>
   </tr>
