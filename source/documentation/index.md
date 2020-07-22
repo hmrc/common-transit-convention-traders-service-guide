@@ -79,7 +79,6 @@ Check each XML message type against our [XSD files](https://github.com/hmrc/comm
 * being ready for the expected increase in CTC movements  
 * greatly improving security   
 * making it easier to test and maintain      
-* creating a more reliable, flexible and robust cloud based system.
 
 
 
