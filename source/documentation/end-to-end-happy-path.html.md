@@ -1,4 +1,8 @@
 ---
+title: End-to-end happy path diagram | CTC APIs End-to-End Service Guide
+weight: 4
+
+---
 # End-to-end happy path
 
 Version 0.1 3rd June 2020
