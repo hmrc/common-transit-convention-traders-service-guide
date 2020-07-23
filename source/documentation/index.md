@@ -85,7 +85,7 @@ Check each XML message type against our [XSD files](https://github.com/hmrc/comm
 ### How we can help you with these changes
 
 #### What you can do now: 
-- **[Review our CTC Traders API definitions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
+- **[Review our CTC Traders API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
 - **[Take advantage of tutorials](https://developer.service.hmrc.gov.uk/api-documentation/docs/tutorials)** 
 - **[Understand authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation)**
 
