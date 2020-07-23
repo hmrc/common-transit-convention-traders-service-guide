@@ -1,5 +1,5 @@
 ---
-title: Get support and help | CTC APIs End-to-End Service Guide
+title: End-toend happy path | CTC APIs End-to-End Service Guide
 weight: 3
 ---
 
