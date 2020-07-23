@@ -1,5 +1,5 @@
 ---
-title: End-toend happy path | CTC APIs End-to-End Service Guide
+title: End-to-end happy path | CTC APIs End-to-End Service Guide
 weight: 3
 ---
 
