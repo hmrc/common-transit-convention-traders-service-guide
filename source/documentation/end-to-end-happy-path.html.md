@@ -65,6 +65,6 @@ This diagram shows the end-to-end process of transporting goods using the Common
 
 13.b Trader at destination receives a notification that goods have been released.   
 
-14.a Office of destination sends notification to confirm that the goods movement is complete. This confirms that all taxes have been paid IE045.    
+14.a Office of destination sends notification to confirm that the goods movement is complete IE045.    
 
 14.b Trader at departure receives notification that the goods movement is complete.  
