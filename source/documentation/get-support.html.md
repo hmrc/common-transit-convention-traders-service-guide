@@ -1,5 +1,5 @@
 ---
-title: Get support and help | Common Transit Convention API End-to-End Service Guide
+title: Get support and help | Common Transit Convention API end-to-end service guide
 weight: 6
 ---
 
