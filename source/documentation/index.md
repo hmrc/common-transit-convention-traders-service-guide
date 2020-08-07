@@ -80,7 +80,7 @@ We are working on XML mapping and we'll replace these XSD files soon.
 
 You can see a list of messages, message content and sequence diagrams on the [NCTS Phase 4 Technical Interface Specifications (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications).       
 
-Note, this __NOT__ the specifications document for the new CTC Traders API.  So, there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
+Note, this is __NOT__ the specifications document for the new CTC Traders API.  So, there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
 
 
 
