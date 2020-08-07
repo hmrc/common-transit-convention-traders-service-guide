@@ -8,14 +8,14 @@ description: Software developers, designers, product owners or business analysts
 
 ***
 
-This guide explains how you can use our new Common Transit Convention (CTC) Traders API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the New Computerised Transit System (NCTS). 
+This guide explains how you can use our new Common Transit Convention (CTC) Traders API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the New Computerised Transit System (NCTS).
 
-In 2021, UK traders will need to move from using the NCTS XML API to the new CTC Traders API. 
+In 2021, UK traders will need to move from using the NCTS XML API to the new CTC Traders API.
 
 
 ### Come back for regular updates
 
-We are updating this guide as we add more functionality to our API, new technical specifications and other items we hope you find useful. 
+We are updating this guide as we add more functionality to our API, new technical specifications and other items we hope you find useful.
 
 
 
@@ -70,9 +70,20 @@ The table below gives you a brief outline of how the new API uses different codi
 </html>
 
 
-### Review XSD files 
+### Review XSD files
 
-Check each XML message type against our [XSD files](https://github.com/hmrc/common-transit-convention-traders/tree/master/conf/xsd) 
+Check each XML message type against our [XSD files](https://github.com/hmrc/common-transit-convention-traders/tree/master/conf/xsd)
+
+We are working on XML mapping and we'll replace these XSD files soon.  
+
+##  Check NCTS API channel specifications
+
+You can see a list of messages, message content and sequence diagrams on the [NCTS Phase 4 Technical Interface Specifications (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications).       
+
+Note, this __NOT__ the specifications document for the new CTC Traders API.  So, there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
+
+
+
 
 
 ### Improvements with the CTC Traders API:  
@@ -84,22 +95,22 @@ Check each XML message type against our [XSD files](https://github.com/hmrc/comm
 
 ### How we can help you with these changes
 
-#### What you can do now: 
-- **[Review our CTC Traders API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)** 
-- **[Take advantage of tutorials](https://developer.service.hmrc.gov.uk/api-documentation/docs/tutorials)** 
+#### What you can do now:
+- **[Review our CTC Traders API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**
+- **[Take advantage of tutorials](https://developer.service.hmrc.gov.uk/api-documentation/docs/tutorials)**
 - **[Understand authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation)**
 
 #### Find support
 
 We have support in place to help you with any questions or problems you might have to do with the CTC Traders API. [See how we can support you]( https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/get-support.html).    
-    
-    
+
+
 #### Check service availability
 
 Before you get in touch, check out whether API downtime or technical issues are the problem. [Check the HMRC API platform availability](https://api-platform-status.production.tax.service.gov.uk).    
 
 
- 
+
 ## End-to-end process
 
 This section shows you how the API fits into various end-to-end user journeys. It aims to help you understand how your software needs to interact with HMRC systems after the changes.
@@ -114,11 +125,11 @@ Here are steps you need to take before you can use your software in the live env
 2. **Understand Government Gateway authorisation**    
 In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth2](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
 3. **Create test user**    
-To start testing your software, you need to generate [test users](https://developer.service.hmrc.gov.uk/api-test-user). 
+To start testing your software, you need to generate [test users](https://developer.service.hmrc.gov.uk/api-test-user).
 4. **Download reference data**   
 To get Customs Offices List (COL) data to use for testing, [visit the EU's reference data download page](https://ec.europa.eu/taxation_customs/dds2/col/col_download_home.jsp?Lang=en).
 5. **Apply to go live**     
-You need to apply for production credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/registration). 
+You need to apply for production credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/registration).
 6. **Get your customers ready**
 For example, ask them to apply for an [EORI number](https://www.gov.uk/eori) and a [Government Gateway account](https://www.gov.uk/log-in-register-hmrc-online-services).
 
@@ -141,11 +152,9 @@ Below are two diagrams that give you an overview of the new processes involving 
 - **[End-to-end happy path diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/end-to-end-happy-path.html)** - See the end-to-end process of transporting goods using the CTC Traders API
 - **[Sending an Arrival Notification diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC Traders API.   
 
-## Full specifications
-You can see a full list of messages and sequence diagrams specifications on the [NCTS Phase 4 Technical Interface Specifications (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications).   
 
 
-We encourage you to include links to relevant guidance in your software.
+
 
 
 
@@ -160,10 +169,16 @@ We encourage you to include links to relevant guidance in your software.
 ## Changelog
 <!--- Section owner: MTD Programme --->
 
-Version 0.1
+Version 0.2
 
-15 July 2020
+6 August 2020
 
 What changed:
+
+- Added detail in reference to the XSD files and a proviso to the NCTS channel specifications (TIS) document
+
+Version 0.3
+
+15 July 2020
 
 * 1st release.
