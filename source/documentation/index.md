@@ -98,6 +98,7 @@ Note, this is __NOT__ the specifications document for the new CTC Traders API.  
 #### What you can do now:
 - **[Review our CTC Traders API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**
 - **[Take advantage of tutorials](https://developer.service.hmrc.gov.uk/api-documentation/docs/tutorials)**
+- **[See our roadmap to see what you can test](https://developer.qa.tax.service.gov.uk/roadmaps/common-transit-convention-traders-roadmap)**
 - **[Understand authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation)**
 
 #### Find support
