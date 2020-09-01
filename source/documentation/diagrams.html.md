@@ -7,11 +7,11 @@ title: Diagrams | Common Transit Convention API end-to-end service guide
 # Diagrams
 
 
-To give yourself a clearer picture of message sequences we have created diagrams for a number of the scenarios.
+To give yourself a clear picture of the message sequences we have created diagrams for a number of the scenarios.
 
-Overview diagrams give you an easy to understand view of trade movements.
+**Overview diagrams** give you an easy to understand view of trade movements.
 
-Detailed diagrams go into more depth with various scenarios
+**Detail diagrams** give you more depth with various scenarios and messages
 
 
 
