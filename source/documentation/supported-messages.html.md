@@ -1,6 +1,6 @@
-# Messages we support
+# Information exchange (IE) messages we support
 
-Here is the list of messages the CTC Traders API will support
+Here is the list of information exchange (IE) messages the CTC Traders API will support
 
 
 ## Departure messages
