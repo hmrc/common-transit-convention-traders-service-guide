@@ -76,6 +76,10 @@ Check each XML message type against our [XSD files](https://github.com/hmrc/comm
 
 We are working on XML mapping and we'll replace these XSD files soon.  
 
+## Messages we are supporting with the CTC Traders API
+
+The CTC Traders API only supports messages used between UK border offices and traders. [See the list](/ where each one fits in a movement journey 
+
 ##  Check NCTS API channel specifications
 
 You can see a list of messages, message content and sequence diagrams on the [NCTS Phase 4 Technical Interface Specifications (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications).       
