@@ -78,7 +78,7 @@ We are working on XML mapping and we'll replace these XSD files soon.
 
 ## Messages we are supporting with the CTC Traders API
 
-The CTC Traders API only supports messages used between UK border offices and traders. [See the list](/ where each one fits in a movement journey 
+The CTC Traders API only supports messages used between UK border offices and traders. [See the list](/supported-messages.html) and where each one fits in a movement journey. 
 
 ##  Check NCTS API channel specifications
 
