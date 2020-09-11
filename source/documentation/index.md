@@ -65,43 +65,53 @@ The table below gives you a brief outline of how the new API uses different codi
     <td>JSON and IE XML</td>
   </tr>
 </table>
-
 </body>
 </html>
-
-
-### Review XSD files
-
-Check each XML message type against our [XSD files](https://github.com/hmrc/common-transit-convention-traders/tree/master/conf/xsd)
-
-We are working on XML mapping and we'll replace these XSD files soon.  
-
-##  Check NCTS API channel specifications
-
-You can see a list of messages, message content and sequence diagrams on the [NCTS Phase 4 Technical Interface Specifications (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications).       
-
-Note, this is __NOT__ the specifications document for the new CTC Traders API.  So, there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
-
-
 
 
 
 ### Improvements with the CTC Traders API:  
 * being ready for the expected increase in CTC movements  
 * greatly improving security   
-* making it easier to test and maintain      
+* making it easier to test and maintain  
 
+## How we can help you with these changes
 
+### CTC Traders API specifications
 
-### How we can help you with these changes
+**[Review our CTC Traders API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0),** endpoints and error messages.
 
-#### What you can do now:
-- **[Review our CTC Traders API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**
-- **[Take advantage of tutorials](https://developer.service.hmrc.gov.uk/api-documentation/docs/tutorials)**
-- **[See our roadmap to see what you can test](/roadmaps/common-transit-convention-traders-roadmap)**
-- **[Understand authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation)**
+### CTC Trader Test API specifications
 
-#### Find support
+**[Check our CTC Traders Test API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders-test-support/1.0)**. The CTC Trader Test API will be replaced by the Trader Test pack in mid October 2020. We will update this page with the details.
+
+### XSD files
+
+**[Look at our XSD files](xsd-reference.html.md)** so you can validate your XML. We are working on an XML mapping guide and we will share that with you as soon as we can.  
+
+### Our roadmap
+
+**[See our roadmap](/roadmaps/common-transit-convention-traders-roadmap)** to see what you can test now.
+
+### See the messages we support
+
+**[See the IE messages our API supports](supported-messages.html.md)** to get a clear understanding of your tasks with the CTC Traders API.
+
+###  Check NCTS API channel specifications
+
+**[Visit NCTS Phase 4 Technical Interface Specifications (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)** to see a list of messages, message content and sequence diagrams on the .       
+
+Note, this is __NOT__ the specifications document for the new CTC Traders API.  So, there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
+
+### O-Auth2
+
+**[Understand authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation)** using guidance from the Developer Hub.
+
+### Developer Hub tutorials
+
+**[Take advantage of Developer Hub tutorials](https://developer.service.hmrc.gov.uk/api-documentation/docs/tutorials)** to find out what you need to know about working with us.
+
+## Find support
 
 We have support in place to help you with any questions or problems you might have to do with the CTC Traders API. [See how we can support you]( https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/get-support.html).    
 
@@ -170,6 +180,15 @@ Below are two diagrams that give you an overview of the new processes involving 
 ## Changelog
 <!--- Section owner: MTD Programme --->
 
+
+Version 0.3
+
+11 September 2020
+
+What changed:
+
+- Added more XSD files, link to our roadmap, supported IE messages and a link to our Test API specifications page.  
+
 Version 0.2
 
 6 August 2020
@@ -178,7 +197,7 @@ What changed:
 
 - Added detail in reference to the XSD files and a proviso to the NCTS channel specifications (TIS) document
 
-Version 0.3
+Version 0.1
 
 15 July 2020
 
