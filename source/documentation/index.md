@@ -180,7 +180,16 @@ Below are two diagrams that give you an overview of the new processes involving 
 ## Changelog
 <!--- Section owner: MTD Programme --->
 
+
 Version 0.3
+
+11 September 2020
+
+What changed:
+
+- Added more XSD files, link to our roadmap, supported IE messages and a link to our Test API specifications page.  
+
+Version 0.2
 
 6 August 2020
 
@@ -188,7 +197,7 @@ What changed:
 
 - Added detail in reference to the XSD files and a proviso to the NCTS channel specifications (TIS) document
 
-Version 0.3
+Version 0.1
 
 15 July 2020
 
