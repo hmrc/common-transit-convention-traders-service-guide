@@ -14,6 +14,7 @@ Here is the list of information exchange (IE) messages the CTC Traders API will 
 |**Release for transit (IE029)**| Get a message from the office at departure to say the goods can start their journey|
 |**Write-off notification (IE045)**| Get a message from the office at departure to the trader at departure to say the movement is complete|
 |**No release for transit (IE051)**| Get a message from the office at departure to the trader at departure to say the goods are not released for transit|
+|**Guarantee not valid(IE055)**| Get a message from the office of departure to the trader at departure that their guarantee is not valid|
 |**Control decision notification (IE060)**| Get a message from the office at departure to the trader at departure to say they want to carry out a control of the goods. This will come after an MRN allocated message (IE028)|
 |**Positive acknowledgement message (IE928)**| Get an acknowledgement message from the office of departure that they have received a declaration data message (IE014) from the trader at departure  
 
