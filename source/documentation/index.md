@@ -87,7 +87,7 @@ The table below gives you a brief outline of how the new API uses different codi
 
 ### XSD files
 
-**[Look at our XSD files](/documentation/xsd-reference.html)** so you can validate your XML. We are working on an XML mapping guide and we will share that with you as soon as we can.  
+**[Look at our XSD files](/documentation/xsd-reference.html)** so you can validate your XML. We are working on an XML field mapping guide and we will share that with you as soon as we can.  
 
 ### Our roadmap
 
