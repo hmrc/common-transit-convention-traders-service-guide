@@ -15,9 +15,9 @@ We are working on an XML mapping guide and we will share that with you as soon a
 | **Title** | **Description** |
 |------|-------------|
 |**[Arrival notification message CC007A (IE007)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc007a.xsd)** |Send an Arrival Notification message from the trader at destination to the office at destination|
-|**[Declaration data cancellation request CC014A (IE014)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc014a.xsd)**| Post a message from the trader at departure asking the office at departure to cancel declaration data|
+|**[Declaration data cancellation request CC014A (IE014)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc014a.xsd)**| Send a message from the trader at departure asking the office at departure to cancel declaration data|
 |**[Declaration data message CC015B (IE015)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc015b.xsd)**|Send a declaration data message from the trader at departure to the office at departure so they can can start the transit|
-|**[Goods unloaded message CC044A (IE044)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc044a.xsd)** |Send a message from the trader at destination to the office at to let the office at destination know that the goods have been unloaded (IE044)|
+|**[Unloading remarks message CC044A (IE044)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc044a.xsd)** |Send a message from the trader at destination to the office at to let the office at destination know that the goods have been unloaded (IE044)|
 
 
 ## Validate arrivals XML from NCTS:  
