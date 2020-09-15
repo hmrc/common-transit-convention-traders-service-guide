@@ -87,7 +87,7 @@ The table below gives you a brief outline of how the new API uses different codi
 
 ### XSD files
 
-**[Look at our XSD files](xsd-reference.html)** so you can validate your XML. We are working on an XML field mapping guide and we will share that with you as soon as we can.  
+**[Look at our XSD files](documentation/xsd-reference.html)** so you can validate your XML. We are working on an XML field mapping guide and we will share that with you as soon as we can.  
 
 ### Our roadmap
 
@@ -95,7 +95,7 @@ The table below gives you a brief outline of how the new API uses different codi
 
 ### See the messages we support
 
-**[See the IE messages our API supports](supported-messages.html)** to get a clear understanding of your tasks with the CTC Traders API.
+**[See the IE messages our API supports](documentation/supported-messages.html)** to get a clear understanding of your tasks with the CTC Traders API.
 
 ###  Check NCTS API channel specifications
 
