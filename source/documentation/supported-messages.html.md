@@ -1,3 +1,8 @@
+---
+title: XSD reference files | Common Transit Convention API end-to-end service guide
+weight: 2
+---
+
 # Information exchange (IE) messages we support
 
 Here is the list of information exchange (IE) messages the CTC Traders API will support
