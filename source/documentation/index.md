@@ -83,7 +83,7 @@ The table below gives you a brief outline of how the new API uses different codi
 
 ### CTC Trader Test Support API specifications
 
-**[Check our CTC Traders Test Support API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders-test-support/1.0)**. The CTC Trader Test API will be replaced by the Trader Test pack in mid October 2020. We will update this page with the details.
+**[Check our CTC Traders Test Support API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders-test-support/1.0)** endpoints.
 
 ### XSD files
 
