@@ -99,7 +99,7 @@ The table below gives you a brief outline of how the new API uses different codi
 
 ###  Check NCTS API channel specifications
 
-**[Visit NCTS Phase 4 Technical Interface Specifications (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)** to see a list of messages, message content and sequence diagrams on the .       
+**[Visit NCTS Phase 4 Technical Interface Specifications (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)** to see a list of messages, message content and sequence diagrams.      
 
 Note, this is __NOT__ the specifications document for the new CTC Traders API.  So, there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
 
