@@ -6,12 +6,14 @@
     var $contentPane;
     var $tocItems;
     var $targets;
+    var $loaded;
 
     this.start = function start($element) {
       $tocPane = $element.find('.app-pane__toc');
       $contentPane = $element.find('.app-pane__content');
       $tocItems = $('.js-toc-list').find('a');
       $targets = $contentPane.find('[id]');
+      $loaded = false;
 
       $contentPane.on('scroll', _.debounce(handleScrollEvent, 100, { maxWait: 100 }));
 
@@ -80,6 +82,20 @@
         $tocItems.removeClass('toc-link--in-view');
         $activeTocItem.addClass('toc-link--in-view');
         scrollTocToActiveItem($activeTocItem);
+        openDetails($activeTocItem);
+      }
+    }
+
+    function openDetails($activeTocItem) {
+      if(!$loaded) {
+        console.log($activeTocItem.get(0).hash)
+        $loaded = true
+
+        var $targetSelect = $(`details[name ="${$activeTocItem.get(0).hash}"]`)
+
+        if($targetSelect){
+          $targetSelect.attr("open", "");
+        }
       }
     }
 
