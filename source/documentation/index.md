@@ -75,21 +75,22 @@ The table below gives you a brief outline of how the new API uses different codi
 * greatly improving security   
 * making it easier to test and maintain  
 
-## How we can help you with these changes
 
-### CTC Traders API specifications
+## How to make these changes
+
+### Have a look at the CTC Traders API specifications
 
 **[Review our CTC Traders API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0),** endpoints and error messages.
 
-### CTC Trader Test Support API specifications
+### Run your own tests with CTC Traders Test Support API
 
-**[Check our CTC Traders Test Support API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders-test-support/1.0)** endpoints.
+**[Look at our CTC Traders Test API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders-test-support/1.0)** to carry out your own testing.
 
-### XSD files
+### Review XSD files
 
 **[Look at our XSD files](documentation/xsd-reference.html)** so you can validate your XML. We are working on an XML field mapping guide and we will share that with you as soon as we can.  
 
-### Our roadmap
+### Check our roadmap
 
 **[See our roadmap](/roadmaps/common-transit-convention-traders-roadmap)** to see what you can test now.
 
@@ -97,23 +98,23 @@ The table below gives you a brief outline of how the new API uses different codi
 
 **[See the IE messages our API supports](documentation/supported-messages.html)** to get a clear understanding of your tasks with the CTC Traders API.
 
-###  Check NCTS API channel specifications
+###  See the NCTS API channel specifications
 
-**[Visit NCTS Phase 4 Technical Interface Specifications (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)** to see a list of messages, message content and sequence diagrams.      
+**[Visit NCTS Phase 4 Technical Interface Specifications (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)** to see a list of messages, message content and sequence diagrams on the .       
 
 Note, this is __NOT__ the specifications document for the new CTC Traders API.  So, there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
 
-### O-Auth2
+###  Learn how to apply O-Auth2
 
 **[Understand authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation)** using guidance from the Developer Hub.
 
-### Developer Hub tutorials
+### Use Developer Hub tutorials
 
 **[Take advantage of Developer Hub tutorials](https://developer.service.hmrc.gov.uk/api-documentation/docs/tutorials)** to find out what you need to know about working with us.
 
-## Find support
+### Find support
 
-We have support in place to help you with any questions or problems you might have to do with the CTC Traders API. [See how we can support you]( https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/get-support.html).    
+We have support in place to help you with any questions or problems you might have to do with the CTC Traders API. [See how we can support you]( https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/get-support.html).   
 
 
 #### Check service availability
@@ -141,7 +142,7 @@ To start testing your software, you need to generate [test users](https://develo
 To get Customs Offices List (COL) data to use for testing, [visit the EU's reference data download page](https://ec.europa.eu/taxation_customs/dds2/col/col_download_home.jsp?Lang=en).
 5. **Apply to go live**     
 You need to apply for production credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/registration).
-6. **Get your customers ready**
+6. **Get your customers ready**   
 For example, ask them to apply for an [EORI number](https://www.gov.uk/eori) and a [Government Gateway account](https://www.gov.uk/log-in-register-hmrc-online-services).
 
 
