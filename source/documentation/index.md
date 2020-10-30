@@ -142,7 +142,7 @@ To start testing your software, you need to generate [test users](https://develo
 To get Customs Offices List (COL) data to use for testing, [visit the EU's reference data download page](https://ec.europa.eu/taxation_customs/dds2/col/col_download_home.jsp?Lang=en).
 5. **Apply to go live**     
 You need to apply for production credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/registration).
-6. **Get your customers ready**
+6. **Get your customers ready**   
 For example, ask them to apply for an [EORI number](https://www.gov.uk/eori) and a [Government Gateway account](https://www.gov.uk/log-in-register-hmrc-online-services).
 
 
