@@ -10,7 +10,7 @@ service_link: https://developer.service.hmrc.gov.uk/
 header_links:
   CTC Traders API Service Guide: /
   Documentation: /api-documentation/docs/using-the-hub
-  Applications: /developer/login
+  Applications: /developer/applications
   Support: /developer/support
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
