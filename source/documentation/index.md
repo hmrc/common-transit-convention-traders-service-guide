@@ -154,7 +154,7 @@ We will release the new CTC Traders API into the NCTS production environment in 
 
 ### What’s happening for Northern Ireland transit
 
-From 1 January 2021, the submission channel for Northern Ireland departure and arrival notification messages will initially be by email only. This is a temporary solution while we continue to work on getting the new API to also serve Northern Ireland.
+From 1 January 2021 you’ll be able to use the existing EDIFACT API channel and the email channel to submit departure and arrival messages for both GB and NI NCTS instances.  We’ll automatically route EDIFACT API messages to the appropriate NCTS system without you having to make any changes to your software.
 
 
 ## Journey diagrams
