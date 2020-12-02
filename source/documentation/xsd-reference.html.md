@@ -21,7 +21,7 @@ You can ignore this heading.
 
 ## Validate XML posted into the API:
 
-**[Download XSD zip file]
+**[Download zip file](ctc-traders-api-xsds.zip)** with all the CTC Traders API XSDs.
 
 | **Title** | **Description** |
 |------|-------------|
