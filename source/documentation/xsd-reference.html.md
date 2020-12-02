@@ -21,7 +21,7 @@ You can ignore this heading.
 
 ## Validate XML posted into the API:
 
-**[Download XSD zip fie
+**[Download XSD zip file]
 
 | **Title** | **Description** |
 |------|-------------|
