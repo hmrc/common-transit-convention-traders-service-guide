@@ -68,7 +68,36 @@ The table below gives you a brief outline of how the new API uses different codi
 </body>
 </html>
 
+### Before and after payload diagrams
 
+The diagrams below show the difference between the old EDIFACT and new XML payloads for getting and sending messages. They have different layers of coding. Notice that the new payloads are slimmer, with less layers.
+
+![Post a message](documentation/post-message.png)
+
+
+#### Old payload
+
+- The old payload has a top layer of HTTPS.
+- The next layer below is XML SOAP transport, this includes and WSSE authentication with a clear text username and password and a command (eg submitDocument).
+- Below this layer lies EDIFACT encoding. Then, at the centre is the true payload - eg Post message IE007.  
+
+#### New payload
+
+- The new payload involves at top layer of RESTful standards, HTTPS and OAuth2 token authentication.
+- Then we go straight to the central true payload which is XML.
+
+![Get a message](documentation/get-message.png)
+
+#### Old payload
+
+- The old payload involved a top layer of HTTPS and WSSE authentication.
+- The next layer below is XML SOAP transport, this includes WSSE authentication with a clear text username and password and a command (eg getDocument).
+- Then, at the centre is the true payload - eg Post message IE007.  
+
+#### New payload
+
+- The new payload involves at top layer of RESTful standards, HTTPS and OAuth2 token authentication.
+- Below that, we have a JSON list. Then we go straight to the central true payload payload which is an XML.
 
 ### Improvements with the CTC Traders API:  
 * being ready for the expected increase in CTC movements  
