@@ -137,7 +137,7 @@ Here are steps you need to take before you can use your software in the live env
 2. **Understand Government Gateway authorisation**    
 In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth2](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
 3. **Create test user**    
-To start testing your software, you need to generate [test users](https://developer.service.hmrc.gov.uk/api-test-user).
+To start testing your software, you need to generate [test users](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0).
 4. **Download reference data**   
 To get Customs Offices List (COL) data to use for testing, [visit the EU's reference data download page](https://ec.europa.eu/taxation_customs/dds2/col/col_download_home.jsp?Lang=en).
 5. **Apply to go live**     
