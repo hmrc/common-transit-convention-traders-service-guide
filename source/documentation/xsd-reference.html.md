@@ -16,7 +16,7 @@ Use these to validate your XML. Please note, there are some known omissions. The
 - IE043 (CC0043A)
 - IE051 (CC051)   
 
-You can ignore this heading.
+You can ignore this field.
 
 
 ## Validate XML posted into the API:
