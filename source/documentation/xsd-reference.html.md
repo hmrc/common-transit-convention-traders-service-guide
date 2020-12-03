@@ -7,10 +7,22 @@ weight: 2
 
 You can check your XML files against our XSD files.
 
-We are working on an XML mapping guide and we will share that with you as soon as we can.  
+Use these to validate your XML. Please note, there are some known omissions. These are all captured in the mapping document.
+
+``NumOfLoaLisHEA304`` has been included in error in:  
+
+- IE015 (CC015B)
+- IE029 (CC0029B)
+- IE043 (CC0043A)
+- IE051 (CC051)   
+
+You can ignore this field.
+
+### [Download zip file](ctc-traders-api-xsds.zip) with all the CTC Traders API XSDs.
+
+Alternatively you can review each XSD file individually using the links below.
 
 ## Validate XML posted into the API:
-
 
 | **Title** | **Description** |
 |------|-------------|

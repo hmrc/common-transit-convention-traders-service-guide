@@ -27,7 +27,7 @@ From 2021, if UK traders want to defer paying these duties and other charges, th
 
 The API will allow traders to send and receive arrival and departure notifications to customs and border offices.
 
-
+<br></br>
 
 ### Why we are creating a new CTC Traders API
 
@@ -68,14 +68,46 @@ The table below gives you a brief outline of how the new API uses different codi
 </body>
 </html>
 
+<br></br>
+
+### Before and after payload diagrams
+
+The diagrams below show the difference between the old EDIFACT and new XML payloads for getting and sending messages. They have different layers of coding. Notice that the new payloads are slimmer, with less layers.
+
+![Post a message](documentation/post-message.png)
 
 
+#### Old payload
+
+- The old payload has a top layer of HTTPS.
+- The next layer below is XML SOAP transport, this includes and WSSE authentication with a clear text username and password and a command (eg submitDocument).
+- Below this layer lies EDIFACT encoding. Then, at the centre is the true payload - eg Post message IE007.  
+
+#### New payload
+
+- The new payload involves at top layer of RESTful standards, HTTPS and OAuth2 token authentication.
+- Then we go straight to the central true payload which is XML.
+
+![Get a message](documentation/get-message.png)
+
+#### Old payload
+
+- The old payload involved a top layer of HTTPS and WSSE authentication.
+- The next layer below is XML SOAP transport, this includes WSSE authentication with a clear text username and password and a command (eg getDocument).
+- Then, at the centre is the true payload - eg Post message IE007.  
+
+#### New payload
+
+- The new payload involves at top layer of RESTful standards, HTTPS and OAuth2 token authentication.
+- Below that, we have a JSON list. Then we go straight to the central true payload payload which is an XML.
+
+<br></br>
 ### Improvements with the CTC Traders API:  
 * being ready for the expected increase in CTC movements  
 * greatly improving security   
 * making it easier to test and maintain  
 
-
+<br></br>
 ## How to make these changes
 
 ### Have a look at the CTC Traders API specifications
@@ -112,21 +144,21 @@ Note, this is __NOT__ the specifications document for the new CTC Traders API.  
 
 **[Take advantage of Developer Hub tutorials](https://developer.service.hmrc.gov.uk/api-documentation/docs/tutorials)** to find out what you need to know about working with us.
 
+<br></br>
 ### Find support
 
 We have support in place to help you with any questions or problems you might have to do with the CTC Traders API. [See how we can support you]( https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/get-support.html).   
 
 
-#### Check service availability
+### Check service availability
 
 Before you get in touch, check out whether API downtime or technical issues are the problem. [Check the HMRC API platform availability](https://api-platform-status.production.tax.service.gov.uk).    
 
-
+<br></br>
 
 ## End-to-end process
 
 This section shows you how the API fits into various end-to-end user journeys. It aims to help you understand how your software needs to interact with HMRC systems after the changes.
-
 
 ### The path to going live with our API
 
@@ -137,7 +169,7 @@ Here are steps you need to take before you can use your software in the live env
 2. **Understand Government Gateway authorisation**    
 In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth2](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
 3. **Create test user**    
-To start testing your software, you need to generate [test users](https://developer.service.hmrc.gov.uk/api-test-user).
+To start testing your software, you need to generate [test users](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0).
 4. **Download reference data**   
 To get Customs Offices List (COL) data to use for testing, [visit the EU's reference data download page](https://ec.europa.eu/taxation_customs/dds2/col/col_download_home.jsp?Lang=en).
 5. **Apply to go live**     
@@ -146,17 +178,19 @@ You need to apply for production credentials through your [developer account](ht
 For example, ask them to apply for an [EORI number](https://www.gov.uk/eori) and a [Government Gateway account](https://www.gov.uk/log-in-register-hmrc-online-services).
 
 
-
+<br></br>
 
 ### When these changes are happening
 
 We will release the new CTC Traders API into the NCTS production environment in Spring 2021.
 
+<br></br>
+
 ### What’s happening for Northern Ireland transit
 
 From 1 January 2021 you’ll be able to use the existing EDIFACT API channel and the email channel to submit departure and arrival messages for both GB and NI NCTS instances.  We’ll automatically route EDIFACT API messages to the appropriate NCTS system without you having to make any changes to your software.
 
-
+<br></br>
 ## Journey diagrams
 
 Below are two diagrams that give you an overview of the new processes involving the CTC Traders API:
@@ -170,13 +204,14 @@ Below are two diagrams that give you an overview of the new processes involving 
 
 
 
-
+<br></br>
 
 ## Related API documentation
 <!--- Section owner: MTD Programme --->
 
-  **[CTC Traders API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
-  **[Create Test User API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0)**
+  **[CTC Traders API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**    
+  **[CTC Traders Test Support API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders-test-support/1.0)**    
+  **[Create Test User API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0)**   
 
 ## Changelog
 <!--- Section owner: MTD Programme --->
