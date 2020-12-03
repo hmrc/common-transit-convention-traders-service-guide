@@ -175,7 +175,8 @@ Below are two diagrams that give you an overview of the new processes involving 
 ## Related API documentation
 <!--- Section owner: MTD Programme --->
 
-  **[CTC Traders API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)**  
+  **[CTC Traders API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)** 
+  **[CTC Traders Test Support API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders-test-support/1.0)**
   **[Create Test User API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0)**
 
 ## Changelog
