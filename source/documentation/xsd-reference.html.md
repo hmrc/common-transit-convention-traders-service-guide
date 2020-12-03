@@ -18,10 +18,11 @@ Use these to validate your XML. Please note, there are some known omissions. The
 
 You can ignore this field.
 
+### [Download zip file](ctc-traders-api-xsds.zip) with all the CTC Traders API XSDs.
+
+Alternatively you can review each XSD file individually using the links below.
 
 ## Validate XML posted into the API:
-
-**[Download zip file](ctc-traders-api-xsds.zip)** with all the CTC Traders API XSDs.
 
 | **Title** | **Description** |
 |------|-------------|
