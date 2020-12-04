@@ -74,7 +74,7 @@ The table below gives you a brief outline of how the new API uses different codi
 
 The diagrams below show the difference between the old EDIFACT and new XML payloads for getting and sending messages. They have different layers of coding. Notice that the new payloads are slimmer, with less layers.
 
-<img src="../figures/post-message.png"/>
+![Post a message](/figures/post-message.png)
 
 
 #### Old payload
