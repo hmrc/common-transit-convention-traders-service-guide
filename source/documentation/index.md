@@ -74,7 +74,7 @@ The table below gives you a brief outline of how the new API uses different codi
 
 The diagrams below show the difference between the old EDIFACT and new XML payloads for getting and sending messages. They have different layers of coding. Notice that the new payloads are slimmer, with less layers.
 
-<img src=“post-message.png”>
+<img src="../figures/post-message.png"/>
 
 
 #### Old payload
@@ -88,7 +88,7 @@ The diagrams below show the difference between the old EDIFACT and new XML paylo
 - The new payload involves at top layer of RESTful standards, HTTPS and OAuth2 token authentication.
 - Then we go straight to the central true payload which is XML.
 
-<img src=“get-message.png”>
+<img src="../figures/get-message.png"/>
 
 #### Old payload
 
