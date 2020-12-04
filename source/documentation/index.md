@@ -88,7 +88,8 @@ The diagrams below show the difference between the old EDIFACT and new XML paylo
 - The new payload involves at top layer of RESTful standards, HTTPS and OAuth2 token authentication.
 - Then we go straight to the central true payload which is XML.
 
-<img src="../figures/get-message.png"/>
+
+![Post a message](../figures/get-message.png)
 
 #### Old payload
 
