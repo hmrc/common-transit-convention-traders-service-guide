@@ -42,7 +42,7 @@ The table below gives you a brief outline of how the new API uses different codi
   <tr>
     <th>Submit Arrival Notification (IE007)</th>
     <td>SOAP authorisation (include username and password in clear text)</td>
-    <td>Government Gateway authorisation (OAuth2 token)</td>
+    <td>Government Gateway authorisation (OAuth 2.0 token)</td>
   </tr>
   <tr>
     <th>Create action</th>
@@ -77,7 +77,7 @@ The diagrams below show the difference between the old EDIFACT and new XML paylo
 
 #### New payload
 
-- The new payload involves at top layer of RESTful standards, HTTPS and OAuth2 token authentication.
+- The new payload involves at top layer of RESTful standards, HTTPS and OAuth 2.0 token authentication.
 - Then we go straight to the central true payload which is XML.
 
 ![Post a message](../figures/get-message.png)
@@ -90,7 +90,7 @@ The diagrams below show the difference between the old EDIFACT and new XML paylo
 
 #### New payload
 
-- The new payload involves at top layer of RESTful standards, HTTPS and OAuth2 token authentication.
+- The new payload involves at top layer of RESTful standards, HTTPS and OAuth 2.0 token authentication.
 - Below that, we have a JSON list. Then we go straight to the central true payload payload which is an XML.
 
 ### Improvements with the CTC Traders API:  
@@ -124,7 +124,7 @@ The diagrams below show the difference between the old EDIFACT and new XML paylo
 
 **Visit [NCTS Phase 4 Technical Interface Specifications (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)** for the specifications for sending and receiving electronic messages to and from NCTS UK.
 
-Note, this is __NOT__ the specifications document for the new CTC Traders API.  So, there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
+Note, this is __not__ the specifications document for the new CTC Traders API so, there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
 
 ###  Learn how to apply O-Auth2
 
@@ -154,7 +154,7 @@ Here are steps you need to take before you can use your software in the live env
 1. **Register and subscribe to the Developer Hub**  
 [Register for a developer account](https://developer.service.hmrc.gov.uk/developer/registration) and subscribe to the services your need to use.  
 2. **Understand Government Gateway authorisation**    
-In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth2](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
+In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth 2.0](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
 3. **Create test user**    
 To start testing your software, you need to generate [test users](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0).
 4. **Download reference data**   
