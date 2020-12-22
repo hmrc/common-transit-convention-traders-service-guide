@@ -12,12 +12,9 @@ This guide explains how you can use our new Common Transit Convention (CTC) Trad
 
 In 2021, UK traders will need to move from using the NCTS XML API to the new CTC Traders API.
 
-
 ### Come back for regular updates
 
 We are updating this guide as we add more functionality to our API, new technical specifications and other items we hope you find useful.
-
-
 
 ## Overview
 
@@ -26,8 +23,6 @@ Right now, goods that can move freely within the UK can move across the EU freel
 From 2021, if UK traders want to defer paying these duties and other charges, they can move the goods under the Common Transit Convention. This will allow traders to move goods [across a number of countries](https://www.gov.uk/guidance/common-transit-convention-countries), without having to pay import duties every time they cross a border. They will only have to complete the paperwork and pay any duties they owe, once they reach their destination country.
 
 The API will allow traders to send and receive arrival and departure notifications to customs and border offices.
-
-<br></br>
 
 ### Why we are creating a new CTC Traders API
 
@@ -47,7 +42,7 @@ The table below gives you a brief outline of how the new API uses different codi
   <tr>
     <th>Submit Arrival Notification (IE007)</th>
     <td>SOAP authorisation (include username and password in clear text)</td>
-    <td>Government Gateway authorisation (OAuth2 token)</td>
+    <td>Government Gateway authorisation (OAuth 2.0 token)</td>
   </tr>
   <tr>
     <th>Create action</th>
@@ -68,14 +63,11 @@ The table below gives you a brief outline of how the new API uses different codi
 </body>
 </html>
 
-<br></br>
-
 ### Before and after payload diagrams
 
 The diagrams below show the difference between the old EDIFACT and new XML payloads for getting and sending messages. They have different layers of coding. Notice that the new payloads are slimmer, with less layers.
 
 ![Post a message](../figures/post-message.png)
-
 
 #### Old payload
 
@@ -85,9 +77,8 @@ The diagrams below show the difference between the old EDIFACT and new XML paylo
 
 #### New payload
 
-- The new payload involves at top layer of RESTful standards, HTTPS and OAuth2 token authentication.
+- The new payload involves at top layer of RESTful standards, HTTPS and OAuth 2.0 token authentication.
 - Then we go straight to the central true payload which is XML.
-
 
 ![Post a message](../figures/get-message.png)
 
@@ -99,16 +90,14 @@ The diagrams below show the difference between the old EDIFACT and new XML paylo
 
 #### New payload
 
-- The new payload involves at top layer of RESTful standards, HTTPS and OAuth2 token authentication.
+- The new payload involves at top layer of RESTful standards, HTTPS and OAuth 2.0 token authentication.
 - Below that, we have a JSON list. Then we go straight to the central true payload payload which is an XML.
 
-<br></br>
 ### Improvements with the CTC Traders API:  
 * being ready for the expected increase in CTC movements  
 * greatly improving security   
 * making it easier to test and maintain  
 
-<br></br>
 ## How to make these changes
 
 ### Have a look at the CTC Traders API specifications
@@ -133,11 +122,11 @@ The diagrams below show the difference between the old EDIFACT and new XML paylo
 
 ###  See the NCTS API channel specifications
 
-**[Visit NCTS Phase 4 Technical Interface Specifications (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)** to see a list of messages, message content and sequence diagrams on the .       
+**Visit the [New Computerised Transit System: technical specifications](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)** to read about the NCTS system that's currently in operation.
 
-Note, this is __NOT__ the specifications document for the new CTC Traders API.  So, there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
+Note, this is __not__ the specifications document for the new CTC Traders API, so there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
 
-###  Learn how to apply O-Auth2
+###  Learn how to apply OAuth 2.0
 
 **[Understand authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation)** using guidance from the Developer Hub.
 
@@ -145,7 +134,6 @@ Note, this is __NOT__ the specifications document for the new CTC Traders API.  
 
 **[Take advantage of Developer Hub tutorials](https://developer.service.hmrc.gov.uk/api-documentation/docs/tutorials)** to find out what you need to know about working with us.
 
-<br></br>
 ### Find support
 
 We have support in place to help you with any questions or problems you might have to do with the CTC Traders API. [See how we can support you]( https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/get-support.html).   
@@ -154,8 +142,6 @@ We have support in place to help you with any questions or problems you might ha
 ### Check service availability
 
 Before you get in touch, check out whether API downtime or technical issues are the problem. [Check the HMRC API platform availability](https://api-platform-status.production.tax.service.gov.uk).    
-
-<br></br>
 
 ## End-to-end process
 
@@ -168,7 +154,7 @@ Here are steps you need to take before you can use your software in the live env
 1. **Register and subscribe to the Developer Hub**  
 [Register for a developer account](https://developer.service.hmrc.gov.uk/developer/registration) and subscribe to the services your need to use.  
 2. **Understand Government Gateway authorisation**    
-In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth2](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
+In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth 2.0](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
 3. **Create test user**    
 To start testing your software, you need to generate [test users](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0).
 4. **Download reference data**   
@@ -179,33 +165,20 @@ You need to apply for production credentials through your [developer account](ht
 For example, ask them to apply for an [EORI number](https://www.gov.uk/eori) and a [Government Gateway account](https://www.gov.uk/log-in-register-hmrc-online-services).
 
 
-<br></br>
-
 ### When these changes are happening
 
 We will release the new CTC Traders API into the NCTS production environment in Spring 2021.
-
-<br></br>
 
 ### What’s happening for Northern Ireland transit
 
 From 1 January 2021 you’ll be able to use the existing EDIFACT API channel and the email channel to submit departure and arrival messages for both GB and NI NCTS instances.  We’ll automatically route EDIFACT API messages to the appropriate NCTS system without you having to make any changes to your software.
 
-<br></br>
 ## Journey diagrams
 
 Below are two diagrams that give you an overview of the new processes involving the CTC Traders API:
 
 - **[End-to-end happy path diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/end-to-end-happy-path.html)** - See the end-to-end process of transporting goods using the CTC Traders API
 - **[Sending an Arrival Notification diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/arrivals-diagram.html)** - See how you send an Arrival Notification to NCTS using the CTC Traders API.   
-
-
-
-
-
-
-
-<br></br>
 
 ## Related API documentation
 <!--- Section owner: MTD Programme --->
