@@ -124,9 +124,9 @@ The diagrams below show the difference between the old EDIFACT and new XML paylo
 
 **Visit the [New Computerised Transit System: technical specifications](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications)** to read about the NCTS system that's currently in operation.
 
-Note, this is __not__ the specifications document for the new CTC Traders API so, there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
+Note, this is __not__ the specifications document for the new CTC Traders API, so there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
 
-###  Learn how to apply O-Auth2
+###  Learn how to apply OAuth 2.0
 
 **[Understand authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation)** using guidance from the Developer Hub.
 
