@@ -77,6 +77,7 @@ The diagrams show the difference between the current EDIFACT and new XML payload
 ![Post a message](../figures/post-message.png)
 
 The current POST message payload consists of 4 layers:
+
 1. Outer layer: HTTPS
 2. Inside that: XML SOAP transport layer which includes 
    1. WSSE authentication, consisting of a clear text username and password
@@ -85,12 +86,14 @@ The current POST message payload consists of 4 layers:
 4. At the centre: the true payload payload which is an XML list
 
 The new POST payload message consists of 2 layers:
+
 - Outer layer: RESTful standards HTTPS and OAuth 2.0 token authentication
 - At the centre: the true payload which is an XML message eg IE007
 
 ![Post a message](../figures/get-message.png)
 
 The current GET message payload consists of 4 layers:
+
 1. Outer layer: HTTPS 
 2. WIthin that: XML SOAP transport layer, which includes 
    1. WSSE authentication, consisting of clear text username and password
@@ -99,6 +102,7 @@ The current GET message payload consists of 4 layers:
 4. At the centre: the true payload - the GET message
 
 The new GET payload consists of 3 layers:
+
 - Outermost layer: RESTful standards HTTPS and OAuth 2.0 token authentication
 - Middle layer: a JSON list
 - At the centre: the true payload which is the XML
@@ -150,6 +154,7 @@ Before you get in touch, check out whether API downtime or technical issues are 
 ## End-to-end process
 
 The steps you need to take before you can use your software in the live environment:
+
 1. **Register and subscribe to the Developer Hub**
 [Register for a developer account](https://developer.service.hmrc.gov.uk/developer/registration) and subscribe to the CTC Traders API, CTC Test support API, Create Test User API and CTC PUSH/PULL notifications (to be released in February).
 2. **Understand Government Gateway authorisation**
