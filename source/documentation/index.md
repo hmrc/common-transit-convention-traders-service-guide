@@ -185,7 +185,7 @@ Review the message flow diagrams to see the correct message sequences:
 
 ## Changelog
 
-Version 0.4: 28 January 2021
+Version 0.4: 4 February 2021
 Added release date for the GB version of the API.
 
 Version 0.3 11 September 2020
