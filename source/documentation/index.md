@@ -10,11 +10,10 @@ description: Software developers, designers, product owners or business analysts
 
 This guide explains how to use the new Common Transit Convention (CTC) Traders API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the New Computerised Transit System (NCTS).
 
-At the end of March 2021, you will be able to use the new CTC Traders API instead of the NCTS XML API channel.
+At the end of March 2021, you will be able to use the new CTC Traders API instead of the NCTS XML API channel for Common Transit arrivals and departures to and from Great Britain (GB), ie England, Scotland, Wales.
 
 To find out about timescales, see the CTC Roadmap.
 
-### Come back for regular updates
 We are updating this guide as we add more functionality to our API, new technical specifications and other guidance.
 
 ## Overview
@@ -28,7 +27,7 @@ All goods will be subject to duties and other charges when they enter the EU, or
 The API allows traders to send and receive arrival and departure notifications for CTC movements.
 
 
-### Replacing the NCTS XML API API
+### Replacing the NCTS XML API
 Volumes of Common Transit movements are expected to increase significantly now that the UK is no longer part of the European Union. The current NCTS XML API channel needs to change to cope with this forecasted increase.
 
 In order to make sure we provide a reliable and fast service we are introducing the new CTC Traders API to replace the current NCTS XML API.
@@ -77,6 +76,7 @@ The diagrams show the difference between the current EDIFACT and new XML payload
 ![Post a message](../figures/post-message.png)
 
 The current POST message payload consists of 4 layers:
+
 1. Outer layer: HTTPS
 2. Inside that: XML SOAP transport layer which includes 
    1. WSSE authentication, consisting of a clear text username and password
@@ -85,12 +85,14 @@ The current POST message payload consists of 4 layers:
 4. At the centre: the true payload payload which is an XML list
 
 The new POST payload message consists of 2 layers:
+
 - Outer layer: RESTful standards HTTPS and OAuth 2.0 token authentication
 - At the centre: the true payload which is an XML message eg IE007
 
 ![Post a message](../figures/get-message.png)
 
 The current GET message payload consists of 4 layers:
+
 1. Outer layer: HTTPS 
 2. WIthin that: XML SOAP transport layer, which includes 
    1. WSSE authentication, consisting of clear text username and password
@@ -99,6 +101,7 @@ The current GET message payload consists of 4 layers:
 4. At the centre: the true payload - the GET message
 
 The new GET payload consists of 3 layers:
+
 - Outermost layer: RESTful standards HTTPS and OAuth 2.0 token authentication
 - Middle layer: a JSON list
 - At the centre: the true payload which is the XML
@@ -111,11 +114,12 @@ The new GET payload consists of 3 layers:
 ## What you'll need to do
 
 ### Read the documentation
-[CTC Traders API specification.](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)
-Using the Developer Hub
+[CTC Traders API specification](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)
+
+[Using the Developer Hub](https://developer.service.hmrc.gov.uk/api-documentation/docs/using-the-hub)
 
 ### Test connectivity and syntax
-Test your application with the CTC Traders Test Support API. It allows you to simulate the Arrival and Departure responses you would receive back from the NCTS database.
+Test your application with the [CTC Traders Test Support API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders-test-support/1.0). It allows you to simulate the Arrival and Departure responses you would receive back from the NCTS database.
 
 ### Validate your XML 
 Use [our XSD files](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/xsd-reference.html) to validate your XML
@@ -134,7 +138,7 @@ Visit the [New Computerised Transit System: technical specifications](https://ww
 Note, this is the specification document for the **outgoing NCTS XML API channel**, so there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
 
 ### Learn how to apply OAuth 2.0 
-Read guidance on the OAuth 2.0 standards required for HMRC APIs.
+Read guidance on the [OAuth 2.0](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation) standards required for HMRC APIs.
 
 ### Use the Developer Hub tutorials
 If you're new to HMRC APIs, use the [Developer Hub tutorials](https://developer.service.hmrc.gov.uk/api-documentation/docs/tutorials) to find out what you need to know about working with us.
@@ -150,23 +154,19 @@ Before you get in touch, check out whether API downtime or technical issues are 
 ## End-to-end process
 
 The steps you need to take before you can use your software in the live environment:
+
 1. **Register and subscribe to the Developer Hub**
 [Register for a developer account](https://developer.service.hmrc.gov.uk/developer/registration) and subscribe to the CTC Traders API, CTC Test support API, Create Test User API and CTC PUSH/PULL notifications (to be released in February).
 2. **Understand Government Gateway authorisation**
-In order to use the CTC Traders API your software needs to interact with [Government Gateway by using OAuth 2.0](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
-3. **Create test user**
+In order to use the CTC Traders API your software needs to interact [using OAuth 2.0](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
+1. **Create test user**
 To start testing your software, you need to generate [test users](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0).
 4. **Download reference data**
 To get Customs Offices List (COL) data to use for testing, [visit the EU’s reference data download page](https://ec.europa.eu/taxation_customs/dds2/col/col_download_home.jsp?Lang=en).
 5. **Apply to go live**
-You need to apply for production credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/registration).
+You need to apply for production credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/login).
 6. **Get your customers ready**
 For example, ask them to apply for an [EORI number](https://www.gov.uk/eori) and a [Government Gateway account](https://www.gov.uk/log-in-register-hmrc-online-services).
-
-
-## When the new API will be released
-
-We will release the new CTC Traders API into the NCTS production environment in March 2021.
 
 ## Northern Ireland transit
 
@@ -179,20 +179,13 @@ Later this year functionality will be available through the CTC API to submit NI
 ## Message flows
 
 Review the message flow diagrams to see the correct message sequences:
+
 - [End-to-end happy path diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/end-to-end-happy-path.html) - the end-to-end process of transporting goods using the CTC Traders API
 - [Sending an Arrival Notification diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/arrivals-diagram.html) - for sending an Arrival Notification to NCTS using the CTC Traders API
 
-## Related API documentation
-
-[CTC Traders API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)
-
-[CTC Traders Test Support API specifications](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders-test-support/1.0)
-
-[Create Test User API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0)
-
 ## Changelog
 
-Version 0.4: 28 January 2021
+Version 0.4: 4 February 2021
 Added release date for the GB version of the API.
 
 Version 0.3 11 September 2020
