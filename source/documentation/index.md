@@ -73,7 +73,7 @@ The table shows how the new API uses different coding, compared to the existing 
 
 The diagrams show the difference between the current EDIFACT and new XML payloads for GET and POST  messages. 
 
-<img src="../figures/post-message.png"/>
+<img src="./figures/post-message.png"/>
 
 The current POST message payload consists of 4 layers:
 
@@ -89,7 +89,7 @@ The new POST payload message consists of 2 layers:
 1. Outer layer: RESTful standards HTTPS and OAuth 2.0 token authentication
 2. At the centre: the true payload which is an XML message eg IE007
 
-<img src="../figures/get-message.png"/>
+<img src="./figures/get-message.png"/>
 
 The current GET message payload consists of 4 layers:
 
