@@ -129,6 +129,8 @@ This will include:
 * A link to the GB test pack with scenarios and test data
 * Guidance for how to test
 
+Trader Test will automatically simulate and give you responses just like in a real life scenario. You can also request NCTS support staff to generate the manual responses as if Border Force staff are processing your goods. 
+
 ### Validate your XML 
 Use [our XSD files](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/xsd-reference.html) to validate your XML
 
