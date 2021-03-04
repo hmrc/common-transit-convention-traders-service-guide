@@ -118,8 +118,18 @@ The new GET payload consists of 3 layers:
 
 [Using the Developer Hub](https://developer.service.hmrc.gov.uk/api-documentation/docs/using-the-hub)
 
-### Test connectivity and syntax
-Test your application with the [CTC Traders Test Support API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders-test-support/1.0). It allows you to simulate the Arrival and Departure responses you would receive back from the NCTS database.
+### Testing your software
+You can now test with the Trader Test service within the sandbox environment. 
+
+We plan to publish a new support guidance page very shortly. This will signpost you to all the information you need and what to do.
+
+This will include:
+
+* All the information you need to get set up for testing
+* A link to the GB test pack with scenarios and test data
+* Guidance for how to test
+
+Trader Test will automatically simulate and give you responses just like in a real life scenario. You can also request NCTS support staff to generate the manual responses as if Border Force staff are processing your goods. 
 
 ### Validate your XML 
 Use [our XSD files](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/xsd-reference.html) to validate your XML
