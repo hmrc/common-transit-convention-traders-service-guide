@@ -1,0 +1,141 @@
+---
+title: Questions and Answers | Common Transit Convention API end-to-end service guide
+weight: 6
+---
+
+<%= partial 'partials/google_tag_manager_js' %>
+
+# Questions and Answers
+<!--- Section owner: CTC Traders API --->
+
+
+Here are your questions and our answers from the API call sessions held on 15th and 16th February 2021.
+
+<table>
+  <tr>
+    <th>Your Question</th>
+    <th>Our Answer</th>
+  </tr>
+  <tr>
+    <td>Will there be a filter on XML EORI since we could potentially have several hundred or thousands of enrolments?</td>
+    <td>Yes, we can filter on EORI over a 28 day period but we are currently working on a more suitable filter.</td>
+  </tr>
+  <tr>
+    <td>How long will OAuthTokens be valid for once they are issued?</td>
+    <td>The OAuth tokens are valid for 18 months unless there’s an update and they become invalid. The session token is valid for 4 hours. After 4 hours you will need to regenerate the token.</td>
+  </tr>
+  <tr>
+    <td>How will we find out when the OAuthToken is about to become invalid?</td>
+    <td>The token itself will tell you how long it will remain valid for.</td>
+  </tr>
+  <tr>
+    <td>What happens if the message passes CTC validation but fails NTCS validation.</td>
+    <td>This should never really happen. NCTS can send back an IE917 message, which can be pulled.</td>
+  </tr>
+  <tr>
+    <td>If a client revokes my access, then will the first notification I get about this be your refresh token on messages fails with 401?</td>
+    <td>Yes our refresh token will be your first notification of this.</td>
+  </tr>
+  <tr>
+    <td>Can Push notifications go live sooner?</td>
+    <td>We are currently working to many priorities at present but envisage push notifications to go live around May 2021. We'll email out a formal update closer towards the time.</td>
+  </tr>
+  <tr>
+    <td>Are movements from GB to any other transit area available or possible? For example from France to Northern Ireland in the UK?</td>
+    <td>Yes in due course. We expect to release this functionality in May, then movements both from and to Northern Ireland will be possible</td>
+  </tr>
+  <tr>
+    <td>Is October still the planned go live date for testing the system for real customers which consignees and consignors can use?</td>
+    <td>The testing date you mention might be for a different project as this is not CTC related. We are making enquiries with the policy team to establish what this might refer to.  For more information, please contact your Business Relationship Manager in the first instance. </td>
+  </tr>
+  <tr>
+    <td>When we are able to test with the Trader Test service, will it provide automated responses or will we have to continue injecting our own IE messages?</td>
+    <td>Once Trader Test is active you will get automated responses where that would be true in ‘real life’ use but also there are manual responses, which you will require support staff to initiate. Guidance on this can be found here. The manual steps are called out in the test pack.</td>
+  </tr>
+  <tr>
+    <td>Will a user be able to use the same set of credentials for both GB and NI once CTC API is up and running? Or will they need to use two different sets of credentials?</td>
+    <td>A single set of credentials can submit both NI and GB movements.</td>
+  </tr>
+  <tr>
+    <td>When you refer to the IE Message IE007, is this the same as IE07?</td>
+    <td>Yes. We have added the extra digit to ensure that IE messages work across several NCTS systems across the EU. We will be updating all document to use three digits in future but this may take some time.</td>
+  </tr>
+  <tr>
+    <td>Is testing a session token a new step for your CTC application?</td>
+    <td>All HMRC APIs are the same including CDS. The session token (same as the access token) is valid for 4 hours and can be refreshed, the Auth token is valid for 18 months.</td>
+  </tr>
+  <tr>
+    <td>We are currently receiving EDIFACT responses in the legacy system. When will we start to receive XML JSON responses from the new system? For example HATEOAS JSON?</td>
+    <td>This is already in place and you should be receiving JSON messages from the new system in the sandbox environment</td>
+  </tr>
+  <tr>
+    <td>I understand that HMRC updated their API to accomodate NI so that we could continue to use the same business as usual service. You are now asking for us to use a new identification message of XI007 rather than GB007. How do you plan to differentiate between NI and GB movements?</td>
+    <td>The office of destination or departure will have a GB or XI pre-fix that we will use to route the message to the correct NCTS core.</td>
+  </tr>
+  <tr>
+    <td>When do you intend to turn off the HMRC legacy systems?</td>
+    <td>There are no confirmed dates yet. There will be a period of dual running. We will provide ample notice once a date is set for switch off of the legacy system so you can plan ahead accordingly. However it is important to note that the legacy systems are going to become increasingly unstable with the amount of extra traffic and we expect performance to degrade. We strongly advise that you should move to the new API as soon as possible.</td>
+  </tr>
+  <tr>
+    <td>When dealing with IE015 declaration messages, will our applications need to be authenticated as the Principal?</td>
+    <td>To submit any message via the CTC Traders API, the application will need to be subscribed to the API on the Developer Hub and have a valid client ID and client secret.  The Trader will also need to be authenticated by the Government Gateway and the application will have to include the access token as a header when the messages are submitted.</td>
+  </tr>
+  <tr>
+    <td>Can we submit on behalf of another Principal without using their log in details or being logged in as them?</td>
+    <td>Yes you can. Also note that the EORI on the user and IE015 do not need to match.</td>
+  </tr>
+  <tr>
+    <td>Where can I find the latest collection of postman test script files?</td>
+    <td>We have published these on GIT Hub which you can access here: <a href="https://github.com/hmrc/common-transit-convention-traders-postman">https://github.com/hmrc/common-transit-convention-traders-postman</a></td>
+  </tr>
+  <tr>
+    <td>We currently use IA prefix as the message code, are you planning to change this in the future?</td>
+    <td>The message XML will always start with the letters 'CC', for example Arrivals CC007A.</td>
+  </tr>
+  <tr>
+    <td>In addition to the current testing window of 1st to 31st March, what other facilities can we use, like test flag messages for example?</td>
+    <td>Our sandbox environment will still be available after the transition to Production. The API will continue to be available with Trader Test service in the sandbox environment indefinitely, so that you can continue to test even after we go live. Please note that it is illegal to test in the Production environment. You must never attempt to do this.</td>
+  </tr>
+  <tr>
+    <td>France uses a different concept of lodged and pre-lodged departures. This is called the DeltaT French system. Will CTC use the same idea and principle?</td>
+    <td>We currently support the pre-lodged. For simplified processes it is likely to be an automatic release.</td>
+  </tr>
+  <tr>
+    <td>Will your sandbox testing environment provide the real-life proper responses?</td>
+    <td>Yes its a clone of live, you will receive all the messages throughout the journey and SDST will be available for support.</td>
+  </tr>
+  <tr>
+    <td>How do we contact you if we have a specific question or issue to discuss?</td>
+    <td>Your first port of call is emailing the Software Developer Support Team [Hyperlink to SDSTeam@HMRC.gov.uk]. If the answer isn't easily resolved, then they can schedule a call with our team.</td>
+  </tr>
+  <tr>
+    <td>Will your CTC API provide me with new status messages for whole transit declarations which are submitted through the NCTS XML API. This includes messages such as GB045A for example?</td>
+    <td>The full set of message types supported by the CTC Traders API can be found here: <a href="https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/xsd-reference.html#validate-arrivals-xml-from-ncts">https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/xsd-reference.html#validate-arrivals-xml-from-ncts</a>. This includes IE045</td>
+  </tr>
+  <tr>
+    <td>Will new messages be sent to advise that goods have progressed or are progressing through offices of transit?</td>
+    <td>Currently no Office of Transit messages are supported though the CTC Traders API.  We will look to see if they are supported through another HMRC API and get back to you.</td>
+  </tr>
+  <tr>
+    <td>Will queries to the endpoints mentioned in question 28 give status updates like the ones on the Europa page?</td>
+    <td>We can see the value in this too as it is useful. We will therefore make enquiries within HMRC so see if we can investigate a quick win. Please note that all other HMRC project teams are working on urgent priority work at present.</td>
+  </tr>
+  <tr>
+    <td>Can the IBFs (Inland Border Facility) see the LRNs (Local Reference Number) that the NCTS system has acknowledged as received?</td>
+    <td>If your application has received a 202 Accepted back from the POST IE015, then it has been "accepted" by NCTS, i.e. it's on their queue for processing.  You can retrieve a status of all current movements using this endpoint. 
+<a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-movement-departures_get_accordion">https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-movement-departures_get_accordion</a> <br>
+The "status" field contains the current state of the movement. <br>
+NCTS will reply with an IE928 or an IE028 to confirm the movement has been processed.  You can check the individual movement status using these endpoints: <br>
+<a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-a-movement-departure-for-a-departure-id_get_accordion">https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-a-movement-departure-for-a-departure-id_get_accordion</a> <br>
+<a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-messages-relating-to-a-movement-departure_get_accordion">https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-messages-relating-to-a-movement-departure_get_accordion</a> <br>
+</td>
+  </tr>
+  <tr>
+    <td>Will we get updates for old transit declarations which are submitted by NCTS XML API, not CTC API. We will still have many unclosed declarations and will need to get status messages for those old declarations after we shift to CTC API. Will you divert all the status messages into CTC API? Otherwise we will need to keep both structures live?</td>
+    <td>All in-flight movements will have to be completed on the legacy NCTS SOAP XML. Legacy movements cannot be viewed on the new API.</td>
+  </tr>
+  <tr>
+    <td>When is the IE message IE928 created?</td>
+    <td>In most cases, directly after the IE015 has been submitted, although it depends if the movement is simplified or not. Please refer to the Technical Interface Specifications (TIS) document [hyperlink] and the TIS appendices [hyperlink] for all the business rules.</td>
+  </tr>
+</table>
