@@ -22,7 +22,7 @@ Here are your questions and our answers from the API call sessions held on 15th 
   </tr>
   <tr>
     <td>How long will OAuthTokens be valid for once they are issued?</td>
-    <td>The OAuth tokens are valid for 18 months unless there’s an update and they become invalid. The session token is valid for 4 hours. After 4 hours you will need to regenerate the token.</td>
+    <td>The OAuth tokens are valid for 18 months unless there’s an update and they become invalid. The session token is valid for 4 hours. After 4 hours you will need to regenerate the token. For further information go to the following auth pages on dev hub: <a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints">https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints</a></td>
   </tr>
   <tr>
     <td>How will we find out when the OAuthToken is about to become invalid?</td>
@@ -90,7 +90,7 @@ Here are your questions and our answers from the API call sessions held on 15th 
   </tr>
   <tr>
     <td>We currently use IA prefix as the message code, are you planning to change this in the future?</td>
-    <td>The message XML will always start with the letters 'CC', for example Arrivals CC007A.</td>
+    <td>The message XML will always start with a 'CC' tag, for example Arrivals &lt;CC007A&gt; and end with a matching CC close tag, for example &lt;/CC015B&gt;</td>
   </tr>
   <tr>
     <td>In addition to the current testing window of 1st to 31st March, what other facilities can we use, like test flag messages for example?</td>
@@ -117,8 +117,8 @@ Here are your questions and our answers from the API call sessions held on 15th 
     <td>Currently no Office of Transit messages are supported though the CTC Traders API.  We will look to see if they are supported through another HMRC API and get back to you.</td>
   </tr>
   <tr>
-    <td>Will queries to the endpoints mentioned in question 28 give status updates like the ones on the Europa page?</td>
-    <td>We can see the value in this too as it is useful. We will therefore make enquiries within HMRC so see if we can investigate a quick win. Please note that all other HMRC project teams are working on urgent priority work at present.</td>
+    <td>Will we be able to get status updates like the ones on the Europa page?</td>
+    <td>We can see the value in this request and will make enquiries within HMRC to explore if this is feasible. However this may require work from multiple teams and if approved, this would be in the longer term.</td>
   </tr>
   <tr>
     <td>Can the IBFs (Inland Border Facility) see the LRNs (Local Reference Number) that the NCTS system has acknowledged as received?</td>
