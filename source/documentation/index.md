@@ -121,7 +121,7 @@ The new GET payload consists of 3 layers:
 [Using the Developer Hub](https://developer.service.hmrc.gov.uk/api-documentation/docs/using-the-hub)
 
 ### Testing your software
-You can now test with the Trader Test service within the sandbox environment. 
+We have now released the API with working arrivals and departures endpoints for Great Britain only (and not Northern Ireland). You can now run tests for movements to or from Great Britain in HMRC's sandbox environment.
 
 First read the [CTC Testing Guide](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/). This signposts you to all the information you need and a step by step of what to do, plus the resources to use.
 
