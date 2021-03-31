@@ -123,13 +123,13 @@ The new GET payload consists of 3 layers:
 ### Testing your software
 You can now test with the Trader Test service within the sandbox environment. 
 
-We plan to publish a new support guidance page very shortly. This will signpost you to all the information you need and what to do.
+First read the [CTC Testing Guide](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/). This signposts you to all the information you need and a step by step of what to do, plus the resources to use.
 
 This will include:
 
 * All the information you need to get set up for testing
 * A link to the GB test pack with scenarios and test data
-* Guidance for how to test
+* Detailed guidance for how to test
 
 Trader Test will automatically simulate and give you responses just like in a real life scenario. You can also request NCTS support staff to generate the manual responses as if Border Force staff are processing your goods. 
 
