@@ -10,11 +10,11 @@ description: Software developers, designers, product owners or business analysts
 
 This guide explains how to use the new Common Transit Convention (CTC) Traders API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the New Computerised Transit System (NCTS).
 
-At the end of March 2021, you will be able to use the new CTC Traders API instead of the NCTS XML API channel for Common Transit arrivals and departures to and from Great Britain (GB), ie England, Scotland, Wales.
+New CTC Traders API
 
-For timescales, see the [CTC Roadmap](https://developer.service.hmrc.gov.uk/roadmaps/common-transit-convention-traders-roadmap/).
+* Our CTC Traders API is now live in production for GB movements only
 
-We are updating this guide as we add more functionality to our API, new technical specifications.
+Read our Roadmap to find out what we have planned.
 
 ## Overview
 
@@ -30,7 +30,7 @@ The API allows traders to send and receive arrival and departure notifications f
 ### Replacing the NCTS XML API
 Volumes of Common Transit movements are expected to increase significantly now that the UK is no longer part of the European Union. The current NCTS XML API channel needs to change to cope with this forecasted increase.
 
-In order to make sure we provide a reliable and fast service we are introducing the new CTC Traders API to replace the current NCTS XML API.
+In order to make sure we provide a reliable and fast service we have introduced the CTC Traders API to replace the current NCTS XML API.
 
 **If you have never used the NCTS XML API channel, you'll only need to refer to the new CTC Traders API descriptions.**
 
@@ -119,15 +119,15 @@ The new GET payload consists of 3 layers:
 [Using the Developer Hub](https://developer.service.hmrc.gov.uk/api-documentation/docs/using-the-hub)
 
 ### Testing your software
-You can now test with the Trader Test service within the sandbox environment. 
+You can now test with the Trader Test service within the sandbox environment. You must not test in the live production environment.
 
-We plan to publish a new support guidance page very shortly. This will signpost you to all the information you need and what to do.
+We have published a [Guide to Testing](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/). This will signpost you to all the information you need and what to do.
 
 This will include:
 
-* All the information you need to get set up for testing
-* A link to the GB test pack with scenarios and test data
-* Guidance for how to test
+* all the information you need to get set up for testing
+* a link to the GB test pack with scenarios and test data
+* step by step guidance for how to test
 
 Trader Test will automatically simulate and give you responses just like in a real life scenario. You can also request NCTS support staff to generate the manual responses as if Border Force staff are processing your goods. 
 
@@ -155,7 +155,7 @@ If you're new to HMRC APIs, use the [Developer Hub tutorials](https://developer.
 
 ## Get help
 
-We have support in place to help you with any questions or problems you might have to do with the CTC Traders API. [Find out to get help](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/get-support.html).
+We have support in place to help you with any questions or problems you might have with the CTC Traders API. [Find out to get help](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/get-support.html).
 
 ## Check service availability
 
@@ -184,7 +184,7 @@ Following the end of the UK's transition from the EU, Northern Ireland transit m
 
 You can use the existing EDIFACT API channel and the email channel to submit departure and arrival messages for Northern Ireland  NCTS instances. EDIFACT API messages will automatically be routed to the appropriate NCTS system without you having to make any changes to your software.
 
-Later this year functionality will be available through the CTC API to submit NI movements. The exact date will be added to the Roadmap and we will email everyone who is subscribed to the CTC Traders API as soon it is available.
+We expect the CTC Traders API to support Northern Ireland (NI) movements from late April 2021. The exact date will be published in our [Roadmap](https://developer.service.hmrc.gov.uk/roadmaps/common-transit-convention-traders-roadmap/) and we will email everyone who is subscribed to the CTC Traders API as soon it is available.
 
 ## Message flows
 
@@ -194,6 +194,9 @@ Review the message flow diagrams to see the correct message sequences:
 - [Sending an Arrival Notification diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/arrivals-diagram.html) - for sending an Arrival Notification to NCTS using the CTC Traders API
 
 ## Changelog
+
+Version 0.5: 31 March 2021
+Added revised bullet point information about CTC Traders API go live plus NI functionality planned to go live around April 2021.
 
 Version 0.4: 10 February 2021
 Added release date for the GB version of the API.
