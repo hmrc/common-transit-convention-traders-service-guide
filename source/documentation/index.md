@@ -197,7 +197,7 @@ Review the message flow diagrams to see the correct message sequences:
 
 ## Changelog
 
-Version 0.5: 31 March 2021
+Version 0.5: 13th April 2021
 Added revised bullet point information about CTC Traders API go live plus NI functionality planned to go live around April 2021.
 
 Version 0.4: 10 February 2021
