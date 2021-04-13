@@ -14,7 +14,7 @@ New CTC Traders API
 
 * Our CTC Traders API is now live in production for GB movements only
 
-Read our Roadmap to find out what we have planned.
+Read our [Roadmap](https://developer.service.hmrc.gov.uk/roadmaps/common-transit-convention-traders-roadmap/) to find out what we have planned.
 
 ## Overview
 
