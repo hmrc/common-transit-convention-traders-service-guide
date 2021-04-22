@@ -64,8 +64,6 @@ The table shows how the new API uses different coding, compared to the existing 
     <td>JSON and IE XML</td>
   </tr>
 </table>
-</body>
-</html>
 
 ## Payloads comparison
 
@@ -119,7 +117,7 @@ The new GET payload consists of 3 layers:
 [Using the Developer Hub](https://developer.service.hmrc.gov.uk/api-documentation/docs/using-the-hub)
 
 ### Testing your software
-You can now test with the Trader Test service within the sandbox environment. You must not test in the live production environment.
+You can now test movements to or from both Great Britain and Northern Ireland using the Trade Test service.
 
 We have published a [Guide to Testing](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/). This will signpost you to all the information you need and what to do.
 
