@@ -10,9 +10,7 @@ description: Software developers, designers, product owners or business analysts
 
 This guide explains how to use the new Common Transit Convention (CTC) Traders API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the New Computerised Transit System (NCTS).
 
-New CTC Traders API
-
-* Our CTC Traders API is now live in production for GB movements only
+Our CTC Traders API is now live in production for GB movements only
 
 Read our [Roadmap](https://developer.service.hmrc.gov.uk/roadmaps/common-transit-convention-traders-roadmap/) to find out what we have planned.
 
@@ -24,7 +22,7 @@ Under the agreement, CTC member countries only need to pay duties in the country
 
 All goods will be subject to duties and other charges when they enter the EU, or enter the UK from the EU.
 
-The API allows traders to send and receive arrival and departure notifications for CTC movements.
+The CTC Traders API allows traders to send and receive arrival and departure notifications for GB movements.
 
 
 ### Replacing the NCTS XML API
@@ -66,8 +64,6 @@ The table shows how the new API uses different coding, compared to the existing 
     <td>JSON and IE XML</td>
   </tr>
 </table>
-</body>
-</html>
 
 ## Payloads comparison
 
@@ -121,14 +117,14 @@ The new GET payload consists of 3 layers:
 [Using the Developer Hub](https://developer.service.hmrc.gov.uk/api-documentation/docs/using-the-hub)
 
 ### Testing your software
-You can now test with the Trader Test service within the sandbox environment. You must not test in the live production environment.
+You can now test movements to or from both Great Britain and Northern Ireland using the Trade Test service.
 
 We have published a [Guide to Testing](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/). This will signpost you to all the information you need and what to do.
 
 This will include:
 
 * all the information you need to get set up for testing
-* a link to the GB test pack with scenarios and test data
+* a link to the CTC Traders API Test Pack which includes scenarios and test data for both GB and NI
 * step by step guidance for how to test
 
 Trader Test will automatically simulate and give you responses just like in a real life scenario. You can also request NCTS support staff to generate the manual responses as if Border Force staff are processing your goods. 
@@ -186,7 +182,7 @@ Following the end of the UK's transition from the EU, Northern Ireland transit m
 
 You can use the existing EDIFACT API channel and the email channel to submit departure and arrival messages for Northern Ireland  NCTS instances. EDIFACT API messages will automatically be routed to the appropriate NCTS system without you having to make any changes to your software.
 
-We expect the CTC Traders API to support Northern Ireland (NI) movements from late April 2021. The exact date will be published in our [Roadmap](https://developer.service.hmrc.gov.uk/roadmaps/common-transit-convention-traders-roadmap/) and we will email everyone who is subscribed to the CTC Traders API as soon it is available.
+In late May 2021 new functionality will be available through the CTC API to submit NI movements. We will email everyone who has subscribed to the CTC Traders API as soon as this is available.
 
 ## Message flows
 
@@ -196,6 +192,8 @@ Review the message flow diagrams to see the correct message sequences:
 - [Sending an Arrival Notification diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/arrivals-diagram.html) - for sending an Arrival Notification to NCTS using the CTC Traders API
 
 ## Changelog
+
+Version 0.6: 22 April 2021 Added updated information about new CTC Trader Test Pack, testing can now be done for NI plus NI live functionality planned for late May 2021
 
 Version 0.5: 13th April 2021
 Added revised bullet point information about CTC Traders API go live plus NI functionality planned to go live around April 2021.
