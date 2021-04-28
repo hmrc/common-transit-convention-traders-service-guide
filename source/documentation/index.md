@@ -117,7 +117,7 @@ The new GET payload consists of 3 layers:
 [Using the Developer Hub](https://developer.service.hmrc.gov.uk/api-documentation/docs/using-the-hub)
 
 ### Testing your software
-You can now test movements to or from both Great Britain and Northern Ireland using the Trade Test service.
+You can now test movements to or from both Great Britain and Northern Ireland using the Trader Test service.
 
 We have published a [Guide to Testing](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/). This will signpost you to all the information you need and what to do.
 
@@ -182,7 +182,7 @@ Following the end of the UK's transition from the EU, Northern Ireland transit m
 
 You can use the existing EDIFACT API channel and the email channel to submit departure and arrival messages for Northern Ireland  NCTS instances. EDIFACT API messages will automatically be routed to the appropriate NCTS system without you having to make any changes to your software.
 
-In late May 2021 new functionality will be available through the CTC API to submit NI movements. We will email everyone who has subscribed to the CTC Traders API as soon as this is available.
+In late May 2021 new functionality will be available through the CTC Traders API to submit NI movements. We will email everyone who has subscribed to the CTC Traders API as soon as this is available.
 
 ## Message flows
 
@@ -193,7 +193,7 @@ Review the message flow diagrams to see the correct message sequences:
 
 ## Changelog
 
-Version 0.6: 22 April 2021 Added updated information about new CTC Trader Test Pack, testing can now be done for NI plus NI live functionality planned for late May 2021
+Version 0.6: 22 April 2021 Added updated information about new CTC Trader Test Pack, testing can now be done for NI plus NI live functionality planned for late May 2021.
 
 Version 0.5: 13th April 2021
 Added revised bullet point information about CTC Traders API go live plus NI functionality planned to go live around April 2021.
