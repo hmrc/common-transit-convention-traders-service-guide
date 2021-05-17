@@ -27,3 +27,6 @@ Staticfile.auth
 /.project
 /logs
 .idea
+.metals/
+.vscode/
+metals.sbt

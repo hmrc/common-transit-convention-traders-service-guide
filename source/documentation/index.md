@@ -164,8 +164,8 @@ Before you get in touch, check out whether API downtime or technical issues are 
 The steps you need to take before you can use your software in the live environment:
 
 1. **Register and subscribe to the Developer Hub**
-[Register for a developer account](https://developer.service.hmrc.gov.uk/developer/registration) and subscribe to the CTC Traders API, Create Test User API and CTC PUSH/PULL notifications (to be released in February).
-2. **Understand Government Gateway authorisation**
+[Register for a developer account](https://developer.service.hmrc.gov.uk/developer/registration) and subscribe to both the CTC Traders API and Create Test User API.
+1. **Understand Government Gateway authorisation**
 In order to use the CTC Traders API your software needs to interact [using OAuth 2.0](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
 3. **Create test user**
 To start testing your software, you need to generate [test users](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0).
@@ -192,6 +192,8 @@ Review the message flow diagrams to see the correct message sequences:
 - [Sending an Arrival Notification diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/arrivals-diagram.html) - for sending an Arrival Notification to NCTS using the CTC Traders API
 
 ## Changelog
+
+Version 0.7 10 May 2021 minor content update 
 
 Version 0.6: 22 April 2021 Added updated information about new CTC Trader Test Pack, testing can now be done for NI plus NI live functionality planned for late May 2021.
 
