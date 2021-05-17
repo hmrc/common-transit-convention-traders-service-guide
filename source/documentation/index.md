@@ -165,7 +165,7 @@ The steps you need to take before you can use your software in the live environm
 
 1. **Register and subscribe to the Developer Hub**
 [Register for a developer account](https://developer.service.hmrc.gov.uk/developer/registration) and subscribe to both the CTC Traders API and Create Test User API.
-1. **Understand Government Gateway authorisation**
+2. **Understand Government Gateway authorisation**
 In order to use the CTC Traders API your software needs to interact [using OAuth 2.0](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
 3. **Create test user**
 To start testing your software, you need to generate [test users](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0).
