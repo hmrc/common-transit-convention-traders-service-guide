@@ -193,7 +193,7 @@ Review the message flow diagrams to see the correct message sequences:
 
 ## Changelog
 
-Version 0.7: 18 May 2021 minor content update 
+Version 0.7: 18 May 2021 minor content update. 
 
 Version 0.6: 22 April 2021 Added updated information about new CTC Trader Test Pack, testing can now be done for NI plus NI live functionality planned for late May 2021.
 
@@ -210,4 +210,4 @@ Version 0.2: 6 August 2020
 Added further detail in reference to the XSD files.
 
 Version 0.1: 15 July 2020
-First release
+First release.
