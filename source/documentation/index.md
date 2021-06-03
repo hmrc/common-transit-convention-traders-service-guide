@@ -187,6 +187,8 @@ Review the message flow diagrams to see the correct message sequences:
 Version 0.8: 28 May 2021
 Added updated information about Northern Ireland functionality now live in production environment.
 
+<details>
+<summary>Previous changes</summary>
 Version 0.7: 18 May 2021
 Minor content update. 
 
@@ -206,3 +208,4 @@ Added further detail in reference to the XSD files.
 
 Version 0.1: 15 July 2020
 First release.
+</details>
