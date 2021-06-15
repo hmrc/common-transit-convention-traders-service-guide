@@ -184,28 +184,34 @@ Review the message flow diagrams to see the correct message sequences:
 
 ## Changelog
 
-Version 0.8: 28 May 2021
-Added updated information about Northern Ireland functionality now live in production environment.
+**Version 0.9: 15 June 2021 -**
+v2 updated to include 917 XSD file info and XML Negative Acknowledgement (IE917) and rephrased descriptions. Also added link to 917 XSD and added the XSD to the zip file of all XSDs.
+v1 originally published version
 
 <details>
 <summary>Previous changes</summary>
-Version 0.7: 18 May 2021
+
+**Version 0.8: 28 May 2021 -**
+Added updated information about Northern Ireland functionality now live in production environment.
+
+**Version 0.7: 18 May 2021 -**
 Minor content update. 
 
-Version 0.6: 22 April 2021 Added updated information about new CTC Trader Test Pack, testing can now be done for NI plus NI live functionality planned for late May 2021.
+**Version 0.6: 22 April 2021 -**
+Added updated information about new CTC Trader Test Pack, testing can now be done for NI plus NI live functionality planned for late May 2021.
 
-Version 0.5: 13th April 2021
+**Version 0.5: 13th April 2021 -**
 Added revised bullet point information about CTC Traders API go live plus NI functionality planned to go live around April 2021.
 
-Version 0.4: 10 February 2021
+**Version 0.4: 10 February 2021 -**
 Added release date for the GB version of the API.
 
-Version 0.3 11 September 2020
+**Version 0.3 11 September 2020 -**
 Added more XSD files and added to list of supported IE messages.
 
-Version 0.2: 6 August 2020
+**Version 0.2: 6 August 2020 -**
 Added further detail in reference to the XSD files.
 
-Version 0.1: 15 July 2020
+**Version 0.1: 15 July 2020 -**
 First release.
 </details>
