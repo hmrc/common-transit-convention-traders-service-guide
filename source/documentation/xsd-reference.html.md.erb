@@ -20,7 +20,7 @@ Use these to validate your XML. Please note, there are some known omissions. The
 
 You can ignore this field.
 
-### [Download zip file](ctc-traders-api-xsds.zip) with all the CTC Traders API XSDs.
+### [Download zip file](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/ctc-traders-api-xsds.zip) with all the CTC Traders API XSDs.
 
 Alternatively you can review each XSD file individually using the links below.
 
@@ -28,20 +28,21 @@ Alternatively you can review each XSD file individually using the links below.
 
 | **Title** | **Description** |
 |------|-------------|
-|**[Arrival notification message CC007A (IE007)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc007a.xsd)** |Send an Arrival Notification message from the trader at destination to the office at destination|
-|**[Declaration data cancellation request CC014A (IE014)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc014a.xsd)**| Send a message from the trader at departure asking the office at departure to cancel declaration data|
-|**[Declaration data message CC015B (IE015)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc015b.xsd)**|Send a declaration data message from the trader at departure to the office at departure so they can can start the transit|
-|**[Unloading remarks message CC044A (IE044)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc044a.xsd)** |Send a message from the trader at destination to the office at to let the office at destination know that the goods have been unloaded (IE044)|
+|**[Arrival notification message CC007A (IE007)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc007a.xsd)** |Message type sent by the trader to the office of departure containing an arrival notification|
+|**[Declaration data cancellation request CC014A (IE014)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc014a.xsd)**|Message type sent by the trader to the office of departure containing a cancellation request|
+|**[Declaration data message CC015B (IE015)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc015b.xsd)**|Message type sent by the trader to the office of departure to indicate that they would like to start a movement|
+|**[Unloading remarks message CC044A (IE044)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc044a.xsd)** |Message type sent by the trader to the office at destination to let them know that the goods have been unloaded (IE044)|
 
 
 ## Validate arrivals XML from NCTS:  
 
 | **Title** | **Description** |
 |------|-------------|
-|**[Arrival notification rejection message CC008A (IE008)](https://github.com/hmrc/transit-movements-trader-at-destination/blob/master/conf/xsd/CC008A.xsd)**|Get a message from the office of destination to the trader at destination rejecting the traders Arrival Notification (IE007)|
-|**[Goods release notification CC025A (IE025)](https://github.com/hmrc/transit-movements-trader-at-destination/blob/master/conf/xsd/CC025A.xsd)**| Get a message from the office at destination to the trader at destination that they can release the goods|
-|**[Unloading permission message CC043A (IE043)](https://github.com/hmrc/transit-movements-trader-at-destination/blob/master/conf/xsd/CC043A.xsd)**| Get an unloading permission message from the office at destination to the trader at destination |
-|**[Unloading remarks rejection message CC058A (IE058)](https://github.com/hmrc/transit-movements-trader-at-destination/blob/master/conf/xsd/CC058A.xsd)**| Get a message from the office at destination to the trader at destination that there are errors in the trader's unloading remarks message (IE044)|
+|**[Arrival notification rejection message CC008A (IE008)](https://github.com/hmrc/transit-movements-trader-at-destination/blob/master/conf/xsd/CC008A.xsd)**|Message type received by the trader from the office of destination rejecting the traders arrival notification (IE007)|
+|**[Goods release notification CC025A (IE025)](https://github.com/hmrc/transit-movements-trader-at-destination/blob/master/conf/xsd/CC025A.xsd)**|Message type received by the trader at destination from the office at destination stating that they can release the goods|
+|**[Unloading permission message CC043A (IE043)](https://github.com/hmrc/transit-movements-trader-at-destination/blob/master/conf/xsd/CC043A.xsd)**|Message type received by the trader at destination from the office at destination stating that they have permission to unload|
+|**[Unloading remarks rejection message CC058A (IE058)](https://github.com/hmrc/transit-movements-trader-at-destination/blob/master/conf/xsd/CC058A.xsd)**|Message type received by the trader at destination from the office at destination stating that there are errors in the trader’s unloading remarks message (IE044)|
+|**[XML Negative Acknowledgement (IE917)](https://github.com/hmrc/transit-movements-trader-at-destination/blob/master/conf/xsd/CC917A.xsd)**|Message type received by the trader when NCTS has rejected the submitted message due to an invalid XML format|
 
 
 
@@ -49,12 +50,13 @@ Alternatively you can review each XSD file individually using the links below.
 
 | **Title** | **Description** |
 |------|-------------|
-|**[Cancellation decision message CC009A (IE009)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC009A.xsd)**| Get a message from the office at departure in reference to a cancellation request (IE014)|
-|**[Declaration rejection message CC016A (IE016)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC016A.xsd)**| Get a message from the office at departure to the trader at departure rejecting a Declaration data message (IE015)|
-|**[MRN allocated message CC028A (IE028)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC028A.xsd)**| Get a message from the office at departure to the trader at departure allocating a Movement Reference Number (MRN)|
-|**[Goods released for transit CC029B (IE029)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC029B.xsd)**| Get a message from the office at departure to the trader at departure to say the goods are released for transit|
-|**[Write-off notification CC045A (IE045)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC045A.xsd)**| Get a message from the office at departure to the trader at departure that the transit movement is finished|
-|**[No release for transit CC051B (IE051)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC051B.xsd)**| Get a message from the office at departure to the trader at departure that the movement cannot be released for transit|
-|**[Guarantee not valid CC055A (IE055)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC055A.xsd)**| Get a message from the office of departure to the trader at departure that their guarantee is not valid|
-|**[Control decision notification CC060A (IE060)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC060A.xsd)**| Get a message from the office at departure to tell the trader at departure they wish to carry out a control of the goods|
-|**[Declaration received CC928A (IE928)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC928A.xsd)**| Get a positive acknowledgement of a departure declaration message (IE015)|
+|**[Cancellation decision message CC009A (IE009)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC009A.xsd)**|Message type received by the trader from the office at departure in reference to a cancellation request (IE014)|
+|**[Declaration rejection message CC016A (IE016)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC016A.xsd)**|Message type received from the office at departure to the trader at departure rejecting a Declaration data message (IE015)|
+|**[MRN allocated message CC028A (IE028)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC028A.xsd)**|Message type received from the office at departure to the trader at departure allocating a Movement Reference Number (MRN)|
+|**[Goods released for transit CC029B (IE029)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC029B.xsd)**|Message type received from the office at departure to the trader at departure to say the goods are released for transit|
+|**[Write-off notification CC045A (IE045)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC045A.xsd)**|Message type received from the office at departure to the trader at departure to say that the transit movement is finished|
+|**[No release for transit CC051B (IE051)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC051B.xsd)**|Message type received from the office at departure to the trader at departure to say that the movement cannot be released for transit|
+|**[Guarantee not valid CC055A (IE055)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC055A.xsd)**|Message type received from the office at departure to the trader at departure to say that their guarantee is not valid|
+|**[Control decision notification CC060A (IE060)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC060A.xsd)**|Message type received from the office at departure to tell the trader at departure they wish to carry out a control of the goods|
+|**[Declaration received CC928A (IE928)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC928A.xsd)**|Message type received from NCTS of a positive acknowledgement of a departure declaration message (IE015)|
+|**[XML Negative Acknowledgement (IE917)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC917A.xsd)**|Message type received by the trader when NCTS has rejected the submitted message due to an invalid XML format|
