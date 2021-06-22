@@ -175,6 +175,28 @@ You need to apply for production credentials through your [developer account](ht
 6. **Get your customers ready**
 For example, ask them to apply for an [EORI number](https://www.gov.uk/eori) and a [Government Gateway account](https://www.gov.uk/log-in-register-hmrc-online-services).
 
+## Data cap and using filters
+
+When you submit a request to 'GET all movements' against a single EORI enrolment, we’ll limit the number of movements you get back to 5,000 movements. 
+
+You can use filters when you ‘GET all movements’ so that you only get the movements that have been updated since a specified date and time. This affects the ‘[GET all movements arrivals](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-movement-arrivals_get_accordion)’ and ‘[GET all movement departure](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-movement-departures_get_accordion)’ endpoints.
+
+If you do not use filters:
+
+* you’ll only get up to the most recently updated 5,000 movements, within the last 28 days
+* you will not get any additional movements above this cap, within the last 28 days 
+
+In order to manage the limit you need to regularly poll using a filter date and time of the last poll. This will ensure your list of movements requested is less than 5,000.
+
+You must also note:
+
+* the amount of responses that we send back to you will be capped at 5,000 for one single Economic Operator Registration and Identification (EORI) enrolment
+* the EORI enrolment for your application might not be the same as the trader’s EORI associated with a movement
+* the cap is not related to the movement EORI in the XML messages
+* if your movements are split over multiple EORI enrolments then each enrolment will have a separate 5,000 cap
+* if you do get results over the 5,000 capped limit, the JSON payload will tell you this cap has happened and how many movements have not been sent to you. For example, the JSON message will state that 5,000 movements of a total of 6,433
+* only the most recent 5,000 data movements in last 28 days will be returned. This is because we only store message data from the last 28 days
+
 ## Message flows
 
 Review the message flow diagrams to see the correct message sequences:
@@ -184,12 +206,15 @@ Review the message flow diagrams to see the correct message sequences:
 
 ## Changelog
 
-**Version 0.9: 15 June 2021 -**
-v2 updated to include 917 XSD file info and XML Negative Acknowledgement (IE917) and rephrased descriptions. Also added link to 917 XSD and added the XSD to the zip file of all XSDs.
-v1 originally published version
+**Version 0.10  22 June 2021 -**
+Added cap and filter information
 
 <details>
 <summary>Previous changes</summary>
+
+**Version 0.9: 15 June 2021 -**
+v2 updated to include 917 XSD file info and XML Negative Acknowledgement (IE917) and rephrased descriptions. Also added link to 917 XSD and added the XSD to the zip file of all XSDs.
+v1 originally published version
 
 **Version 0.8: 28 May 2021 -**
 Added updated information about Northern Ireland functionality now live in production environment.
