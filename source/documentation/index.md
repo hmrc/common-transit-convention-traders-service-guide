@@ -194,8 +194,8 @@ You must also note:
 * the EORI enrolment for your application might not be the same as the trader’s EORI associated with a movement
 * the cap is not related to the movement EORI in the XML messages
 * if your movements are split over multiple EORI enrolments then each enrolment will have a separate 5,000 cap
-* if you do get results over the 5,000 capped limit, the JSON payload will tell you this cap has happened and how many movements have not been sent to you. For example, the JSON message will state that 5,000 movements of a total of 6,433
-* only the most recent 5,000 data movements in last 28 days will be returned. This is because we only store message data from the last 28 days
+* if you have over 5,000 active movements, the JSON payload will tell you this cap has happened and how many movements have not been sent to you. For example, the JSON message will state that 5,000 movements of a total of 6,433
+* only the most recent 5,000 data movements in last 28 days will be returned. This is because we only store message data from the last 28 days.
 
 ## Message flows
 
