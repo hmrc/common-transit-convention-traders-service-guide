@@ -225,11 +225,14 @@ Review the message flow diagrams to see the correct message sequences:
 
 ## Changelog
 
-**Version 0.10  22 June 2021 -**
-Added cap and filter information
+**Version 0.11  16 July 2021 -**
+Added Push Pull Notifications Service info
 
 <details>
 <summary>Previous changes</summary>
+
+**Version 0.10  22 June 2021 -**
+Added cap and filter information
 
 **Version 0.9: 15 June 2021 -**
 v2 updated to include 917 XSD file info and XML Negative Acknowledgement (IE917) and rephrased descriptions. Also added link to 917 XSD and added the XSD to the zip file of all XSDs.
