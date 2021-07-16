@@ -197,6 +197,25 @@ You must also note:
 * if you have over 5,000 active movements, the JSON payload will tell you this cap has happened and how many movements have not been sent to you. For example, the JSON message will state that 5,000 movements of a total of 6,433
 * only the most recent 5,000 data movements in last 28 days will be returned. This is because we only store message data from the last 28 days.
 
+## Push pull notifications
+
+Our automated service can send you notification updates about new messages from NCTS. This functionality will send you a notification each time there is a new message for you to read.
+
+This will mean your:
+
+* software will not have to poll for updated information
+* requests are unlikely to be rate limited because they’ll not be as frequent
+* network usage will also go down because you’ll not need to poll
+
+You should also note: 
+
+* smaller messages of less than 100KB will be sent to you directly by our system in the payload of the push notification
+* messages greater than or equal to 100KB will not include the XML in the push notification
+* the push notification will have a field called messageURI which will contain the relative path to the full XML message
+* for messages larger than 100KB you must use the URI to download the XML message from the CTC Traders API
+
+For more information on how to configure and test this functionality read our [Guide to Testing](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/).
+
 ## Message flows
 
 Review the message flow diagrams to see the correct message sequences:
