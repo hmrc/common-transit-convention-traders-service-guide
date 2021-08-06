@@ -225,7 +225,7 @@ Review the message flow diagrams to see the correct message sequences:
 
 ## Changelog 
 
-**Version 0.12  06 August 2021 -**
+**Version 0.12  6 August 2021 -**
 Added instructions about MesSenMES3 XML element
 
 <details>
