@@ -129,7 +129,7 @@ This will include:
 Trader Test will automatically simulate and give you responses just like in a real life scenario. You can also request NCTS support staff to generate the manual responses as if Border Force staff are processing your goods. 
 
 ### Validate your XML 
-Use [our XSD files](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/xsd-reference.html) to validate your XML
+Use [our XSD files](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/xsd-reference.html) to validate your XML. You should note you must not include the MesSenMES3 XML element when sending your message to our API. Our system will automatically populate that data element for you.
 
 ### Find out which functionality we've released
 Check the [roadmap](https://developer.service.hmrc.gov.uk/roadmaps/common-transit-convention-traders-roadmap/) to see what you can test now and what's coming soon.
@@ -223,13 +223,16 @@ Review the message flow diagrams to see the correct message sequences:
 - [End-to-end happy path diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/end-to-end-happy-path.html) - the end-to-end process of transporting goods using the CTC Traders API
 - [Sending an Arrival Notification diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/arrivals-diagram.html) - for sending an Arrival Notification to NCTS using the CTC Traders API
 
-## Changelog
+## Changelog 
 
-**Version 0.11  16 July 2021 -**
-Added Push Pull Notifications Service info
+**Version 0.12  06 August 2021 -**
+Added instructions about MesSenMES3 XML element
 
 <details>
 <summary>Previous changes</summary>
+
+**Version 0.11  16 July 2021 -**
+Added Push Pull Notifications Service info
 
 **Version 0.10  22 June 2021 -**
 Added cap and filter information
