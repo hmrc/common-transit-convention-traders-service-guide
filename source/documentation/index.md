@@ -225,16 +225,19 @@ Review the message flow diagrams to see the correct message sequences:
 
 ## Changelog 
 
-**Version 0.12  6 August 2021 -**
-Added instructions about MesSenMES3 XML element
+**Version 0.13:  18 October 2021 -**
+Removed references to IE917's
 
 <details>
 <summary>Previous changes</summary>
 
-**Version 0.11  16 July 2021 -**
+**Version 0.12:  6 August 2021 -**
+Added instructions about MesSenMES3 XML element
+
+**Version 0.11:  16 July 2021 -**
 Added Push Pull Notifications Service info
 
-**Version 0.10  22 June 2021 -**
+**Version 0.10:  22 June 2021 -**
 Added cap and filter information
 
 **Version 0.9: 15 June 2021 -**
