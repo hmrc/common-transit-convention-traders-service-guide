@@ -1,270 +1,248 @@
 ---
-title: Common Transit Convention Traders end-to-end
+title: Common Transit Convention Traders Service Guide
 weight: 1
 description: Software developers, designers, product owners or business analysts. Integrate your software with Common Transit Convention Traders API.
 ---
 
-# Common Transit Convention Traders API end-to-end service guide
+# Common Transit Convention Traders API Service guide
 
-***
+##Useful CTC Page Links
+[CTC Traders API Roadmap](https://developer.service.hmrc.gov.uk/roadmaps/common-transit-convention-traders-roadmap/)
 
-This guide explains how to use the new Common Transit Convention (CTC) Traders API with your software. The API will allow your software to send and receive movement notifications and status messages to and from the New Computerised Transit System (NCTS).
+[CTC Traders API Documentation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)
 
-Our CTC Traders API is now live in production for Great Britain movements and Northern Ireland.
+[CTC Traders API Testing Guide](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/)
 
-Read our [Roadmap](https://developer.service.hmrc.gov.uk/roadmaps/common-transit-convention-traders-roadmap/) to find out what we have planned.
+##Introduction
+This guide explains how to use the Common Transit Convention (CTC) Traders API with your software.
 
-## Overview
+The CTC Traders API allows traders to send and receive arrival and departure movements to and from the New Computerised Transit System (NCTS) for Great Britain and Northern Ireland.
 
-The Common Transit Convention allows traders to move goods across CTC member states without paying import duties at every border they cross. 
+##Quick Links
+To make this easier for you, these are the main developer files you need:
 
-Under the agreement, CTC member countries only need to pay duties in the country of destination.
+ - [XSD zip file](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/xsd-reference.html) (file unzips and downloads)
+ - [Postman collections of example API calls and cURL commands](https://github.com/hmrc/common-transit-convention-traders-postman). If you want to use the XML directly, you can extract these from the Postman collections link.
 
-All goods will be subject to duties and other charges when they enter the EU, or enter the UK from the EU.
+##Essential Reading
+Before starting, you must read:
 
-The CTC Traders API allows traders to send and receive arrival and departure notifications for Great Britain and Northern Ireland movements.
+[New Computerised Transit System: technical interface specifications (TIS)](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications) 
 
-### Replacing the NCTS XML API
-Volumes of Common Transit movements are expected to increase significantly now that the UK is no longer part of the European Union. The current NCTS XML API channel needs to change to cope with this forecasted increase.
+The Technical Interface Specification (TIS) for Direct Trader Input (DTI) to NCTS.
 
-In order to make sure we provide a reliable and fast service we have introduced the CTC Traders API to replace the current NCTS XML API.
+A full list of key information including messages, message content and sequence diagrams, plus instructions on how to use test message transfer and content.
 
-**If you have never used the NCTS XML API channel, you'll only need to refer to the new CTC Traders API descriptions.**
+[Appendix B Technical Message Structures](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/641489/NCTSPhase4TISAppv3_9_3.pdf)
 
+Defines which data fields are optional and mandatory. These cover the NCTS mandatory business rules and logic needed when building software to connect with NCTS.
 
+You must note that:
 
-### Comparison between the existing and the new API
-The table shows how the new API uses different coding, compared to the existing NCTS XML API.  
+1. These NCTS documents are technical specifications for **both legacy channels and CTC Traders API**. These documents therefore include some EDIFACT information in certain places for legacy channel users.
 
-<table>
-  <tr>
-    <th>Activity</th>
-    <th>NCTS XML API</th>
-    <th>CTC Traders API</th>
-  </tr>
-  <tr>
-    <th>Submit Arrival Notification (IE007)</th>
-    <td>SOAP authorisation (includes username and password in clear text)</td>
-    <td>Government Gateway authorisation (OAuth 2.0 token)</td>
-  </tr>
-  <tr>
-    <th>Create action</th>
-    <td>SOAP wrapper, with embedded instruction</td>
-    <td>RESTful interface, action inferred from the URL</td>
-  </tr>
-  <tr>
-    <th>POST API Payload</th>
-    <td>SOAP with EDIFACT body</td>
-    <td>Information Exchange message (IE) XML</td>
-  </tr>
-  <tr>
-    <th>GET API Payload</th>
-    <td>SOAP with EDIFACT body</td>
-    <td>JSON and IE XML</td>
-  </tr>
-</table>
+2. The CTC Traders API will be using XML and RESTful standards. It will not be using EDIFACT wrapper or SOAP, so you can disregard guidance about EDIFACT.
 
-## Payloads comparison
+3. The TIS is tailored more towards the legacy systems and not the CTC Traders API, but you must still understand its contents.
 
-The diagrams show the difference between the current EDIFACT and new XML payloads for GET and POST  messages. 
+[Mapping Document](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/figures/xml-2-edifact-mapping-updated12112020.pdf)
 
-<img src="./figures/post-message.png"/>
+A guide for converting EDIFACT to XML movement messages.
 
-The current POST message payload consists of 4 layers:
+[CTC Traders API Definition](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)
 
-1. Outer layer: HTTPS
-2. Inside that: XML SOAP transport layer which includes 
-   - WSSE authentication, consisting of a clear text username and password
-   - a command (eg getDocument)
-3. Within that: the EDIFACT 'wrapper' 
-4. At the centre: the true payload payload which is an XML list
+A page of endpoints and error messages needed to retrieve or handle messages sent to or from the offices of departure and destination.
 
-The new POST payload message consists of 2 layers:
+[CTC Guide to Testing](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/)
 
-1. Outer layer: RESTful standards HTTPS and OAuth 2.0 token authentication
-2. At the centre: the true payload which is an XML message eg IE007
-
-<img src="./figures/get-message.png"/>
-
-The current GET message payload consists of 4 layers:
-
-1. Outer layer: HTTPS 
-2. WIthin that: XML SOAP transport layer, which includes 
-   - WSSE authentication, consisting of clear text username and password
-   - a command, eg getDocument
-3. Within that: the EDIFACT 'wrapper'
-4. At the centre: the true payload - the GET message
-
-The new GET payload consists of 3 layers:
-
-1. Outermost layer: RESTful standards HTTPS and OAuth 2.0 token authentication
-2. Middle layer: a JSON list
-3. At the centre: the true payload which is the XML
-
-## Advantages of the new CTC Traders API
-- Our systems will be ready for the expected increase in CTC movements
-- They will greatly improve security
-- Testing and maintenance of the platform will be more efficient
-
-## What you'll need to do
-
-### Read the documentation
-[CTC Traders API specification](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)
-
-[CTC Testing Guide](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/)
+A step-by-step guide to test your software.
 
 [Using the Developer Hub](https://developer.service.hmrc.gov.uk/api-documentation/docs/using-the-hub)
 
-### Testing your software
-You can now test movements to or from both Great Britain and Northern Ireland using the Trader Test service.
+A guide to register for your user account to access the Developer Hub.
 
-We have published a [Guide to Testing](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/). This will signpost you to all the information you need and what to do.
+[Developer Hub tutorials](https://developer.service.hmrc.gov.uk/api-documentation/docs/tutorials)
 
-This will include:
+Guidance on using the Developer Hub and GitHub. Including end points, access tokens and GET requests.
 
-* all the information you need to get set up for testing
-* a link to the CTC Traders API Test Pack which includes scenarios and test data for both Great Britain and Northern Ireland
-* step by step guidance for how to test
 
-Trader Test will automatically simulate and give you responses just like in a real life scenario. You can also request NCTS support staff to generate the manual responses as if Border Force staff are processing your goods. 
+***
 
-### Validate your XML 
+#Surely a title should be here?
+
+These steps must be followed before you can use your software in the live environment and access our live API:
+
+1. **Subscribe** to the Developer Hub by [registering for a developer account](https://developer.service.hmrc.gov.uk/developer/registration).
+2. **Create** an application by following the instructions on [Using the Developer Hub](https://developer.qa.tax.service.gov.uk/api-documentation/docs/using-the-hub).
+3. **Subscribe** to the CTC Traders API and to the Test User API using your test application.
+4. **Opt to receive** Push notifications from the CTC Traders API if required using the Subscription Configuration page for your application.
+5. **Read** about the [Government Gateway Authorisation](https://developer.qa.tax.service.gov.uk/api-documentation/docs/authorisation). Before you can access the CTC Traders API, your software needs to authenticate using OAuth 2.0.
+6. **Read** guidance on the [OAuth 2.0](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation) standards required for all of HMRC’s APIs.
+7. **Create** [test users](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0) before you can test your application.
+8. **Download** reference data to get Customs Offices List (COL) data to use for testing. Visit the [EU’s reference data download page](https://ec.europa.eu/taxation_customs/dds2/rd/rd_download_home.jsp?Lang=en) to download reference data.
+9. **Test** your application in the sandbox environment by following the steps in our [Guide to Testing](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/).
+10. **Complete** the [Application for Productions Checklist](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/figures/CTC_Traders_API_Application_for_Productions_Credentials.docx) form.
+11. **Apply** for production credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/login) before you go live.
+12. **Get your customers ready** by asking them to apply for an [EORI number](https://www.gov.uk/eori) and a [Government Gateway account](https://www.gov.uk/log-in-register-hmrc-online-services).
+
+##Happy Path Diagram
+The end-to-end process of transporting goods using the CTC Traders API.
+
+It shows at what stage in the process each message is sent, and which type of office each message is sent to and from.
+
+![The Happy Path diagram shows the process for transporting goods using the CTC Traders API](/figures/HappyPath.png)
+
+
+
+##NCTS Message Details
+
+###XSD - XML Schema Definition
+The API uses XSD templates to validate all the Information Exchange (IE) messages that come into the system.
+
+If there's any problems, the IE message will be rejected with a 400 BadRequest status which will contain an explanation of the problem.
+
+###Information Exchange messages
+These are standard messages sent to and received from NCTS.
+
+Details of the IE messages valid for use in the CTC Traders API are available in the TIS.
+
+See some examples below.
+
+##Validate XML posted into the API:
+
+| Title                                                                                                                                             | Description                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [Arrival notification message CC007A (IE007)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc007a.xsd)          | Message type sent by the trader to the office of departure containing an arrival notification                           |
+| [Declaration data cancellation request CC014A (IE014)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc014a.xsd) | Message type sent by the trader to the office of departure containing a cancellation request                            |
+| [Declaration data message CC015B (IE015)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc015b.xsd)              | Message type sent by the trader to the office of departure to indicate that they would like to start a movement         |
+| [Unloading remarks message CC044A (IE044)](https://github.com/hmrc/common-transit-convention-traders/blob/master/conf/xsd/cc044a.xsd)             | Message type sent by the trader to the office at destination to let them know that the goods have been unloaded (IE044) |
+
+
+##Validate arrivals XML from NCTS:
+
+| Title                                                                                                                                                     | Description                                                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [Arrival notification rejection message CC008A (IE008)](https://github.com/hmrc/transit-movements-trader-at-destination/blob/master/conf/xsd/CC008A.xsd)  | Message type received by the trader from the office of destination rejecting the traders arrival notification (IE007)                           |
+| [Goods release notification CC025A (IE025)](https://github.com/hmrc/transit-movements-trader-at-destination/blob/master/conf/xsd/CC025A.xsd)              | Message type received by the trader at destination from the office at destination stating that they can release the goods                            |
+| [Unloading permission message CC043A (IE043)](https://github.com/hmrc/transit-movements-trader-at-destination/blob/master/conf/xsd/CC043A.xsd)            | Message type received by the trader at destination from the office at destination stating that they have permission to unload         |
+| [Unloading remarks rejection message CC058A (IE058)](https://github.com/hmrc/transit-movements-trader-at-destination/blob/master/conf/xsd/CC058A.xsd)     | Message type received by the trader at destination from the office at destination stating that there are errors in the trader’s unloading remarks message (IE044) |
+
+##Validate departures XML from NCTS:
+
+| Title                                                                                                                                                     | Description                                                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [Cancellation decision message CC009A (IE009)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC009A.xsd)  | Message type received by the trader from the office at departure in reference to a cancellation request (IE014)                           |
+| [Declaration rejection message CC016A (IE016)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC016A.xsd)              | Message type received from the office at departure to the trader at departure rejecting a Declaration data message (IE015)                            |
+| [MRN allocated message CC028A (IE028)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC028A.xsd)            | Message type received from the office at departure to the trader at departure allocating a Movement Reference Number (MRN)         |
+| [Goods released for transit CC029B (IE029)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC029B.xsd)     | Message type received from the office at departure to the trader at departure to say the goods are released for transit |
+| [Write-off notification CC045A (IE045)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC045A.xsd)     | Message type received from the office at departure to the trader at departure to say that the transit movement is finished |
+| [No release for transit CC051B (IE051)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC051B.xsd)     | Message type received from the office at departure to the trader at departure to say that the movement cannot be released for transit |
+| [Guarantee not valid CC055A (IE055)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC055A.xsd)     | Message type received from the office at departure to the trader at departure to say that their guarantee is not valid |
+| [Control decision notification CC060A (IE060)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC060A.xsd)     | Message type received from the office at departure to tell the trader at departure they wish to carry out a control of the goods |
+| [Declaration received CC928A (IE928)](https://github.com/hmrc/transits-movements-trader-at-departure/blob/master/conf/xsd/CC928A.xsd)     | Message type received from NCTS of a positive acknowledgement of a departure declaration message (IE015) |
+
+###Clarifications and omissions
+It should be note there  are some known omissions which are detailed in the [mapping document](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/figures/xml-2-edifact-mapping-updated12112020.pdf). These include :
+
+`NumOfLoaLisHEA304` has been included in error in:
+
+1. IE015 (CC015B)
+2. IE029 (CC029B)
+3. IE043 (CC043A)
+4. IE051 (CC051)
+
+You can ignore this field.
+
+**MesSenMES3**
+
 Use [our XSD files](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/xsd-reference.html) to validate your XML. You should note you must not include the MesSenMES3 XML element when sending your message to our API. Our system will automatically populate that data element for you.
 
-### Find out which functionality we've released
-Check the [roadmap](https://developer.service.hmrc.gov.uk/roadmaps/common-transit-convention-traders-roadmap/) to see what you can test now and what's coming soon.
+[Postman Scripts](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/#how-to-test-using-sample-test-scripts)
 
-### See the list of in-scope messages
-Check which [IE messages](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/supported-messages.html) are applicable to the CTC Traders API.
+If you are seeking examples of the XML, you can find them in our repo on Github. To use the XML directly use Postman or you can also refer to all four XML examples.
 
-### Read about the current NCTS API channel specifications
-The specifications for the current NCTS describe the business rules and logic for building software to connect with NCTS. These rules are applicable to both the current and the new APIs.
+[cURL commands](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/#how-to-test-using-sample-test-scripts)
 
-Visit the [New Computerised Transit System: technical specifications](https://www.gov.uk/government/publications/new-computerised-transit-system-technical-specifications) to read about the NCTS system that’s currently in operation.
+cURL commands simulate your software application’s actions and messages, and those that come back from NCTS. You will need these to test your software.
 
-Note, this is the specification document for the **outgoing NCTS XML API channel**, so there will be discrepancies. For example, the CTC Traders API will not use an EDIFACT wrapper or SOAP.
+###API features
 
-### Learn how to apply OAuth 2.0 
-Read guidance on the [OAuth 2.0](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation) standards required for HMRC APIs.
-
-### Use the Developer Hub tutorials
-If you're new to HMRC APIs, use the [Developer Hub tutorials](https://developer.service.hmrc.gov.uk/api-documentation/docs/tutorials) to find out what you need to know about working with us.
-
-## Get help
-
-We have support in place to help you with any questions or problems you might have with the CTC Traders API. [Find out to get help](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/get-support.html).
-
-## Check service availability
-
-Before you get in touch, check out whether API downtime or technical issues are the problem. [Check the HMRC API platform availability.](https://api-platform-status.production.tax.service.gov.uk/)
-
-## End-to-end process
-
-The steps you need to take before you can use your software in the live environment:
-
-1. **Register and subscribe to the Developer Hub**
-[Register for a developer account](https://developer.service.hmrc.gov.uk/developer/registration) and subscribe to both the CTC Traders API and Create Test User API.
-2. **Understand Government Gateway authorisation**
-In order to use the CTC Traders API your software needs to interact [using OAuth 2.0](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation).
-3. **Create test user**
-To start testing your software, you need to generate [test users](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0).
-4. **Download reference data**
-To get Customs Offices List (COL) data to use for testing, [visit the EU’s reference data download page](https://ec.europa.eu/taxation_customs/dds2/col/col_download_home.jsp?Lang=en).
-5. **Apply to go live**
-You need to apply for production credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/login).
-6. **Get your customers ready**
-For example, ask them to apply for an [EORI number](https://www.gov.uk/eori) and a [Government Gateway account](https://www.gov.uk/log-in-register-hmrc-online-services).
-
-## Data cap and using filters
-
-When you submit a request to 'GET all movements' against a single EORI enrolment, we’ll limit the number of movements you get back to 5,000 movements. 
-
-You can use filters when you ‘GET all movements’ so that you only get the movements that have been updated since a specified date and time. This affects the ‘[GET all movements arrivals](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-movement-arrivals_get_accordion)’ and ‘[GET all movement departure](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-movement-departures_get_accordion)’ endpoints.
-
+ - Default Guarantee  Insertion
+    - Our system will automatically insert a default guarantee amount of 10,000 Euros for any transit movement where the trader has not specified a guarantee value.
+ - Rate limits
+    - Our API Platform’s standard rate limit is [3 requests per second](https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#rate-limiting). If you need a higher rate limit, you must give us more information about data and limit forecasts when filling in the [Application for Production Credentials checklist](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/figures/CTC_Traders_API_Application_for_Productions_Credentials.docx) form.
+ - Payload Limits for GET movements
+    - ???
+ - Data cap and using filters
+    - ???
+ - When you submit a request to 'GET all movements' against a single EORI enrolment, we’ll limit the number of movements you get back to 5,000.
+ - This affects the ‘[GET all movements arrivals](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-movement-arrivals_get_accordion)’ and ‘[GET all movement departure](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-movement-departures_get_accordion)’ endpoints (remove links) More information can be viewed on our API CTC Traders 
+   documentation page (check APi definition -link to RAML).
+ - You can use filters so that you only get the movements that have been updated since a specified date and time.
+ - You can use the updatedSince parameter in order to retrieve new messages since you last polled. 
+ 
 If you do not use filters:
-
-* you’ll only get up to the most recently updated 5,000 movements, within the last 28 days
-* you will not get any additional movements above this cap, within the last 28 days 
-
+ - you’ll only get up to the most recently updated 5,000 movements, within the last 28 days
+ - you will not get any additional movements above this cap, within the last 28 days
+ 
 In order to manage the limit you need to regularly poll using a filter date and time of the last poll. This will ensure your list of movements requested is less than 5,000.
 
 You must also note:
-
-* the amount of responses that we send back to you will be capped at 5,000 for one single Economic Operator Registration and Identification (EORI) enrolment
-* the EORI enrolment for your application might not be the same as the trader’s EORI associated with a movement
-* the cap is not related to the movement EORI in the XML messages
-* if your movements are split over multiple EORI enrolments then each enrolment will have a separate 5,000 cap
-* if you have over 5,000 active movements, the JSON payload will tell you this cap has happened and how many movements have not been sent to you. For example, the JSON message will state that 5,000 movements of a total of 6,433
-* only the most recent 5,000 data movements in last 28 days will be returned. This is because we only store message data from the last 28 days.
-
-## Push pull notifications
-
+ - the amount of responses that we send back to you will be capped at 5,000 for one single Economic Operator Registration and Identification (EORI) enrolment
+ - the EORI enrolment for your application might not be the same as the trader’s EORI associated with a movement
+ - the cap is not related to the movement EORI in the XML message
+ - if your movements are split over multiple EORI enrolments then each enrolment will have a separate 5,000 cap
+ - if you do get results over the 5,000 capped limit, the JSON payload will tell you this cap has happened and how many movements have not been sent to you. For example, the JSON message will state that 5,000 movements of a total of 6,433
+ - only the most recent 5,000 data movements in the last 28 days will be returned. This is because we only store message data from the last 28 days
+ 
+###Push pull notifications
 Our automated service can send you notification updates about new messages from NCTS. This functionality will send you a notification each time there is a new message for you to read.
 
-This will mean your:
+This means your:
+ - software will not have to poll for updated information
+ - requests are unlikely to be rate limited because they’ll not be as frequent
+ - network usage will also go down because you’ll not need to poll
+ 
+You should also note:
+ - smaller messages of less than 100KB will be sent to you directly by our system in the payload of the push notification
+ - messages greater than or equal to 100KB will not include the XML in the push notification
+ - the push notification will have a field called messageURI which will contain the relative path to the full XML message
+ - for messages larger than 100KB you must use the URI to download the XML message from the CTC Traders API
+ 
+For more information on how to configure and test this functionality follow the step by step instructions in our [Guide to Testing](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/).
 
-* software will not have to poll for updated information
-* requests are unlikely to be rate limited because they’ll not be as frequent
-* network usage will also go down because you’ll not need to poll
+###For legacy users migrating to XML
 
-You should also note: 
+If you are still using EDIFACT, you will need to know how to translate from EDIFACT to XML. We’ve created a [mapping document](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/figures/xml-2-edifact-mapping-updated12112020.pdf) to show you how to convert EDIFACT and XML versions of movement messages into the other format of messages. This will help you get ready to use our CTC Traders API.
 
-* smaller messages of less than 100KB will be sent to you directly by our system in the payload of the push notification
-* messages greater than or equal to 100KB will not include the XML in the push notification
-* the push notification will have a field called messageURI which will contain the relative path to the full XML message
-* for messages larger than 100KB you must use the URI to download the XML message from the CTC Traders API
+##Comparison between the existing and the new API
 
-For more information on how to configure and test this functionality read our [Guide to Testing](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/).
+**The table shows how the API uses different coding compared to the existing NCTS XML API**
 
-## Message flows
+| Activity                            | NCTS XML API                                                      | CTC Traders API                                    |
+| ----------------------------------- | ----------------------------------------------------------------- | -------------------------------------------------- |
+| Submit Arrival Notification (IE007) | SOAP authorisation (includes username and password in clear text) | Government Gateway authorisation (OAuth 2.0 token) |
+| Create action                       | SOAP wrapper, with embedded instruction                           | RESTful interface, action inferred from the URL    |
+| POST API Payload                    | SOAP with EDIFACT body                                            | Information Exchange message (IE) XML              |
+| GET API Payload                     | SOAP with EDIFACT body                                            | JSON and IE XML                                    |
 
-Review the message flow diagrams to see the correct message sequences:
+###Payloads Comparison
+The diagrams show the difference between the current EDIFACT and XML payloads for GET and POST messages.
 
-- [End-to-end happy path diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/end-to-end-happy-path.html) - the end-to-end process of transporting goods using the CTC Traders API
-- [Sending an Arrival Notification diagram](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/arrivals-diagram.html) - for sending an Arrival Notification to NCTS using the CTC Traders API
+![Post Message](/figures/post-message.png)
+![Get Message](/figures/get-message.png)
 
-## Changelog 
+Before you get in touch, find out if there are any planned API downtime or technical issues by checking:
+ - [HMRC API Platform availability](https://api-platform-status.production.tax.service.gov.uk/)
+ - [NCTS service availability](https://www.gov.uk/government/publications/new-computerised-transit-system-ncts-web-service-availability-and-issues/new-computerised-transit-system-ncts-web-service-availability-and-issues)
 
-**Version 0.13:  18 October 2021 -**
-Removed references to IE917's
+If you have specific questions about the CTC Traders API, get in touch with our Software Developer Support Team.
 
-<details>
-<summary>Previous changes</summary>
+You’ll get an initial response in 2 working days.
 
-**Version 0.12:  6 August 2021 -**
-Added instructions about MesSenMES3 XML element
+Email us your questions to [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk). We might ask for more detailed information when we respond.
 
-**Version 0.11:  16 July 2021 -**
-Added Push Pull Notifications Service info
-
-**Version 0.10:  22 June 2021 -**
-Added cap and filter information
-
-**Version 0.9: 15 June 2021 -**
-v2 updated to include 917 XSD file info and XML Negative Acknowledgement (IE917) and rephrased descriptions. Also added link to 917 XSD and added the XSD to the zip file of all XSDs.
-v1 originally published version
-
-**Version 0.8: 28 May 2021 -**
-Added updated information about Northern Ireland functionality now live in production environment.
-
-**Version 0.7: 18 May 2021 -**
-Minor content update. 
-
-**Version 0.6: 22 April 2021 -**
-Added updated information about new CTC Trader Test Pack, testing can now be done for NI plus NI live functionality planned for late May 2021.
-
-**Version 0.5: 13th April 2021 -**
-Added revised bullet point information about CTC Traders API go live plus NI functionality planned to go live around April 2021.
-
-**Version 0.4: 10 February 2021 -**
-Added release date for the GB version of the API.
-
-**Version 0.3 11 September 2020 -**
-Added more XSD files and added to list of supported IE messages.
-
-**Version 0.2: 6 August 2020 -**
-Added further detail in reference to the XSD files.
-
-**Version 0.1: 15 July 2020 -**
-First release.
-</details>
+**Useful Links**
+ - [CTC Traders API service roadmap](https://developer.service.hmrc.gov.uk/roadmaps/common-transit-convention-traders-roadmap/)
+ - [CTC Traders API documentation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)
+ - [CTC Traders API Testing Guide](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/)
