@@ -68,7 +68,7 @@ Guidance on using the Developer Hub and GitHub. Including end points, access tok
 
 ***
 
-#Surely a title should be here?
+#Getting Started
 
 These steps must be followed before you can use your software in the live environment and access our live API:
 
@@ -234,11 +234,8 @@ cURL commands simulate your software application’s actions and messages, and t
     - Our system will automatically insert a default guarantee amount of 10,000 Euros for any transit movement where the trader has not specified a guarantee value.
  - Rate limits
     - Our API Platform’s standard rate limit is [3 requests per second](https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#rate-limiting). If you need a higher rate limit, you must give us more information about data and limit forecasts when filling in the [Application for Production Credentials checklist](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/figures/CTC_Traders_API_Application_for_Productions_Credentials.docx) form.
- - Payload Limits for GET movements
-    - ???
  - Data cap and using filters
-    - ???
- - When you submit a request to 'GET all movements' against a single EORI enrolment, we’ll limit the number of movements you get back to 5,000.
+    - When you submit a request to 'GET all movements' against a single EORI enrolment, we’ll limit the number of movements you get back to 5,000.
  - This affects the ‘[GET all movements arrivals](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-movement-arrivals_get_accordion)’ and ‘[GET all movement departure](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-movement-departures_get_accordion)’ endpoints (remove links) More information can be viewed on our API CTC Traders 
    documentation page (check APi definition -link to RAML).
  - You can use filters so that you only get the movements that have been updated since a specified date and time.
