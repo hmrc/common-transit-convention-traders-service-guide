@@ -68,7 +68,7 @@ Guidance on using the Developer Hub and GitHub. Including end points, access tok
 
 ***
 
-#Getting Started
+##Getting Started
 
 These steps must be followed before you can use your software in the live environment and access our live API:
 
@@ -86,6 +86,7 @@ These steps must be followed before you can use your software in the live enviro
 12. **Get your customers ready** by asking them to apply for an [EORI number](https://www.gov.uk/eori) and a [Government Gateway account](https://www.gov.uk/log-in-register-hmrc-online-services).
 
 ##Happy Path Diagram
+
 The end-to-end process of transporting goods using the CTC Traders API.
 
 It shows at what stage in the process each message is sent, and which type of office each message is sent to and from.
@@ -108,7 +109,7 @@ Details of the IE messages valid for use in the CTC Traders API are available in
 
 See some examples below.
 
-##Validate XML posted into the API:
+##XSDs for POST messages:
 
 <table>
     <tr>
@@ -133,7 +134,7 @@ See some examples below.
     </tr>
 </table>
 
-##Validate arrivals XML from NCTS:
+##XSDs for GET arrivals messages:
 
 <table>
 <tr>
@@ -158,7 +159,7 @@ See some examples below.
 </tr>
 </table>
 
-##Validate departures XML from NCTS:
+##XSDs for GET departures messages:
 
 <table>
 <tr>
@@ -204,7 +205,7 @@ See some examples below.
 </table>
 
 
-###Clarifications and omissions
+##Clarifications and omissions
 It should be note there  are some known omissions which are detailed in the [mapping document](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/figures/xml-2-edifact-mapping-updated12112020.pdf). These include :
 
 `NumOfLoaLisHEA304` has been included in error in:
@@ -220,6 +221,8 @@ You can ignore this field.
 
 Use [our XSD files](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/xsd-reference.html) to validate your XML. You should note you must not include the MesSenMES3 XML element when sending your message to our API. Our system will automatically populate that data element for you.
 
+##Example XML Requests
+
 [Postman Scripts](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/#how-to-test-using-sample-test-scripts)
 
 If you are seeking examples of the XML, you can find them in our repo on Github. To use the XML directly use Postman or you can also refer to all four XML examples.
@@ -228,26 +231,35 @@ If you are seeking examples of the XML, you can find them in our repo on Github.
 
 cURL commands simulate your software application’s actions and messages, and those that come back from NCTS. You will need these to test your software.
 
-###API features
+##API features
 
- - Default Guarantee  Insertion
-    - Our system will automatically insert a default guarantee amount of 10,000 Euros for any transit movement where the trader has not specified a guarantee value.
- - Rate limits
-    - Our API Platform’s standard rate limit is [3 requests per second](https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#rate-limiting). If you need a higher rate limit, you must give us more information about data and limit forecasts when filling in the [Application for Production Credentials checklist](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/figures/CTC_Traders_API_Application_for_Productions_Credentials.docx) form.
- - Data cap and using filters
-    - When you submit a request to 'GET all movements' against a single EORI enrolment, we’ll limit the number of movements you get back to 5,000.
- - This affects the ‘[GET all movements arrivals](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-movement-arrivals_get_accordion)’ and ‘[GET all movement departure](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-movement-departures_get_accordion)’ endpoints (remove links) More information can be viewed on our API CTC Traders 
-   documentation page (check APi definition -link to RAML).
- - You can use filters so that you only get the movements that have been updated since a specified date and time.
- - You can use the updatedSince parameter in order to retrieve new messages since you last polled. 
+**Default Guarantee  Insertion**
+
+Our system will automatically insert a default guarantee amount of 10,000 Euros for any transit movement where the trader has not specified a guarantee value.
+
+**Rate limits**
+
+Our API Platform’s standard rate limit is [3 requests per second](https://developer.service.hmrc.gov.uk/api-documentation/docs/reference-guide#rate-limiting). If you need a higher rate limit, you must give us more information about data and limit forecasts when filling in the [Application for Production Credentials checklist](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/figures/CTC_Traders_API_Application_for_Productions_Credentials.docx) form.
+
+**Data cap and using filters**
+
+When you submit a request to 'GET all movements' against a single EORI enrolment, we’ll limit the number of movements you get back to 5,000.
+
+This affects the ‘[GET all movements arrivals](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-movement-arrivals_get_accordion)’ and ‘[GET all movement departure](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0#_get-all-movement-departures_get_accordion)’ endpoints (remove links) More information can be viewed on our API CTC Traders documentation page (check APi definition -link to RAML).
+
+You can use filters so that you only get the movements that have been updated since a specified date and time.
+
+You can use the updatedSince parameter in order to retrieve new messages since you last polled. 
  
 If you do not use filters:
+
  - you’ll only get up to the most recently updated 5,000 movements, within the last 28 days
  - you will not get any additional movements above this cap, within the last 28 days
  
 In order to manage the limit you need to regularly poll using a filter date and time of the last poll. This will ensure your list of movements requested is less than 5,000.
 
 You must also note:
+
  - the amount of responses that we send back to you will be capped at 5,000 for one single Economic Operator Registration and Identification (EORI) enrolment
  - the EORI enrolment for your application might not be the same as the trader’s EORI associated with a movement
  - the cap is not related to the movement EORI in the XML message
@@ -255,7 +267,7 @@ You must also note:
  - if you do get results over the 5,000 capped limit, the JSON payload will tell you this cap has happened and how many movements have not been sent to you. For example, the JSON message will state that 5,000 movements of a total of 6,433
  - only the most recent 5,000 data movements in the last 28 days will be returned. This is because we only store message data from the last 28 days
  
-###Push pull notifications
+**Push pull notifications**
 Our automated service can send you notification updates about new messages from NCTS. This functionality will send you a notification each time there is a new message for you to read.
 
 This means your:
@@ -271,11 +283,11 @@ You should also note:
  
 For more information on how to configure and test this functionality follow the step by step instructions in our [Guide to Testing](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/).
 
-###For legacy users migrating to XML
+##For legacy users migrating to XML
 
 If you are still using EDIFACT, you will need to know how to translate from EDIFACT to XML. We’ve created a [mapping document](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/figures/xml-2-edifact-mapping-updated12112020.pdf) to show you how to convert EDIFACT and XML versions of movement messages into the other format of messages. This will help you get ready to use our CTC Traders API.
 
-##Comparison between the existing and the new API
+###Comparison between the existing and the new API
 
 **The table shows how the API uses different coding compared to the existing NCTS XML API**
 
@@ -313,6 +325,8 @@ The diagrams show the difference between the current EDIFACT and XML payloads fo
 ![Post Message](/figures/post-message.png)
 ![Get Message](/figures/get-message.png)
 
+##Get Support
+
 Before you get in touch, find out if there are any planned API downtime or technical issues by checking:
  - [HMRC API Platform availability](https://api-platform-status.production.tax.service.gov.uk/)
  - [NCTS service availability](https://www.gov.uk/government/publications/new-computerised-transit-system-ncts-web-service-availability-and-issues/new-computerised-transit-system-ncts-web-service-availability-and-issues)
@@ -324,6 +338,7 @@ You’ll get an initial response in 2 working days.
 Email us your questions to [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk). We might ask for more detailed information when we respond.
 
 **Useful Links**
+
  - [CTC Traders API service roadmap](https://developer.service.hmrc.gov.uk/roadmaps/common-transit-convention-traders-roadmap/)
  - [CTC Traders API documentation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0)
  - [CTC Traders API Testing Guide](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/)
