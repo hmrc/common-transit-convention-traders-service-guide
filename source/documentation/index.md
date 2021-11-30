@@ -331,6 +331,7 @@ The diagrams show the difference between the current EDIFACT and XML payloads fo
 ##Get Support
 
 Before you get in touch, find out if there are any planned API downtime or technical issues by checking:
+
  - [HMRC API Platform availability](https://api-platform-status.production.tax.service.gov.uk/)
  - [NCTS service availability](https://www.gov.uk/government/publications/new-computerised-transit-system-ncts-web-service-availability-and-issues/new-computerised-transit-system-ncts-web-service-availability-and-issues)
 
