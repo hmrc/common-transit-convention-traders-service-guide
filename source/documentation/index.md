@@ -109,7 +109,7 @@ Details of the IE messages valid for use in the CTC Traders API are available in
 
 See some examples below.
 
-##XSDs for POST messages:
+##XSDs for POST messages
 
 <table>
     <tr>
@@ -134,7 +134,7 @@ See some examples below.
     </tr>
 </table>
 
-##XSDs for GET arrivals messages:
+##XSDs for GET arrivals messages
 
 <table>
 <tr>
@@ -159,7 +159,7 @@ See some examples below.
 </tr>
 </table>
 
-##XSDs for GET departures messages:
+##XSDs for GET departures messages
 
 <table>
 <tr>
