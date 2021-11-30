@@ -109,7 +109,7 @@ Details of the IE messages valid for use in the CTC Traders API are available in
 
 See some examples below.
 
-##XSDs for POST messages:
+##XSDs for POST messages
 
 <table>
     <tr>
@@ -134,7 +134,7 @@ See some examples below.
     </tr>
 </table>
 
-##XSDs for GET arrivals messages:
+##XSDs for GET arrivals messages
 
 <table>
 <tr>
@@ -159,7 +159,7 @@ See some examples below.
 </tr>
 </table>
 
-##XSDs for GET departures messages:
+##XSDs for GET departures messages
 
 <table>
 <tr>
@@ -268,14 +268,17 @@ You must also note:
  - only the most recent 5,000 data movements in the last 28 days will be returned. This is because we only store message data from the last 28 days
  
 **Push pull notifications**
+
 Our automated service can send you notification updates about new messages from NCTS. This functionality will send you a notification each time there is a new message for you to read.
 
 This means your:
+
  - software will not have to poll for updated information
  - requests are unlikely to be rate limited because they’ll not be as frequent
  - network usage will also go down because you’ll not need to poll
  
 You should also note:
+
  - smaller messages of less than 100KB will be sent to you directly by our system in the payload of the push notification
  - messages greater than or equal to 100KB will not include the XML in the push notification
  - the push notification will have a field called messageURI which will contain the relative path to the full XML message
@@ -328,6 +331,7 @@ The diagrams show the difference between the current EDIFACT and XML payloads fo
 ##Get Support
 
 Before you get in touch, find out if there are any planned API downtime or technical issues by checking:
+
  - [HMRC API Platform availability](https://api-platform-status.production.tax.service.gov.uk/)
  - [NCTS service availability](https://www.gov.uk/government/publications/new-computerised-transit-system-ncts-web-service-availability-and-issues/new-computerised-transit-system-ncts-web-service-availability-and-issues)
 
