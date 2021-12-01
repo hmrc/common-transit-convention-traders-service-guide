@@ -21,7 +21,7 @@ The CTC Traders API allows traders to send and receive arrival and departure mov
 ##Quick Links
 To make this easier for you, these are the main developer files you need:
 
- - [XSD zip file](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/xsd-reference.html) (file unzips and downloads)
+ - [XSD zip file](/figures/ctc-traders-api-xsds.zip) (file unzips and downloads)
  - [Postman collections of example API calls and cURL commands](https://github.com/hmrc/common-transit-convention-traders-postman). If you want to use the XML directly, you can extract these from the Postman collections link.
 
 ##Essential Reading
@@ -206,7 +206,7 @@ See some examples below.
 
 
 ##Clarifications and omissions
-It should be note there  are some known omissions which are detailed in the [mapping document](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/figures/xml-2-edifact-mapping-updated12112020.pdf). These include :
+It should be noted there  are some known omissions which are detailed in the [mapping document](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/figures/xml-2-edifact-mapping-updated12112020.pdf). These include :
 
 `NumOfLoaLisHEA304` has been included in error in:
 
@@ -219,7 +219,7 @@ You can ignore this field.
 
 **MesSenMES3**
 
-Use [our XSD files](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-service-guide/documentation/xsd-reference.html) to validate your XML. You should note you must not include the MesSenMES3 XML element when sending your message to our API. Our system will automatically populate that data element for you.
+Use our XSD files to validate your XML. You should note you must not include the MesSenMES3 XML element when sending your message to our API. Our system will automatically populate that data element for you.
 
 ##Example XML Requests
 
