@@ -223,11 +223,11 @@ Use our XSD files to validate your XML. You should note you must not include the
 
 ##Example XML Requests
 
-[Postman Scripts](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/#how-to-test-using-sample-test-scripts)
+[Postman Scripts](https://github.com/hmrc/common-transit-convention-traders-postman/tree/main/Collections)
 
 If you are seeking examples of the XML, you can find them in our repo on Github. To use the XML directly use Postman or you can also refer to all four XML examples.
 
-[cURL commands](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/#how-to-test-using-sample-test-scripts)
+[cURL commands](https://github.com/hmrc/common-transit-convention-traders-postman/tree/main/Curl%20commands)
 
 cURL commands simulate your software application’s actions and messages, and those that come back from NCTS. You will need these to test your software.
 
