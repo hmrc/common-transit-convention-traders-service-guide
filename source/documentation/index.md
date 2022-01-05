@@ -93,15 +93,11 @@ It shows at what stage in the process each message is sent, and which type of of
 
 ###Departures
 
-![The Happy Path diagram for Departures shows the process for transporting goods using the CTC Traders API](/figures/HappyPath-Portrait-Departures.png)
-
-![The Happy Path diagram for Departures shows the process for transporting goods using the CTC Traders API](/figures/HappyPath-Landscape-Departures.png)
+![The Happy Path diagram for Departures shows the process for transporting goods using the CTC Traders API](/figures/HappyPath-Departures.png)
 
 ###Arrivals
 
-![The Happy Path diagram for Departures shows the process for transporting goods using the CTC Traders API](/figures/HappyPath-Portrait-Destination.png)
-
-![The Happy Path diagram for Departures shows the process for transporting goods using the CTC Traders API](/figures/HappyPath-Landscape-Destination.png)
+![The Happy Path diagram for Arrivals shows the process for transporting goods using the CTC Traders API](/figures/HappyPath-Arrivals.png)
 
 ##NCTS Message Details
 
