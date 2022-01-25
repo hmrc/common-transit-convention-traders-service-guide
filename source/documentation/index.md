@@ -85,6 +85,25 @@ These steps must be followed before you can use your software in the live enviro
 11. **Apply** for production credentials through your [developer account](https://developer.service.hmrc.gov.uk/developer/login) before you go live.
 12. **Get your customers ready** by asking them to apply for an [EORI number](https://www.gov.uk/eori) and a [Government Gateway account](https://www.gov.uk/log-in-register-hmrc-online-services).
 
+##Get your customers ready
+
+Your customers need to [sign up to the CTC Traders API](https://www.tax.service.gov.uk/customs-enrolment-services/ctc/subscribe) and provide you with the following details:
+
+* GB Economic Operators Registration and Identification (EORI) number
+* VAT details (optional) 
+* Standard Industrial Classification (SIC) code
+* company or organisation details: 
+  * unique tax reference (UTR) number 
+  * registered company name (this must be an exact match)
+  * registered company address 
+  * date of company establishment 
+
+They will also need to provide:
+ 
+* email address 
+* contact details
+
+
 ##Happy Path Diagram
 
 The end-to-end process of transporting goods using the CTC Traders API.
