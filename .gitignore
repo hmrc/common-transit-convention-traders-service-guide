@@ -30,5 +30,3 @@ Staticfile.auth
 .metals/
 .vscode/
 metals.sbt
-
-.bloop
