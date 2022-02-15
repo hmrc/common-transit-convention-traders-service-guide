@@ -112,9 +112,9 @@ The following diagrams show the expected order of messages that can be sent and 
 
 The following diagram shows the messages that the office of departure receives. 
 
-<img src="/figures/Departures_Diagram.svg" />
+<img src="figures/Departures_Diagram.svg" />
 
-<a href="/figures/Departures_Diagram.svg" target="_blank">Open the Departures diagram in a new tab.</a>
+<a href="figures/Departures_Diagram.svg" target="_blank">Open the Departures diagram in a new tab.</a>
 
 1. An IE015 message containing declaration data is sent by the user to NCTS.
 2. NCTS responds with one of the following messages: 
@@ -137,9 +137,9 @@ The following diagram shows the messages that the office of departure receives.
 
 The following diagram shows the messages that the office of destination receives.
 
-<img src="/figures/Arrivals_Diagram.svg" />
+<img src="figures/Arrivals_Diagram.svg" />
 
-<a href="/figures/Arrivals_Diagram.svg" target="_blank">Open the Arrivals diagram in a new tab.</a>
+<a href="figures/Arrivals_Diagram.svg" target="_blank">Open the Arrivals diagram in a new tab.</a>
 
 1. An IE007 arrival notification message is sent by the user to NCTS.
 2. One of the following actions takes place:
