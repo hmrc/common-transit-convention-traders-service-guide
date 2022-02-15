@@ -104,19 +104,53 @@ They will also need to provide:
 * contact details
 
 
-##Happy Path Diagram
+##Message Flow Diagrams
 
-The end-to-end process of transporting goods using the CTC Traders API.
-
-It shows at what stage in the process each message is sent, and which type of office each message is sent to and from.
+The following diagrams show the expected order of messages that can be sent and received.
 
 ###Departures
 
-![The Happy Path diagram for Departures shows the process for transporting goods using the CTC Traders API](/figures/HappyPath-Departures.png)
+The following diagram shows the messages that the office of departure receives. 
+
+<img src="/figures/Departures_Diagram.svg" />
+
+<a href="/figures/Departures_Diagram.svg" target="_blank">Open the Departures diagram in a new tab.</a>
+
+1. An IE015 message containing declaration data is sent by the user to NCTS.
+2. NCTS responds with one of the following messages: 
+   - An IE016 message if the declaration is rejected. The transit movement ends.
+   - An IE028 message if an MRN is allocated. (Go to step 3.)
+   - An IE928 message for a positive acknowledgment followed by an IE016 or an IE028 (see previous options in this step).
+3. If the user sends an IE014 declaration cancellation request, NCTS sends an IE009 cancellation decision. This also happens following a cancellation request by the office of departure. A cancellation decision has one of the following outcomes: 
+   - The cancellation request is accepted and the transit movement ends.
+   - The cancellation request is rejected and NCTS sends an IE029 release for transit. (Go to step 5.)
+4. If the user does not send an IE014 declaration cancellation request following the allocation of an MRN (see step 2), one of the following actions takes place:
+   - NCTS sends an IE060 control of decision notification, then an IE029 release for transit. (Go to step 5.) 
+   - If there is an intervention, NCTS sends an IE055 guarantee not valid message followed by an IE051 no release for transit. At this point, the transit movement ends.
+   - If there is no intervention, NCTS sends an IE051 no release for transit message. At this point, the transit movement ends.
+5. When NCTS issues an IE029 release for transit (following an IE028, an IE060, or an IE009), one of the following actions takes place:
+   - The transit movement ends.
+   - Upon completion of the arrival, an IE045 is issued by NCTS. 
+   - A cancellation is requested by the office of departure, which results in a cancellation decision. (Go to step 3.)
 
 ###Arrivals
 
-![The Happy Path diagram for Arrivals shows the process for transporting goods using the CTC Traders API](/figures/HappyPath-Arrivals.png)
+The following diagram shows the messages that the office of destination receives.
+
+<img src="/figures/Arrivals_Diagram.svg" />
+
+<a href="/figures/Arrivals_Diagram.svg" target="_blank">Open the Arrivals diagram in a new tab.</a>
+
+1. An IE007 arrival notification message is sent by the user to NCTS.
+2. One of the following actions takes place:
+   - NCTS sends the user an IE008 arrival notification rejection. (Go to step 1.)
+   - NCTS issues an IE043 unloading permission message. (Go to step 3.)
+3. An IE044 unloading remarks message is sent by the user to NCTS. 
+4. One of the following actions takes place:
+   - NCTS sends an IE058 unloading remarks rejection message. If the user contacts the helpdesk to request a manual intervention, go to step 5, otherwise, go to step 3.
+   - NCTS sends an IE025 good release notification message. (Go to step 6.)
+5. After the user contacts the helpdesk to request a manual intervention following receipt of an IE058 unloading remarks rejection message, NCTS issues an IE043 unloading permission message. (Go to step 3.)
+6. NCTS sends an IE045 to the office of departure for the transit movement.
 
 ##NCTS Message Details
 
