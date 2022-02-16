@@ -112,7 +112,7 @@ The following diagrams show the expected order of messages that can be sent and 
 
 The following diagram shows the messages that the office of departure receives. 
 
-<img src="figures/Departures_Diagram.svg" />
+<img src="figures/Departures_Diagram.svg" alt="Departures workflow. Flow is described in this section." />
 
 <a href="figures/Departures_Diagram.svg" target="_blank">Open the Departures diagram in a new tab.</a>
 
@@ -137,7 +137,7 @@ The following diagram shows the messages that the office of departure receives.
 
 The following diagram shows the messages that the office of destination receives.
 
-<img src="figures/Arrivals_Diagram.svg" />
+<img src="figures/Arrivals_Diagram.svg" alt="Arrivals workflow. Flow is described in this section." />
 
 <a href="figures/Arrivals_Diagram.svg" target="_blank">Open the Arrivals diagram in a new tab.</a>
 
