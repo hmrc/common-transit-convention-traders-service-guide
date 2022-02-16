@@ -112,7 +112,7 @@ The following diagrams show the expected order of messages that can be sent and 
 
 The following diagram shows the messages that the office of departure receives. 
 
-<img src="figures/Departures_Diagram.svg" alt="Departures workflow. Flow is described in this section." />
+<img src="figures/Departures_Diagram.svg" alt="Departures workflow flow. Flow is described in this section." />
 
 <a href="figures/Departures_Diagram.svg" target="_blank">Open the Departures diagram in a new tab.</a>
 
@@ -129,28 +129,34 @@ The following diagram shows the messages that the office of departure receives.
    - If there is an intervention, NCTS sends an IE055 guarantee not valid message followed by an IE051 no release for transit. At this point, the transit movement ends.
    - If there is no intervention, NCTS sends an IE051 no release for transit message. At this point, the transit movement ends.
 5. When NCTS issues an IE029 release for transit (following an IE028, an IE060, or an IE009), one of the following actions takes place:
-   - The transit movement ends.
-   - Upon completion of the arrival, an IE045 is issued by NCTS. 
-   - A cancellation is requested by the office of departure, which results in a cancellation decision. (Go to step 3.)
+   - The user chooses to send an IE014 declaration cancellation request.
+   - A cancellation is requested by the office of departure, which results in NCTS sending an IE009 cancellation decision message. (Go to step 3.)
+   - Upon completion of the arrival, an IE045 write-off notification movement is issued by NCTS. 
 
 ###Arrivals
 
 The following diagram shows the messages that the office of destination receives.
 
-<img src="figures/Arrivals_Diagram.svg" alt="Arrivals workflow. Flow is described in this section." />
+<img src="figures/Arrivals_Diagram.svg" alt="Arrivals workflow flow. Flow is described in this section." />
 
 <a href="figures/Arrivals_Diagram.svg" target="_blank">Open the Arrivals diagram in a new tab.</a>
 
 1. An IE007 arrival notification message is sent by the user to NCTS.
 2. One of the following actions takes place:
    - NCTS sends the user an IE008 arrival notification rejection. (Go to step 1.)
-   - NCTS issues an IE043 unloading permission message. (Go to step 3.)
-3. An IE044 unloading remarks message is sent by the user to NCTS. 
-4. One of the following actions takes place:
-   - NCTS sends an IE058 unloading remarks rejection message. If the user contacts the helpdesk to request a manual intervention, go to step 5, otherwise, go to step 3.
+   - NCTS sends an IE043 unloading permission message. (Go to step 3.)
    - NCTS sends an IE025 good release notification message. (Go to step 6.)
-5. After the user contacts the helpdesk to request a manual intervention following receipt of an IE058 unloading remarks rejection message, NCTS issues an IE043 unloading permission message. (Go to step 3.)
-6. NCTS sends an IE045 to the office of departure for the transit movement.
+3. An IE043 unloading permission message results in one of the following actions:
+   - An IE044 unloading remarks message is sent by the user to NCTS. (Go to step 4.)
+   - If manual helpdesk intervention takes place, NCTS sends an IE025 goods release notification message. (Go to step 6.)
+4. After NCTS receives an IE044 unloading remarks message, one of the following actions takes place:
+   - NCTS sends an IE058 unloading remarks rejection message. (Go to step 5.)
+   - NCTS sends an IE025 goods release notification message. (Go to step 6.)
+   - If manual helpdesk intervention takes place, NCTS sends an IE043 unloading permission message. (Go to step 3.)
+5. After NCTS sends an IE058 unloading remarks rejection message, one of the following actions takes place:
+   - An IE044 unloading remarks message is sent by the user to NCTS. (Go to step 4.)
+   - If manual Border Force intervention takes place, NCTS sends an IE043 unloading permission message. (Go to step 3.)
+6. After NCTS sends an IE025 goods release notification message, NCTS sends an IE045 to the office of departure for the transit movement.
 
 ##NCTS Message Details
 
