@@ -125,9 +125,10 @@ The following diagram shows the messages that the office of departure receives.
    - The cancellation request is accepted and the transit movement ends.
    - The cancellation request is rejected and NCTS sends an IE029 release for transit. (Go to step 5.)
 4. If the user does not send an IE014 declaration cancellation request following the allocation of an MRN (see step 2), one of the following actions takes place:
-   - NCTS sends an IE060 control of decision notification, then an IE029 release for transit. (Go to step 5.) 
-   - If there is an intervention, NCTS sends an IE055 guarantee not valid message followed by an IE051 no release for transit. At this point, the transit movement ends.
-   - If there is no intervention, NCTS sends an IE051 no release for transit message. At this point, the transit movement ends.
+   - NCTS sends an IE060 control of decision notification, then sends either an IE029 release for transit (Go to step 5.) or an IE051 no release for transit message. 
+   - NCTS sends an IE051 no release for transit message. At this point, the transit movement ends.
+   - NCTS sends an an IE055 guarantee not valid message. If there is an intervention, NCTS then sends an IE029 release for transit. If there is no intervention, NCTS then sends an IE051 no release for transit message. 
+   - NCTS sends an IE029 release for transit message (Go to step 5.)
 5. When NCTS issues an IE029 release for transit (following an IE028, an IE060, or an IE009), one of the following actions takes place:
    - The user chooses to send an IE014 declaration cancellation request.
    - A cancellation is requested by the office of departure, which results in NCTS sending an IE009 cancellation decision message. (Go to step 3.)
