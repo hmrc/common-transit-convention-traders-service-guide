@@ -317,8 +317,8 @@ You can use the updatedSince parameter in order to retrieve new messages since y
  
 If you do not use filters:
 
- - you’ll only get up to the most recently updated 5,000 movements, within the last 28 days
- - you will not get any additional movements above this cap, within the last 28 days
+ - you’ll only get up to the most recently updated 5,000 movements, within the last 31 days
+ - you will not get any additional movements above this cap, within the last 31 days
  
 In order to manage the limit you need to regularly poll using a filter date and time of the last poll. This will ensure your list of movements requested is less than 5,000.
 
@@ -329,7 +329,7 @@ You must also note:
  - the cap is not related to the movement EORI in the XML message
  - if your movements are split over multiple EORI enrolments then each enrolment will have a separate 5,000 cap
  - if you do get results over the 5,000 capped limit, the JSON payload will tell you this cap has happened and how many movements have not been sent to you. For example, the JSON message will state that 5,000 movements of a total of 6,433
- - only the most recent 5,000 data movements in the last 28 days will be returned. This is because we only store message data from the last 28 days
+ - only the most recent 5,000 data movements in the last 31 days will be returned. This is because we only store message data from the last 31 days
  
 **Push pull notifications**
 
