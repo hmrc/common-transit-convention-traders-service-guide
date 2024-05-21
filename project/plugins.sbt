@@ -10,4 +10,4 @@ addSbtPlugin("uk.gov.hmrc" % "sbt-git-versioning" % "2.4.0")
 
 addSbtPlugin("uk.gov.hmrc" % "sbt-distributables" % "2.5.0")
 
-addSbtPlugin("org.playframework\"" % "sbt-plugin" % "3.0.1")
+addSbtPlugin("org.playframework" % "sbt-plugin" % "3.0.1")
